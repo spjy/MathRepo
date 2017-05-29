@@ -1,0 +1,2268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:300|Comfortaa|Raleway|Open+Sans' rel='stylesheet' type='text/css'>
+	<link type="text/css" rel="stylesheet" href="../../css/style.css" media="screen,projection" />
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<style>
+		#call-to-action {
+			font-size: 50px;
+		}
+		
+		.headers {
+			font-family: Comfortaa, Roboto, Lucida Sans;
+		}
+		
+		.nav-txt {
+			font-family: Raleway, Roboto, Tahoma;
+		}
+		
+		.js-txt {
+			font-family: Josefin Sans, sans-serif;
+		}
+		
+		.os-txt {
+			font-family: Open Sans;
+		}
+		
+		.hl-txt {
+			color: #ff9800;
+		}
+		
+		.typedtxt {
+			display: inline;
+		}
+		
+		#logobg {
+			background-color: #cc7900;
+		}
+		
+		.logoimg {
+			width: 20%
+		}
+		
+		#cat-header {
+			color: #19B5FE;
+			font-size: 40px;
+		}
+		
+		.desc-txt {
+			font-size: 0.3em;
+		}
+		
+		.overlap-header {
+			padding: 25px 25px 35px;
+			/* 100px extra for bottom */
+		}
+		
+		.overlap-img {
+			display: block;
+			margin: -30px auto 1px;
+		}
+		
+		body {
+			display: flex;
+			min-height: 100vh;
+			flex-direction: column;
+		}
+		
+		main {
+			flex: 1 0 auto;
+		}
+		
+		.topic-cards {
+			padding: 1.5em;
+		}
+		
+		.category-text {
+			font-size: 1.5em;
+			font-family: Open Sans;
+			color: black;
+			padding-top: 3%;
+		}
+		
+		.category-text-content {
+			font-size: 1em;
+			font-family: Open Sans;
+			color: black;
+			padding-top: 1%;
+			padding-bottom: 3%;
+		}
+		
+		.category-text:after {
+			content: ' ';
+			display: block;
+			border: 1px solid #ff9800;
+			width: 6.5%;
+		}
+		
+		.example-hl {
+			margin-top: 3%;
+			border-left: solid 6px #d32f2f;
+		}
+		
+		.f-hl {
+			margin-top: 3%;
+			border-left: solid 6px #d32f2f;
+		}
+	</style>
+
+</head>
+
+<body class="blue-grey darken-1">
+	<header>
+		<nav>
+			<div class="nav-wrapper">
+				<a href="/mathrepo/" class="brand-logo center z-depth-1" id="logobg">&nbsp;<span class="headers">math</span><span class="js-txt hl-txt">calculus</span>&nbsp;</a>
+				<ul id="nav-mobile" class="left hide-on-med-and-down nav-txt">
+					<li><a class="dropdown-button" href="/mathrepo/calculus/" data-activates="calc">calculus<i class="material-icons right">arrow_drop_down</i></a></li>
+					<li><a class="dropdown-button" href="/mathrepo/physics/" data-activates="phys">physics<i class="material-icons right">arrow_drop_down</i></a></li>
+				</ul>
+				<ul id="nav-mobile" class="right hide-on-med-and-down nav-txt">
+					<li><a href="#">me</a></li>
+				</ul>
+			</div>
+		</nav>
+		<ul id="calc" class="dropdown-content">
+			<li><a href="/mathrepo/calculus/vectors/">vectors</a></li>
+			<li><a href="/mathrepo/calculus/limits/">limits</a></li>
+			<li><a href="/mathrepo/calculus/derivatives/">derivatives</a></li>
+			<li><a href="/mathrepo/calculus/integrals/">integrals</a></li>
+			<li><a href="/mathrepo/calculus/series/">series</a></li>
+		</ul>
+		<ul id="phys" class="dropdown-content">
+			<li><a href="#!">intro</a></li>
+			<li><a href="#!">kintematics</a></li>
+			<li><a href="#!">newton's laws</a></li>
+		</ul>
+	</header>
+	<main>
+		<div class="container">
+			<div class="center white-text flow-text headers overlap-header" id="call-to-action">
+				<span class="js-txt">topic: <span class="hl-txt">derivatives</span></span>
+				<br>
+			</div>
+			<div class="divider"></div>
+			<br>
+			<br>
+			<a class="btn-floating btn-large waves-effect waves-light orange overlap-img"><i class="material-icons">keyboard_arrow_down</i></a>
+			<div class="row">
+				<div class="col s12 m12">
+					<div class="card overlap-img blue-grey darken-2">
+						<div class="card-content headers center-align">
+							<br>
+							<span class="js-txt white-text" id="cat-header">rules | trig | logs &amp; exponentials | application</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<ul class="card-animation">
+				<li>
+					<ul class="collapsible" data-collapsible="expandable">
+						<li>
+							<div class="collapsible-header center topic-cards"><span class="card-title js-txt orange-text" id="cat-header">derivatives: <span class="js-txt black-text">rules</span></span>
+							</div>
+							<div class="collapsible-body white">
+								<div class="container left-align">
+									<div class="category-text">
+										Derivatives
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">
+										A derivative finds the slope of a function. The notation to indicate a derivative can be expressed through either: $$f'(x)\ \text{or}\ \frac{d}{dx}(f(x))$$
+									</div>
+									<div class="category-text">
+										Limit definition
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">You can find the derivative of a function through the limit definition of a derivative which is: $$\lim_{h \rightarrow 0}\frac{f(x+h)-f(x)}{h}$$
+									</div>
+									<div class="row">
+										<div class="col s12 m6">
+											<div class="card example-hl">
+												<div class="card-content">
+													<span class="headers">APPLY. </span>Find the derivative of the function using the limit definition of a derivative: $$f(x)=x^2$$ $$\lim_{h \rightarrow 0}\frac{(x+h)^2-x^2}{h}$$ $$\lim_{h \rightarrow 0}\frac{x^2+2hx+h^2-x^2}{h}$$ $$\lim_{h \rightarrow 0}\frac{2hx+h^2}{h}$$ $$\lim_{h \rightarrow 0}\frac{h(2x+h)}{h}$$ $$\lim_{h \rightarrow 0}2x+h$$ $$f'(x)=2x$$
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="category-text">
+										Power rule
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">We are able to find the derivative of a function by simply applying the power rule. If we want to find the derivative of $f(x)=x^n$ we use the formula: $$nx^{n-1}$$ We bring down the exponent to the front and subtract one of the exponent.
+									</div>
+									<div class="row">
+										<div class="col s12 m6">
+											<div class="card example-hl">
+												<div class="card-content">
+													<span class="headers">APPLY. </span>Find the derivative of the function using the power rule. $$f(x)=x^6$$ $$f'(x)=6x^5$$
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="category-text">
+										Product rule
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">Not only can we use the power rule, but we can also use the product rule if we have two components to the function. If we wanted to find the derivative of $f(x) \times g(x)$, the general formula is: $$f(x)g'(x)+g(x)f'(x)$$
+									</div>
+									<div class="row">
+										<div class="col s12 m6">
+											<div class="card example-hl">
+												<div class="card-content">
+													<span class="headers">APPLY. </span>Find the derivative of the function using the product rule. $$f(x)=(x^2)(x+1)$$ $$f'(x)=(x^2)(x+1)'+(x+1)(x^2)'$$ $$f'(x)=(x^2)(1)+(x+1)(2x)$$ $$f'(x)=(x^2)+2x^2+2x$$ $$f'(x)=3x^2+2x$$
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="category-text">
+										Quotient rule
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">The third rule we can use is the quotient rule, and if we want to express it in terms of $\frac{f(x)}{g(x)}$ then it would be expressed by: $$\frac{g(x)f'(x)-f(x)g'(x)}{g^2(x)}$$
+									</div>
+									<div class="row">
+										<div class="col s12 m6">
+											<div class="card example-hl">
+												<div class="card-content">
+													<span class="headers">APPLY. </span>Find the derivative of the function using the quotient rule. $$f(x)=\frac{x+1}{x}$$ $$f'(x)=\frac{(x)(x+1)'-(x+1)(x)'}{x^2}$$ $$f'(x)=\frac{(x)(1)-(x+1)(1)}{x^2}$$ $$f'(x)=\frac{x-x-1}{x^2}$$ $$f'(x)=-\frac{1}{x^2}$$
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="category-text">
+										Chain rule
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">The final rule we can use is the chain rule to deal with compositional functions. If we wanted to find the derivative of $(f(g(x))$, we'd use the following: $$f'(g(x)) \times g'(x)$$
+									</div>
+									<div class="row">
+										<div class="col s12 m6">
+											<div class="card example-hl">
+												<div class="card-content">
+													<span class="headers">APPLY. </span>Find the derivative of the function using the chain rule. $$f(x)=(x^2+1)^2$$ $$f'(x)=2(x^2+1)(2x)$$ $$f'(x)=(4x^2+2)(2x)$$ $$f'(x)=8x^3+4x$$
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="category-text">
+										Implicit differentiation
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">We can also derive functions which have more than one variable, such as $x+y=1$. If we wanted to derive it in terms of $x$, first we would normally take the derivative of both sides. Then for each $y$ we derive we would simply multiply by a $y'$ (like applying the chain rule).
+									</div>
+									<div class="row">
+										<div class="col s12 m6">
+											<div class="card example-hl">
+												<div class="card-content">
+													<span class="headers">APPLY. </span>Find the derivative of the function in terms of $x$ using implicit differentiation. $$2x+y=3$$ $$(2x+y)'=(3)'$$ $$2+y \times y'=0$$ $$yy'=-2$$ $$y'=\frac{-2}{y}$$ $$y'=\frac{-2}{3-2x}$$
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<ul class="collapsible" data-collapsible="accordion">
+						<li>
+							<div class="collapsible-header center topic-cards"><span class="card-title js-txt orange-text" id="cat-header">derivatives: <span class="js-txt black-text">trig</span></span>
+							</div>
+							<div class="collapsible-body white">
+								<div class="container left-align">
+									<div class="category-text">
+										Derivatives involving trigonometry
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">We can find the derivative of trigonometric functions which can be found through the limit definition of a derivative. Here they are:
+										<div class="row">
+											<div class="col s12 m4">
+												$$y=sinx \\ y'=cosx$$
+											</div>
+											<div class="col s12 m4">
+												$$y=cosx \\ y'=-sinx$$
+											</div>
+											<div class="col s12 m4">
+												$$y=tanx \\ y'=sec^2x$$
+											</div>
+										</div>
+										<div class="row">
+											<div class="col s12 m4">
+												$$y=cscx \\ y'=-cscxcotx$$
+											</div>
+											<div class="col s12 m4">
+												$$y=secx \\ y'=secxtanx$$
+											</div>
+											<div class="col s12 m4">
+												$$y=cotx \\ y'=-csc^2x$$
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col s12 m6">
+											<div class="card example-hl">
+												<div class="card-content">
+													<span class="headers">APPLY. </span>Find the derivative of the function. $$f(x)=sin^2(2x)$$ $$f'(x)=2cos(2x) \times 2$$ $$f'(x)=4cos(2x)$$
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="category-text">
+										Derivatives involving inverse trigonometry
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">We can also find the derivative of the inverse trigonometric functions through the same methods as the regular trig. Here is a compilation:
+										<div class="row">
+											<div class="col s12 m4">
+												$$y=sin^{-1}x \\ y'=\frac{1}{\sqrt{1-x^2}}$$
+											</div>
+											<div class="col s12 m4">
+												$$y=cos^{-1}x \\ y'=-\frac{1}{\sqrt{1-x^2}}$$
+											</div>
+											<div class="col s12 m4">
+												$$y=tan^{-1}x \\ y'=\frac{1}{1+x^2}$$
+											</div>
+										</div>
+										<div class="row">
+											<div class="col s12 m4">
+												$$y=csc^{-1}x \\ y'=-\frac{1}{|x|\sqrt{x^2-1}}$$
+											</div>
+											<div class="col s12 m4">
+												$$y=sec^{-1}x \\ y'=\frac{1}{|x|\sqrt{x^2-1}}$$
+											</div>
+											<div class="col s12 m4">
+												$$y=cot^{-1}x \\ y'=-\frac{1}{1+x^2}$$
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col s12 m6">
+											<div class="card example-hl">
+												<div class="card-content">
+													<span class="headers">APPLY. </span>Find the derivative of the function. $$f(x)=csc^{-1}(x^2+1)$$ $$f'(x)=\frac{1}{|x^2+1|\sqrt{(x^2+1)^2-1}} \times 2x$$ $$f'(x)=\frac{2x}{|x^2+1|\sqrt{x^4+1}}$$
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="category-text">
+										Derivatives involving hyperbolic trigonometry
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">Finally, here is a list of the derivatives involving hyperbolic trigonometry.
+										<div class="row">
+											<div class="col s12 m4">
+												$$y=sinhx \\ y'=coshx$$
+											</div>
+											<div class="col s12 m4">
+												$$y=coshx \\ y'=sinhx$$
+											</div>
+											<div class="col s12 m4">
+												$$y=tanhx \\ y'=sech^2x$$
+											</div>
+										</div>
+										<div class="row">
+											<div class="col s12 m4">
+												$$y=cschx \\ y'=-cschxcothx$$
+											</div>
+											<div class="col s12 m4">
+												$$y=sechx \\ y'=-sechxtanhx$$
+											</div>
+											<div class="col s12 m4">
+												$$y=cothx \\ y'=-csc^2x$$
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col s12 m6">
+											<div class="card example-hl">
+												<div class="card-content">
+													<span class="headers">APPLY. </span>Find the derivative of the function. $$f(x)=xsinhx-coshx$$ $$f'(x)=(x)(sinhx)'+(sinhx)(x)'-(coshx)'$$ $$f'(x)=(x)(coshx)+(sinhx)(1)-(sinhx)'$$ $$f'(x)=xcoshx+sinhx-sinhx$$ $$f'(x)=xcoshx$$
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<ul class="collapsible" data-collapsible="expandable">
+						<li>
+							<div class="collapsible-header center topic-cards"><span class="card-title js-txt orange-text" id="cat-header">derivatives: <span class="js-txt black-text">logs and exponentials</span></span>
+							</div>
+							<div class="collapsible-body white">
+								<div class="container left-align">
+									<div class="category-text">
+										Derivatives involving logarithms
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">We can derive logarithms with either base $10$ or $e$:
+										<div class="row">
+											<div class="col s12 m6">
+												$$y=\log_{b}{x} \\ y'=\frac{1}{xlnb}$$
+											</div>
+											<div class="col s12 m6">
+												$$y=lnx \\ y'=\frac{1}{x}$$
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col s12 m6">
+											<div class="card example-hl">
+												<div class="card-content">
+													<span class="headers">APPLY. </span>Find the derivative of the function. $$f(x)=ln(sinx)$$ $$f'(x)=\frac{1}{sinx} \times cosx$$ $$f'(x)=\frac{cosx}{sinx}$$ $$f'(x)=cotx$$
+
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="category-text">
+										Derivatives involving exponentials
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">We can also derive exponentials with base $number$ or $e$:
+										<div class="row">
+											<div class="col s12 m6">
+												$$y=e^x \\ y'=e^x$$
+											</div>
+											<div class="col s12 m6">
+												$$y=b^x \\ y'=b^xlnb$$
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col s12 m6">
+											<div class="card example-hl">
+												<div class="card-content">
+													<span class="headers">APPLY. </span>Find the derivative of the function. $$f(x)=2e^{2x}$$ $$f'(x)=2e^2x \times 2$$ $$f'(x)=4e^{2x}$$
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<li>
+						<ul class="collapsible" data-collapsible="expandable">
+							<li>
+								<div class="collapsible-header center topic-cards"><span class="card-title js-txt orange-text" id="cat-header">derivatives: <span class="js-txt black-text">in sum</span></span>
+								</div>
+								<div class="collapsible-body white">
+									<div class="container left-align">
+										<div class="category-text">
+											Derivatives
+											<span class="category-accent"></span>
+											<br>
+										</div>
+										<div class="category-text-content">
+											A derivative basically aims to find the slope of a curve. The notation to indicate a derivative can be expressed through either: $$f'(x)\ \text{or}\ \frac{d}{dx}(f(x))$$
+										</div>
+										<div class="category-text">
+											Limit definition
+											<span class="category-accent"></span>
+											<br>
+										</div>
+										<div class="category-text-content">You can find the derivative of a function through the limit definition of a derivative which is: $$\lim_{h \rightarrow 0}\frac{f(x+h)-f(x)}{h}$$
+										</div>
+										<div class="category-text">
+											Power rule
+											<span class="category-accent"></span>
+											<br>
+										</div>
+										<div class="category-text-content">We are able to find the derivative of a function by simply applying the power rule. If we want to find the derivative of $f(x)=x^n$ we use the formula: $$nx^{n-1}$$ We bring down the exponent to the front and subtract one of the exponent.
+										</div>
+										<div class="category-text">
+											Product rule
+											<span class="category-accent"></span>
+											<br>
+										</div>
+										<div class="category-text-content">Not only can we use the power rule, but we can also use the product rule if we have two components to the function. If we wanted to find the derivative of $f(x) \times g(x)$, the general formula is: $$f(x)g'(x)+g(x)f'(x)$$
+										</div>
+										<div class="category-text">
+											Quotient rule
+											<span class="category-accent"></span>
+											<br>
+										</div>
+										<div class="category-text-content">The third rule we can use is the quotient rule, and if we want to express it in terms of $\frac{f(x)}{g(x)}$ then it would be expressed by: $$\frac{g(x)f'(x)-f(x)g'(x)}{g^2(x)}$$
+										</div>
+										<div class="category-text">
+											Chain rule
+											<span class="category-accent"></span>
+											<br>
+										</div>
+										<div class="category-text-content">The final rule we can use is the chain rule to deal with compositional functions. If we wanted to find the derivative of $(f(g(x))$, we'd use the following: $$f'(g(x)) \times g'(x)$$
+										</div>
+										<div class="category-text">
+											Implicit differentiation
+											<span class="category-accent"></span>
+											<br>
+										</div>
+										<div class="category-text-content">We can also derive functions which have more than one variable, such as $x+y=1$. If we wanted to derive it in terms of $x$, first we would normally take the derivative of both sides. Then for each $y$ we derive we would simply multiply by a $y'$ (like applying the chain rule).
+										</div>
+										<div class="category-text">
+											Derivatives involving trigonometry
+											<span class="category-accent"></span>
+											<br>
+										</div>
+										<div class="category-text-content">We can find the derivative of trigonometric functions which can be found through the limit definition of a derivative. Here they are:
+											<div class="row">
+												<div class="col s12 m4">
+													$$y=sinx \\ y'=cosx$$
+												</div>
+												<div class="col s12 m4">
+													$$y=cosx \\ y'=-sinx$$
+												</div>
+												<div class="col s12 m4">
+													$$y=tanx \\ y'=sec^2x$$
+												</div>
+											</div>
+											<div class="row">
+												<div class="col s12 m4">
+													$$y=cscx \\ y'=-cscxcotx$$
+												</div>
+												<div class="col s12 m4">
+													$$y=secx \\ y'=secxtanx$$
+												</div>
+												<div class="col s12 m4">
+													$$y=cotx \\ y'=-csc^2x$$
+												</div>
+											</div>
+										</div>
+										<div class="category-text">
+											Derivatives involving inverse trigonometry
+											<span class="category-accent"></span>
+											<br>
+										</div>
+										<div class="category-text-content">We can also find the derivative of the inverse trigonometric functions through the same methods as the regular trig. Here is a compilation:
+											<div class="row">
+												<div class="col s12 m4">
+													$$y=sin^{-1}x \\ y'=\frac{1}{\sqrt{1-x^2}}$$
+												</div>
+												<div class="col s12 m4">
+													$$y=cos^{-1}x \\ y'=-\frac{1}{\sqrt{1-x^2}}$$
+												</div>
+												<div class="col s12 m4">
+													$$y=tan^{-1}x \\ y'=\frac{1}{1+x^2}$$
+												</div>
+											</div>
+											<div class="row">
+												<div class="col s12 m4">
+													$$y=csc^{-1}x \\ y'=-\frac{1}{|x|\sqrt{x^2-1}}$$
+												</div>
+												<div class="col s12 m4">
+													$$y=sec^{-1}x \\ y'=\frac{1}{|x|\sqrt{x^2-1}}$$
+												</div>
+												<div class="col s12 m4">
+													$$y=cot^{-1}x \\ y'=-\frac{1}{1+x^2}$$
+												</div>
+											</div>
+										</div>
+										<div class="category-text">
+											Derivatives involving hyperbolic trigonometry
+											<span class="category-accent"></span>
+											<br>
+										</div>
+										<div class="category-text-content">Finally, here is a list of the derivatives involving hyperbolic trigonometry.
+											<div class="row">
+												<div class="col s12 m4">
+													$$y=sinhx \\ y'=coshx$$
+												</div>
+												<div class="col s12 m4">
+													$$y=coshx \\ y'=sinhx$$
+												</div>
+												<div class="col s12 m4">
+													$$y=tanhx \\ y'=sech^2x$$
+												</div>
+											</div>
+											<div class="row">
+												<div class="col s12 m4">
+													$$y=cschx \\ y'=-cschxcothx$$
+												</div>
+												<div class="col s12 m4">
+													$$y=sechx \\ y'=-sechxtanhx$$
+												</div>
+												<div class="col s12 m4">
+													$$y=cothx \\ y'=-csc^2x$$
+												</div>
+											</div>
+										</div>
+										<div class="category-text">
+											Derivatives involving logarithms
+											<span class="category-accent"></span>
+											<br>
+										</div>
+										<div class="category-text-content">We can derive logarithms with either base $10$ or $e$:
+											<div class="row">
+												<div class="col s12 m6">
+													$$y=\log_{b}{x} \\ y'=\frac{1}{xlnb}$$
+												</div>
+												<div class="col s12 m6">
+													$$y=lnx \\ y'=\frac{1}{x}$$
+												</div>
+											</div>
+										</div>
+										<div class="category-text">
+											Derivatives involving exponentials
+											<span class="category-accent"></span>
+											<br>
+										</div>
+										<div class="category-text-content">We can also derive exponentials with base $number$ or $e$:
+											<div class="row">
+												<div class="col s12 m6">
+													$$y=e^x \\ y'=e^x$$
+												</div>
+												<div class="col s12 m6">
+													$$y=b^x \\ y'=b^xlnb$$
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="collapsible" data-collapsible="expandable">
+							<li>
+								<div class="collapsible-header center topic-cards"><span class="card-title js-txt orange-text" id="cat-header">derivatives: <span class="js-txt black-text">application</span></span>
+								</div>
+								<div class="collapsible-body white">
+									<div class="container left-align">
+										<div class="category-text">
+											Finding the equation for the slope tangent to the curve
+											<span class="category-accent"></span>
+											<br>
+										</div>
+										<div class="category-text-content">
+											Using the derivative of a function, we can find the slope tangent to a point on the curve. To do this, take the derivative and find a point on the graph. Plug in those values to the point slope formula accordingly, $y-y_1=m(x-x_1)$ where the derivative is $m$ and the points are $(x,y)$.
+
+										</div>
+										<div class="category-text">
+											Finding critical points
+											<span class="category-accent"></span>
+											<br>
+										</div>
+										<div class="category-text-content">
+											In addition to finding the points tangent to the curve, we can find the critical points of a function. Critical points (see figure) refers to the areas in which the function increases and decreases and the points of the relative minima and maxima (extrema).
+											<div class="row">
+												<div class="col s12">
+													<div class="card figure-hl">
+														<div class="card-content center">
+															<svg version="1.1" id="Layer_1" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="884.1 148.2 1019.9 726" style="enable-background:new 884.1 148.2 1019.9 726; width:50%;" xml:space="preserve">
+																<style type="text/css">
+																	.st0 {
+																		clip-path: url(#SVGID_2_);
+																	}
+																	
+																	.st1 {
+																		fill: none;
+																		stroke: #000000;
+																		stroke-miterlimit: 10;
+																	}
+																	
+																	.st2 {
+																		clip-path: url(#SVGID_8_);
+																	}
+																	
+																	.st3 {
+																		clip-path: url(#SVGID_10_);
+																	}
+																	
+																	.st4 {
+																		clip-path: url(#SVGID_12_);
+																	}
+																	
+																	.st5 {
+																		clip-path: url(#SVGID_16_);
+																	}
+																	
+																	.st6 {
+																		clip-path: url(#SVGID_20_);
+																	}
+																	
+																	.st7 {
+																		clip-path: url(#SVGID_24_);
+																	}
+																	
+																	.st8 {
+																		clip-path: url(#SVGID_28_);
+																	}
+																	
+																	.st9 {
+																		clip-path: url(#SVGID_32_);
+																	}
+																	
+																	.st10 {
+																		clip-path: url(#SVGID_34_);
+																	}
+																	
+																	.st11 {
+																		clip-path: url(#SVGID_36_);
+																	}
+																	
+																	.st12 {
+																		clip-path: url(#SVGID_38_);
+																	}
+																	
+																	.st13 {
+																		clip-path: url(#SVGID_40_);
+																	}
+																	
+																	.st14 {
+																		clip-path: url(#SVGID_42_);
+																	}
+																	
+																	.st15 {
+																		clip-path: url(#SVGID_44_);
+																	}
+																	
+																	.st16 {
+																		clip-path: url(#SVGID_46_);
+																	}
+																	
+																	.st17 {
+																		clip-path: url(#SVGID_48_);
+																	}
+																	
+																	.st18 {
+																		clip-path: url(#SVGID_50_);
+																	}
+																	
+																	.st19 {
+																		clip-path: url(#SVGID_52_);
+																	}
+																	
+																	.st20 {
+																		clip-path: url(#SVGID_54_);
+																	}
+																	
+																	.st21 {
+																		clip-path: url(#SVGID_56_);
+																	}
+																	
+																	.st22 {
+																		clip-path: url(#SVGID_84_);
+																	}
+																	
+																	.st23 {
+																		clip-path: url(#SVGID_88_);
+																	}
+																	
+																	.st24 {
+																		clip-path: url(#SVGID_92_);
+																	}
+																	
+																	.st25 {
+																		clip-path: url(#SVGID_94_);
+																	}
+																	
+																	.st26 {
+																		clip-path: url(#SVGID_96_);
+																	}
+																	
+																	.st27 {
+																		clip-path: url(#SVGID_98_);
+																	}
+																	
+																	.st28 {
+																		clip-path: url(#SVGID_100_);
+																	}
+																	
+																	.st29 {
+																		clip-path: url(#SVGID_102_);
+																	}
+																	
+																	.st30 {
+																		clip-path: url(#SVGID_104_);
+																	}
+																	
+																	.st31 {
+																		clip-path: url(#SVGID_106_);
+																	}
+																	
+																	.st32 {
+																		clip-path: url(#SVGID_108_);
+																	}
+																	
+																	.st33 {
+																		clip-path: url(#SVGID_110_);
+																	}
+																	
+																	.st34 {
+																		clip-path: url(#SVGID_116_);
+																	}
+																	
+																	.st35 {
+																		fill: none;
+																		stroke: #006400;
+																		stroke-width: 1.5;
+																		stroke-linecap: round;
+																		stroke-linejoin: round;
+																		stroke-miterlimit: 10;
+																	}
+																	
+																	.st36 {
+																		clip-path: url(#SVGID_120_);
+																	}
+																	
+																	.st37 {
+																		fill: #0099CC;
+																	}
+																	
+																	.st38 {
+																		clip-path: url(#SVGID_122_);
+																	}
+																	
+																	.st39 {
+																		fill: none;
+																		stroke: #000000;
+																		stroke-linecap: round;
+																		stroke-linejoin: round;
+																		stroke-miterlimit: 10;
+																	}
+																	
+																	.st40 {
+																		clip-path: url(#SVGID_124_);
+																	}
+																	
+																	.st41 {
+																		clip-path: url(#SVGID_126_);
+																	}
+																	
+																	.st42 {
+																		fill: #FF0000;
+																	}
+																	
+																	.st43 {
+																		clip-path: url(#SVGID_128_);
+																	}
+																	
+																	.st44 {
+																		clip-path: url(#SVGID_130_);
+																	}
+																	
+																	.st45 {
+																		clip-path: url(#SVGID_132_);
+																	}
+																	
+																	.st46 {
+																		clip-path: url(#SVGID_134_);
+																	}
+																	
+																	.st47 {
+																		clip-path: url(#SVGID_136_);
+																	}
+																	
+																	.st48 {
+																		clip-path: url(#SVGID_138_);
+																	}
+																	
+																	.st49 {
+																		clip-path: url(#SVGID_140_);
+																	}
+																	
+																	.st50 {
+																		clip-path: url(#SVGID_142_);
+																	}
+																</style>
+																<title></title>
+																<g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_1_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_2_">
+																			<use xlink:href="#SVGID_1_" style="overflow:visible;" />
+																		</clipPath>
+																		<g class="st0">
+																			<g>
+																				<path class="st1" d="M1532.6,148.2v726" />
+																			</g>
+																		</g>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_3_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_4_">
+																			<use xlink:href="#SVGID_3_" style="overflow:visible;" />
+																		</clipPath>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_5_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_6_">
+																			<use xlink:href="#SVGID_5_" style="overflow:visible;" />
+																		</clipPath>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_7_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_8_">
+																			<use xlink:href="#SVGID_7_" style="overflow:visible;" />
+																		</clipPath>
+																		<g class="st2">
+																			<g>
+																				<path class="st1" d="M885.6,447.4h1020" />
+																			</g>
+																		</g>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_9_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_10_">
+																			<use xlink:href="#SVGID_9_" style="overflow:visible;" />
+																		</clipPath>
+																		<g class="st3">
+																			<g>
+																				<path class="st1" d="M2811.3,447.4" />
+																			</g>
+																		</g>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_11_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_12_">
+																			<use xlink:href="#SVGID_11_" style="overflow:visible;" />
+																		</clipPath>
+																		<g class="st4">
+																			<g>
+																				<path class="st1" d="M2811.3,447.4" />
+																			</g>
+																		</g>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_13_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_14_">
+																			<use xlink:href="#SVGID_13_" style="overflow:visible;" />
+																		</clipPath>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_15_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_16_">
+																			<use xlink:href="#SVGID_15_" style="overflow:visible;" />
+																		</clipPath>
+																		<g class="st5">
+																			<g>
+																				<path class="st1" d="M398.1,447.4" />
+																			</g>
+																		</g>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_17_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_18_">
+																			<use xlink:href="#SVGID_17_" style="overflow:visible;" />
+																		</clipPath>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_19_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_20_">
+																			<use xlink:href="#SVGID_19_" style="overflow:visible;" />
+																		</clipPath>
+																		<g class="st6">
+																			<g>
+																				<path class="st1" d="M539.9,447.4" />
+																			</g>
+																		</g>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_21_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_22_">
+																			<use xlink:href="#SVGID_21_" style="overflow:visible;" />
+																		</clipPath>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_23_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_24_">
+																			<use xlink:href="#SVGID_23_" style="overflow:visible;" />
+																		</clipPath>
+																		<g class="st7">
+																			<g>
+																				<path class="st1" d="M681.7,447.4" />
+																			</g>
+																		</g>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_25_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_26_">
+																			<use xlink:href="#SVGID_25_" style="overflow:visible;" />
+																		</clipPath>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_27_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_28_">
+																			<use xlink:href="#SVGID_27_" style="overflow:visible;" />
+																		</clipPath>
+																		<g class="st8">
+																			<g>
+																				<path class="st1" d="M823.5,447.4" />
+																			</g>
+																		</g>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_29_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_30_">
+																			<use xlink:href="#SVGID_29_" style="overflow:visible;" />
+																		</clipPath>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_31_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_32_">
+																			<use xlink:href="#SVGID_31_" style="overflow:visible;" />
+																		</clipPath>
+																		<g class="st9">
+																			<g>
+																				<path class="st1" d="M965.3,447.4" />
+																			</g>
+																		</g>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_33_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_34_">
+																			<use xlink:href="#SVGID_33_" style="overflow:visible;" />
+																		</clipPath>
+																		<g class="st10">
+																			<g>
+																				<path d="M1093.6,464v-1h5.8v1H1093.6z M1105.7,468h-1.3v-8.3c-0.3,0.3-0.7,0.6-1.2,0.9c-0.5,0.3-1,0.5-1.4,0.6V460
+					c0.7-0.3,1.4-0.7,1.9-1.2c0.6-0.5,0.9-1,1.2-1.4h0.8V468z M1109.7,468v-1.5h1.5v1.5H1109.7z M1113.1,465.2l1.4-0.1
+					c0.1,0.7,0.3,1.2,0.7,1.5c0.4,0.3,0.8,0.5,1.3,0.5c0.6,0,1.1-0.2,1.6-0.7c0.4-0.5,0.6-1.1,0.6-1.9c0-0.7-0.2-1.3-0.6-1.8
+					c-0.4-0.4-1-0.6-1.6-0.6c-0.4,0-0.8,0.1-1.1,0.3c-0.3,0.2-0.6,0.4-0.8,0.7l-1.2-0.2l1-5.4h5.3v1.2h-4.2l-0.6,2.8
+					c0.6-0.4,1.3-0.7,2-0.7c0.9,0,1.7,0.3,2.3,1c0.6,0.6,0.9,1.5,0.9,2.5c0,1-0.3,1.8-0.8,2.5c-0.7,0.9-1.6,1.3-2.8,1.3
+					c-1,0-1.8-0.3-2.4-0.8C1113.5,466.8,1113.2,466.1,1113.1,465.2z" />
+																			</g>
+																		</g>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_35_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_36_">
+																			<use xlink:href="#SVGID_35_" style="overflow:visible;" />
+																		</clipPath>
+																		<g class="st11">
+																			<g>
+																				<path class="st1" d="M1107.2,447.4v4.4" />
+																			</g>
+																		</g>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_37_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_38_">
+																			<use xlink:href="#SVGID_37_" style="overflow:visible;" />
+																		</clipPath>
+																		<g class="st12">
+																			<g>
+																				<path d="M1242.7,464v-1h5.8v1H1242.7z M1254.8,468h-1.3v-8.3c-0.3,0.3-0.7,0.6-1.2,0.9c-0.5,0.3-1,0.5-1.4,0.6V460
+					c0.7-0.3,1.4-0.7,1.9-1.2c0.6-0.5,0.9-1,1.2-1.4h0.8V468z" />
+																			</g>
+																		</g>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_39_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_40_">
+																			<use xlink:href="#SVGID_39_" style="overflow:visible;" />
+																		</clipPath>
+																		<g class="st13">
+																			<g>
+																				<path class="st1" d="M1249,447.4v4.4" />
+																			</g>
+																		</g>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_41_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_42_">
+																			<use xlink:href="#SVGID_41_" style="overflow:visible;" />
+																		</clipPath>
+																		<g class="st14">
+																			<g>
+																				<path d="M1377,464v-1h5.8v1H1377z M1384.3,462.8c0-1.3,0.1-2.3,0.4-3c0.3-0.8,0.6-1.3,1.1-1.8c0.5-0.4,1.2-0.6,1.9-0.6
+					c0.6,0,1.1,0.1,1.5,0.4c0.4,0.2,0.8,0.6,1.1,1c0.3,0.4,0.5,1,0.6,1.6c0.2,0.6,0.2,1.5,0.2,2.5c0,1.2-0.1,2.2-0.4,3
+					c-0.3,0.8-0.6,1.3-1.1,1.8c-0.5,0.4-1.2,0.6-1.9,0.6c-1,0-1.8-0.4-2.4-1.1C1384.6,466.2,1384.3,464.7,1384.3,462.8z
+					 M1385.6,462.8c0,1.7,0.2,2.9,0.6,3.5c0.4,0.6,0.9,0.9,1.5,0.9c0.6,0,1.1-0.3,1.5-0.9c0.4-0.6,0.6-1.7,0.6-3.5
+					c0-1.7-0.2-2.9-0.6-3.5c-0.4-0.6-0.9-0.8-1.5-0.8c-0.6,0-1.1,0.2-1.4,0.7C1385.8,459.8,1385.6,461,1385.6,462.8z M1393.2,468
+					v-1.5h1.5v1.5H1393.2z M1396.6,465.2l1.4-0.1c0.1,0.7,0.3,1.2,0.7,1.5c0.4,0.3,0.8,0.5,1.3,0.5c0.6,0,1.1-0.2,1.6-0.7
+					c0.4-0.5,0.6-1.1,0.6-1.9c0-0.7-0.2-1.3-0.6-1.8c-0.4-0.4-1-0.6-1.6-0.6c-0.4,0-0.8,0.1-1.1,0.3c-0.3,0.2-0.6,0.4-0.8,0.7
+					l-1.2-0.2l1-5.4h5.3v1.2h-4.2l-0.6,2.8c0.6-0.4,1.3-0.7,2-0.7c0.9,0,1.7,0.3,2.3,1c0.6,0.6,0.9,1.5,0.9,2.5c0,1-0.3,1.8-0.8,2.5
+					c-0.7,0.9-1.6,1.3-2.8,1.3c-1,0-1.8-0.3-2.4-0.8C1397,466.8,1396.7,466.1,1396.6,465.2z" />
+																			</g>
+																		</g>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_43_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_44_">
+																			<use xlink:href="#SVGID_43_" style="overflow:visible;" />
+																		</clipPath>
+																		<g class="st15">
+																			<g>
+																				<path class="st1" d="M1390.8,447.4v4.4" />
+																			</g>
+																		</g>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_45_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_46_">
+																			<use xlink:href="#SVGID_45_" style="overflow:visible;" />
+																		</clipPath>
+																		<g class="st16">
+																			<g>
+																				<path d="M1540.8,462.8c0-1.3,0.1-2.3,0.4-3c0.3-0.8,0.6-1.3,1.1-1.8c0.5-0.4,1.2-0.6,1.9-0.6c0.6,0,1.1,0.1,1.5,0.4
+					c0.4,0.2,0.8,0.6,1.1,1c0.3,0.4,0.5,1,0.6,1.6c0.2,0.6,0.2,1.5,0.2,2.5c0,1.2-0.1,2.2-0.4,3c-0.3,0.8-0.6,1.3-1.1,1.8
+					c-0.5,0.4-1.2,0.6-1.9,0.6c-1,0-1.8-0.4-2.4-1.1C1541.1,466.2,1540.8,464.7,1540.8,462.8z M1542.1,462.8c0,1.7,0.2,2.9,0.6,3.5
+					c0.4,0.6,0.9,0.9,1.5,0.9s1.1-0.3,1.5-0.9c0.4-0.6,0.6-1.7,0.6-3.5c0-1.7-0.2-2.9-0.6-3.5c-0.4-0.6-0.9-0.8-1.5-0.8
+					c-0.6,0-1.1,0.2-1.4,0.7C1542.3,459.8,1542.1,461,1542.1,462.8z" />
+																			</g>
+																		</g>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_47_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_48_">
+																			<use xlink:href="#SVGID_47_" style="overflow:visible;" />
+																		</clipPath>
+																		<g class="st17">
+																			<g>
+																				<path class="st1" d="M1532.6,447.4v4.4" />
+																			</g>
+																		</g>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_49_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_50_">
+																			<use xlink:href="#SVGID_49_" style="overflow:visible;" />
+																		</clipPath>
+																		<g class="st18">
+																			<g>
+																				<path d="M1664.8,462.8c0-1.3,0.1-2.3,0.4-3c0.3-0.8,0.6-1.3,1.1-1.8c0.5-0.4,1.2-0.6,1.9-0.6c0.6,0,1.1,0.1,1.5,0.4
+					c0.4,0.2,0.8,0.6,1.1,1c0.3,0.4,0.5,1,0.6,1.6c0.2,0.6,0.2,1.5,0.2,2.5c0,1.2-0.1,2.2-0.4,3c-0.3,0.8-0.6,1.3-1.1,1.8
+					c-0.5,0.4-1.2,0.6-1.9,0.6c-1,0-1.8-0.4-2.4-1.1C1665.1,466.2,1664.8,464.7,1664.8,462.8z M1666.1,462.8c0,1.7,0.2,2.9,0.6,3.5
+					c0.4,0.6,0.9,0.9,1.5,0.9s1.1-0.3,1.5-0.9c0.4-0.6,0.6-1.7,0.6-3.5c0-1.7-0.2-2.9-0.6-3.5c-0.4-0.6-0.9-0.8-1.5-0.8
+					c-0.6,0-1.1,0.2-1.4,0.7C1666.3,459.8,1666.1,461,1666.1,462.8z M1673.7,468v-1.5h1.5v1.5H1673.7z M1677.1,465.2l1.4-0.1
+					c0.1,0.7,0.3,1.2,0.7,1.5c0.4,0.3,0.8,0.5,1.3,0.5c0.6,0,1.1-0.2,1.6-0.7c0.4-0.5,0.6-1.1,0.6-1.9c0-0.7-0.2-1.3-0.6-1.8
+					c-0.4-0.4-1-0.6-1.6-0.6c-0.4,0-0.8,0.1-1.1,0.3c-0.3,0.2-0.6,0.4-0.8,0.7l-1.2-0.2l1-5.4h5.3v1.2h-4.2l-0.6,2.8
+					c0.6-0.4,1.3-0.7,2-0.7c0.9,0,1.7,0.3,2.3,1c0.6,0.6,0.9,1.5,0.9,2.5c0,1-0.3,1.8-0.8,2.5c-0.7,0.9-1.6,1.3-2.8,1.3
+					c-1,0-1.8-0.3-2.4-0.8C1677.5,466.8,1677.2,466.1,1677.1,465.2z" />
+																			</g>
+																		</g>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_51_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_52_">
+																			<use xlink:href="#SVGID_51_" style="overflow:visible;" />
+																		</clipPath>
+																		<g class="st19">
+																			<g>
+																				<path class="st1" d="M1674.4,447.4v4.4" />
+																			</g>
+																		</g>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_53_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_54_">
+																			<use xlink:href="#SVGID_53_" style="overflow:visible;" />
+																		</clipPath>
+																		<g class="st20">
+																			<g>
+																				<path d="M1818.7,468h-1.3v-8.3c-0.3,0.3-0.7,0.6-1.2,0.9c-0.5,0.3-0.9,0.5-1.3,0.6V460c0.7-0.3,1.3-0.7,1.9-1.2
+					c0.5-0.5,0.9-1,1.2-1.4h0.7V468z" />
+																			</g>
+																		</g>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_55_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_56_">
+																			<use xlink:href="#SVGID_55_" style="overflow:visible;" />
+																		</clipPath>
+																		<g class="st21">
+																			<g>
+																				<path class="st1" d="M1816.2,447.4v4.4" />
+																			</g>
+																		</g>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_57_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_58_">
+																			<use xlink:href="#SVGID_57_" style="overflow:visible;" />
+																		</clipPath>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_59_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_60_">
+																			<use xlink:href="#SVGID_59_" style="overflow:visible;" />
+																		</clipPath>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_61_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_62_">
+																			<use xlink:href="#SVGID_61_" style="overflow:visible;" />
+																		</clipPath>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_63_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_64_">
+																			<use xlink:href="#SVGID_63_" style="overflow:visible;" />
+																		</clipPath>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_65_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_66_">
+																			<use xlink:href="#SVGID_65_" style="overflow:visible;" />
+																		</clipPath>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_67_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_68_">
+																			<use xlink:href="#SVGID_67_" style="overflow:visible;" />
+																		</clipPath>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_69_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_70_">
+																			<use xlink:href="#SVGID_69_" style="overflow:visible;" />
+																		</clipPath>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_71_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_72_">
+																			<use xlink:href="#SVGID_71_" style="overflow:visible;" />
+																		</clipPath>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_73_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_74_">
+																			<use xlink:href="#SVGID_73_" style="overflow:visible;" />
+																		</clipPath>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_75_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_76_">
+																			<use xlink:href="#SVGID_75_" style="overflow:visible;" />
+																		</clipPath>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_77_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_78_">
+																			<use xlink:href="#SVGID_77_" style="overflow:visible;" />
+																		</clipPath>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_79_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_80_">
+																			<use xlink:href="#SVGID_79_" style="overflow:visible;" />
+																		</clipPath>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_81_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_82_">
+																			<use xlink:href="#SVGID_81_" style="overflow:visible;" />
+																		</clipPath>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_83_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_84_">
+																			<use xlink:href="#SVGID_83_" style="overflow:visible;" />
+																		</clipPath>
+																		<g class="st22">
+																			<g>
+																				<path class="st1" d="M1532.6,1156.5" />
+																			</g>
+																		</g>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_85_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_86_">
+																			<use xlink:href="#SVGID_85_" style="overflow:visible;" />
+																		</clipPath>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_87_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_88_">
+																			<use xlink:href="#SVGID_87_" style="overflow:visible;" />
+																		</clipPath>
+																		<g class="st23">
+																			<g>
+																				<path class="st1" d="M1532.6,1014.7" />
+																			</g>
+																		</g>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_89_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_90_">
+																			<use xlink:href="#SVGID_89_" style="overflow:visible;" />
+																		</clipPath>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_91_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_92_">
+																			<use xlink:href="#SVGID_91_" style="overflow:visible;" />
+																		</clipPath>
+																		<g class="st24">
+																			<g>
+																				<path class="st1" d="M1532.6,872.9" />
+																			</g>
+																		</g>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_93_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_94_">
+																			<use xlink:href="#SVGID_93_" style="overflow:visible;" />
+																		</clipPath>
+																		<g class="st25">
+																			<g>
+																				<path d="M1508.4,732.8v-1h5.8v1H1508.4z M1520.5,736.7h-1.3v-8.3c-0.3,0.3-0.7,0.6-1.2,0.9c-0.5,0.3-1,0.5-1.4,0.6v-1.2
+					c0.7-0.3,1.4-0.7,1.9-1.2c0.6-0.5,0.9-1,1.2-1.4h0.8V736.7z" />
+																			</g>
+																		</g>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_95_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_96_">
+																			<use xlink:href="#SVGID_95_" style="overflow:visible;" />
+																		</clipPath>
+																		<g class="st26">
+																			<g>
+																				<path class="st1" d="M1528.2,731.1h4.4" />
+																			</g>
+																		</g>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_97_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_98_">
+																			<use xlink:href="#SVGID_97_" style="overflow:visible;" />
+																		</clipPath>
+																		<g class="st27">
+																			<g>
+																				<path d="M1495.1,591v-1h5.8v1H1495.1z M1502.4,589.7c0-1.3,0.1-2.3,0.4-3c0.3-0.8,0.6-1.3,1.1-1.8c0.5-0.4,1.2-0.6,1.9-0.6
+					c0.6,0,1.1,0.1,1.5,0.4c0.4,0.2,0.8,0.6,1.1,1c0.3,0.4,0.5,1,0.6,1.6c0.2,0.6,0.2,1.5,0.2,2.5c0,1.2-0.1,2.2-0.4,3
+					c-0.3,0.8-0.6,1.3-1.1,1.8c-0.5,0.4-1.2,0.6-1.9,0.6c-1,0-1.8-0.4-2.4-1.1C1502.7,593.1,1502.4,591.7,1502.4,589.7z
+					 M1503.7,589.7c0,1.7,0.2,2.9,0.6,3.5c0.4,0.6,0.9,0.9,1.5,0.9c0.6,0,1.1-0.3,1.5-0.9c0.4-0.6,0.6-1.7,0.6-3.5
+					c0-1.7-0.2-2.9-0.6-3.5c-0.4-0.6-0.9-0.8-1.5-0.8c-0.6,0-1.1,0.2-1.4,0.7C1503.9,586.8,1503.7,588,1503.7,589.7z M1511.3,594.9
+					v-1.5h1.5v1.5H1511.3z M1514.7,592.2l1.4-0.1c0.1,0.7,0.3,1.2,0.7,1.5c0.4,0.3,0.8,0.5,1.3,0.5c0.6,0,1.1-0.2,1.6-0.7
+					c0.4-0.5,0.6-1.1,0.6-1.9c0-0.7-0.2-1.3-0.6-1.8c-0.4-0.4-1-0.6-1.6-0.6c-0.4,0-0.8,0.1-1.1,0.3c-0.3,0.2-0.6,0.4-0.8,0.7
+					l-1.2-0.2l1-5.4h5.3v1.2h-4.2l-0.6,2.8c0.6-0.4,1.3-0.7,2-0.7c0.9,0,1.7,0.3,2.3,1c0.6,0.6,0.9,1.5,0.9,2.5c0,1-0.3,1.8-0.8,2.5
+					c-0.7,0.9-1.6,1.3-2.8,1.3c-1,0-1.8-0.3-2.4-0.8C1515.1,593.8,1514.8,593.1,1514.7,592.2z" />
+																			</g>
+																		</g>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_99_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_100_">
+																			<use xlink:href="#SVGID_99_" style="overflow:visible;" />
+																		</clipPath>
+																		<g class="st28">
+																			<g>
+																				<path class="st1" d="M1528.2,589.3h4.4" />
+																			</g>
+																		</g>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_101_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_102_">
+																			<use xlink:href="#SVGID_101_" style="overflow:visible;" />
+																		</clipPath>
+																		<g class="st29">
+																			<g>
+																				<path d="M1515.7,439.1c0-1.3,0.1-2.3,0.4-3c0.3-0.8,0.6-1.3,1.1-1.8c0.5-0.4,1.2-0.6,1.9-0.6c0.6,0,1.1,0.1,1.5,0.4
+					c0.4,0.2,0.8,0.6,1.1,1c0.3,0.4,0.5,1,0.6,1.6c0.2,0.6,0.2,1.5,0.2,2.5c0,1.2-0.1,2.2-0.4,3c-0.3,0.8-0.6,1.3-1.1,1.8
+					c-0.5,0.4-1.2,0.6-1.9,0.6c-1,0-1.8-0.4-2.4-1.1C1516,442.5,1515.7,441.1,1515.7,439.1z M1517,439.1c0,1.7,0.2,2.9,0.6,3.5
+					c0.4,0.6,0.9,0.9,1.5,0.9c0.6,0,1.1-0.3,1.5-0.9c0.4-0.6,0.6-1.7,0.6-3.5c0-1.7-0.2-2.9-0.6-3.5c-0.4-0.6-0.9-0.8-1.5-0.8
+					c-0.6,0-1.1,0.2-1.4,0.7C1517.2,436.2,1517,437.4,1517,439.1z" />
+																			</g>
+																		</g>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_103_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_104_">
+																			<use xlink:href="#SVGID_103_" style="overflow:visible;" />
+																		</clipPath>
+																		<g class="st30">
+																			<g>
+																				<path d="M1502.4,306.3c0-1.3,0.1-2.3,0.4-3c0.3-0.8,0.6-1.3,1.1-1.8c0.5-0.4,1.2-0.6,1.9-0.6c0.6,0,1.1,0.1,1.5,0.4
+					c0.4,0.2,0.8,0.6,1.1,1c0.3,0.4,0.5,1,0.6,1.6c0.2,0.6,0.2,1.5,0.2,2.5c0,1.2-0.1,2.2-0.4,3c-0.3,0.8-0.6,1.3-1.1,1.8
+					c-0.5,0.4-1.2,0.6-1.9,0.6c-1,0-1.8-0.4-2.4-1.1C1502.7,309.7,1502.4,308.2,1502.4,306.3z M1503.7,306.3c0,1.7,0.2,2.9,0.6,3.5
+					c0.4,0.6,0.9,0.9,1.5,0.9c0.6,0,1.1-0.3,1.5-0.9c0.4-0.6,0.6-1.7,0.6-3.5c0-1.7-0.2-2.9-0.6-3.5c-0.4-0.6-0.9-0.8-1.5-0.8
+					c-0.6,0-1.1,0.2-1.4,0.7C1503.9,303.3,1503.7,304.5,1503.7,306.3z M1511.3,311.5V310h1.5v1.5H1511.3z M1514.7,308.7l1.4-0.1
+					c0.1,0.7,0.3,1.2,0.7,1.5c0.4,0.3,0.8,0.5,1.3,0.5c0.6,0,1.1-0.2,1.6-0.7c0.4-0.5,0.6-1.1,0.6-1.9c0-0.7-0.2-1.3-0.6-1.8
+					c-0.4-0.4-1-0.6-1.6-0.6c-0.4,0-0.8,0.1-1.1,0.3c-0.3,0.2-0.6,0.4-0.8,0.7l-1.2-0.2l1-5.4h5.3v1.2h-4.2l-0.6,2.8
+					c0.6-0.4,1.3-0.7,2-0.7c0.9,0,1.7,0.3,2.3,1c0.6,0.6,0.9,1.5,0.9,2.5c0,1-0.3,1.8-0.8,2.5c-0.7,0.9-1.6,1.3-2.8,1.3
+					c-1,0-1.8-0.3-2.4-0.8C1515.1,310.3,1514.8,309.6,1514.7,308.7z" />
+																			</g>
+																		</g>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_105_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_106_">
+																			<use xlink:href="#SVGID_105_" style="overflow:visible;" />
+																		</clipPath>
+																		<g class="st31">
+																			<g>
+																				<path class="st1" d="M1528.2,305.6h4.4" />
+																			</g>
+																		</g>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_107_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_108_">
+																			<use xlink:href="#SVGID_107_" style="overflow:visible;" />
+																		</clipPath>
+																		<g class="st32">
+																			<g>
+																				<path d="M1520.5,168.3h-1.3V160c-0.3,0.3-0.7,0.6-1.2,0.9c-0.5,0.3-1,0.5-1.4,0.6v-1.2c0.7-0.3,1.4-0.7,1.9-1.2
+					c0.6-0.5,0.9-1,1.2-1.4h0.8V168.3z" />
+																			</g>
+																		</g>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_109_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_110_">
+																			<use xlink:href="#SVGID_109_" style="overflow:visible;" />
+																		</clipPath>
+																		<g class="st33">
+																			<g>
+																				<path class="st1" d="M1528.2,163.8h4.4" />
+																			</g>
+																		</g>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_111_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_112_">
+																			<use xlink:href="#SVGID_111_" style="overflow:visible;" />
+																		</clipPath>
+																	</g>
+																	<g>
+																		<defs>
+																			<polyline id="SVGID_113_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 			" />
+																		</defs>
+																		<clipPath id="SVGID_114_">
+																			<use xlink:href="#SVGID_113_" style="overflow:visible;" />
+																		</clipPath>
+																	</g>
+																	<g id="misc">
+																	</g>
+																	<g id="layer0">
+																		<g>
+																			<defs>
+																				<polyline id="SVGID_115_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 				" />
+																			</defs>
+																			<clipPath id="SVGID_116_">
+																				<use xlink:href="#SVGID_115_" style="overflow:visible;" />
+																			</clipPath>
+																			<g class="st34">
+																				<g>
+																					<path class="st35" d="M2013.6,34.2" />
+																					<path class="st35" d="M933.3,874.1l2.5-12l2.5-11.9l2.5-11.7l2.5-11.5l2.5-11.3l2.5-11.1l2.5-11l2.5-10.8l2.5-10.6l2.5-10.4
+						l2.5-10.3l2.5-10.1l2.5-9.9l2.5-9.7l2.5-9.6l2.5-9.4l2.5-9.2l2.5-9.1l2.5-8.9l2.5-8.8l2.5-8.6l2.5-8.4l2.5-8.3l2.5-8.1l2.5-7.9
+						l2.5-7.8l2.5-7.6l2.5-7.5l2.5-7.3l4.9-14.2l4.9-13.6l4.9-13l4.9-12.4l4.9-11.9l4.9-11.3l4.9-10.7l4.9-10.2l4.9-9.6l4.9-9.1
+						l4.9-8.6l4.9-8.1l9.8-14.6l9.8-12.7l9.8-10.8l9.8-9l9.8-7.3l9.8-5.6l9.8-4l9.8-2.5l9.8-1l9.8,0.3l9.8,1.6l9.8,2.9l9.8,4.1
+						l9.8,5.1l9.8,6.2l9.8,7.1l9.8,8l9.8,8.8l9.8,9.6l9.8,10.2l9.8,10.8l9.8,11.4l9.8,11.8l9.8,12.2l9.8,12.5l9.8,12.8l9.8,13
+						l9.8,13.1l9.8,13.1l9.8,13.1l9.8,13l9.8,12.8l9.8,12.5l9.8,12.2l9.8,11.8l9.8,11.4l9.8,10.8l9.8,10.2l9.8,9.6l9.8,8.8l9.8,8
+						l9.8,7.1l9.8,6.2l9.8,5.1l9.8,4l9.8,2.8l9.8,1.6l9.8,0.3l9.8-1.1l9.8-2.5l9.8-4l9.8-5.6l9.8-7.3l9.8-9l9.8-10.8l9.8-12.7
+						l9.8-14.7l4.9-8.1l4.9-8.6l4.9-9.1l4.9-9.7l4.9-10.2l4.9-10.7l4.9-11.3l4.9-11.9l4.9-12.4l4.9-13l4.9-13.6l4.9-14.2l2.5-7.3
+						l2.5-7.5l2.5-7.6l2.5-7.8l2.5-8l2.5-8.1l2.5-8.3l2.5-8.4l2.5-8.6l2.5-8.8l2.5-8.9l2.5-9.1l2.5-9.3l2.5-9.4l2.5-9.6l2.5-9.8
+						l2.5-9.9l2.5-10.1l2.5-10.3l2.5-10.5l2.5-10.6l2.5-10.8l2.5-11l2.5-11.1l2.5-11.3l2.5-11.5l2.5-11.7l2.5-11.9l2.5-12.1
+						l2.5-12.2l2.5-12.4l2.5-12.6l2.5-12.8l2.5-13l2.5-13.2l2.5-13.4l2.5-13.6" />
+																					<title>Function f</title>
+																					<desc>f(x) = x³ + 2x² - 1</desc>
+																				</g>
+																			</g>
+																		</g>
+																		<g>
+																			<defs>
+																				<polyline id="SVGID_117_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 				" />
+																			</defs>
+																			<clipPath id="SVGID_118_">
+																				<use xlink:href="#SVGID_117_" style="overflow:visible;" />
+																			</clipPath>
+																		</g>
+																		<g>
+																			<defs>
+																				<polyline id="SVGID_119_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 				" />
+																			</defs>
+																			<clipPath id="SVGID_120_">
+																				<use xlink:href="#SVGID_119_" style="overflow:visible;" />
+																			</clipPath>
+																			<g class="st36">
+																				<g>
+																					<path class="st37" d="M1158.9,394.9c0,2.5-2,4.4-4.4,4.4c-2.5,0-4.4-2-4.4-4.4s2-4.4,4.4-4.4
+						C1156.9,390.5,1158.9,392.5,1158.9,394.9z" />
+																					<title>Point Maxima</title>
+																					<desc>Point Maxima: Extremum of f</desc>
+																				</g>
+																			</g>
+																		</g>
+																		<g>
+																			<defs>
+																				<polyline id="SVGID_121_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 				" />
+																			</defs>
+																			<clipPath id="SVGID_122_">
+																				<use xlink:href="#SVGID_121_" style="overflow:visible;" />
+																			</clipPath>
+																			<g class="st38">
+																				<g>
+																					<path class="st39" d="M1158.9,394.9c0,2.5-2,4.4-4.4,4.4c-2.5,0-4.4-2-4.4-4.4s2-4.4,4.4-4.4
+						C1156.9,390.5,1158.9,392.5,1158.9,394.9z" />
+																					<title>Point Maxima</title>
+																					<desc>Point Maxima: Extremum of f</desc>
+																				</g>
+																			</g>
+																		</g>
+																		<g>
+																			<defs>
+																				<polyline id="SVGID_123_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 				" />
+																			</defs>
+																			<clipPath id="SVGID_124_">
+																				<use xlink:href="#SVGID_123_" style="overflow:visible;" />
+																			</clipPath>
+																			<g class="st40">
+																				<g>
+																					<path class="st37" d="M1162,386.8v-12.7h1.7v11.2h6.2v1.5H1162z M1171.2,382.2c0-1.7,0.5-3,1.4-3.8c0.8-0.7,1.8-1,2.9-1
+						c1.3,0,2.3,0.4,3.1,1.2c0.8,0.8,1.2,2,1.2,3.4c0,1.2-0.2,2.1-0.5,2.8c-0.4,0.7-0.9,1.2-1.6,1.6c-0.7,0.4-1.4,0.6-2.2,0.6
+						c-1.3,0-2.3-0.4-3.1-1.2C1171.5,384.9,1171.2,383.7,1171.2,382.2z M1172.8,382.2c0,1.2,0.3,2,0.8,2.6c0.5,0.6,1.2,0.9,1.9,0.9
+						c0.8,0,1.4-0.3,1.9-0.9c0.5-0.6,0.8-1.5,0.8-2.7c0-1.1-0.3-2-0.8-2.6c-0.5-0.6-1.2-0.9-1.9-0.9c-0.8,0-1.4,0.3-1.9,0.9
+						C1173,380.1,1172.8,381,1172.8,382.2z M1187.6,383.4l1.5,0.2c-0.2,1-0.6,1.9-1.3,2.5c-0.7,0.6-1.5,0.9-2.5,0.9
+						c-1.3,0-2.3-0.4-3-1.2c-0.8-0.8-1.1-2-1.1-3.5c0-1,0.2-1.9,0.5-2.6c0.3-0.7,0.8-1.3,1.5-1.7c0.7-0.4,1.4-0.6,2.2-0.6
+						c1,0,1.8,0.3,2.4,0.8c0.6,0.5,1,1.2,1.2,2.2l-1.5,0.2c-0.1-0.6-0.4-1.1-0.8-1.4c-0.4-0.3-0.8-0.5-1.3-0.5
+						c-0.8,0-1.4,0.3-1.9,0.8c-0.5,0.6-0.7,1.5-0.7,2.7c0,1.2,0.2,2.1,0.7,2.7c0.5,0.6,1.1,0.8,1.8,0.8c0.6,0,1.1-0.2,1.5-0.6
+						C1187.2,384.8,1187.5,384.2,1187.6,383.4z M1196.4,385.6c-0.6,0.5-1.2,0.8-1.7,1c-0.5,0.2-1.1,0.3-1.7,0.3
+						c-1,0-1.8-0.2-2.3-0.7c-0.5-0.5-0.8-1.1-0.8-1.9c0-0.4,0.1-0.9,0.3-1.2c0.2-0.4,0.5-0.7,0.8-0.9c0.3-0.2,0.7-0.4,1.1-0.5
+						c0.3-0.1,0.8-0.2,1.4-0.3c1.2-0.1,2.2-0.3,2.8-0.5c0-0.2,0-0.3,0-0.4c0-0.6-0.1-1.1-0.4-1.4c-0.4-0.3-1-0.5-1.8-0.5
+						c-0.7,0-1.3,0.1-1.6,0.4c-0.4,0.3-0.6,0.7-0.8,1.4l-1.5-0.2c0.1-0.6,0.4-1.2,0.7-1.6c0.3-0.4,0.8-0.7,1.4-0.9
+						c0.6-0.2,1.3-0.3,2.1-0.3c0.8,0,1.4,0.1,1.9,0.3c0.5,0.2,0.9,0.4,1.1,0.7c0.2,0.3,0.4,0.6,0.5,1.1c0,0.3,0.1,0.7,0.1,1.4v2.1
+						c0,1.4,0,2.4,0.1,2.7c0.1,0.4,0.2,0.8,0.4,1.1h-1.6C1196.6,386.4,1196.5,386.1,1196.4,385.6z M1196.3,382.2
+						c-0.6,0.2-1.4,0.4-2.5,0.6c-0.6,0.1-1.1,0.2-1.4,0.3c-0.3,0.1-0.5,0.3-0.6,0.5c-0.1,0.2-0.2,0.5-0.2,0.7c0,0.4,0.2,0.8,0.5,1
+						c0.3,0.3,0.8,0.4,1.4,0.4c0.6,0,1.1-0.1,1.6-0.4c0.5-0.3,0.8-0.6,1-1.1c0.2-0.4,0.3-0.9,0.3-1.5V382.2z M1200.3,386.8v-12.7
+						h1.6v12.7H1200.3z M1209.3,386.8v-12.7h2.5l3,9c0.3,0.8,0.5,1.5,0.6,1.9c0.1-0.5,0.4-1.1,0.7-2l3-8.8h2.3v12.7h-1.6v-10.6
+						l-3.7,10.6h-1.5l-3.7-10.8v10.8H1209.3z M1229.9,385.6c-0.6,0.5-1.2,0.8-1.7,1c-0.5,0.2-1.1,0.3-1.7,0.3c-1,0-1.8-0.2-2.3-0.7
+						c-0.5-0.5-0.8-1.1-0.8-1.9c0-0.4,0.1-0.9,0.3-1.2c0.2-0.4,0.5-0.7,0.8-0.9c0.3-0.2,0.7-0.4,1.1-0.5c0.3-0.1,0.8-0.2,1.4-0.3
+						c1.2-0.1,2.2-0.3,2.8-0.5c0-0.2,0-0.3,0-0.4c0-0.6-0.1-1.1-0.4-1.4c-0.4-0.3-1-0.5-1.8-0.5c-0.7,0-1.3,0.1-1.6,0.4
+						c-0.4,0.3-0.6,0.7-0.8,1.4l-1.5-0.2c0.1-0.6,0.4-1.2,0.7-1.6c0.3-0.4,0.8-0.7,1.4-0.9c0.6-0.2,1.3-0.3,2.1-0.3
+						c0.8,0,1.4,0.1,1.9,0.3c0.5,0.2,0.9,0.4,1.1,0.7c0.2,0.3,0.4,0.6,0.5,1.1c0,0.3,0.1,0.7,0.1,1.4v2.1c0,1.4,0,2.4,0.1,2.7
+						s0.2,0.8,0.4,1.1h-1.6C1230.1,386.4,1230,386.1,1229.9,385.6z M1229.8,382.2c-0.6,0.2-1.4,0.4-2.5,0.6
+						c-0.6,0.1-1.1,0.2-1.4,0.3c-0.3,0.1-0.5,0.3-0.6,0.5c-0.1,0.2-0.2,0.5-0.2,0.7c0,0.4,0.2,0.8,0.5,1c0.3,0.3,0.8,0.4,1.4,0.4
+						c0.6,0,1.1-0.1,1.6-0.4c0.5-0.3,0.8-0.6,1-1.1c0.2-0.4,0.3-0.9,0.3-1.5V382.2z M1232.7,386.8l3.3-4.8l-3.1-4.4h1.9l1.4,2.1
+						c0.3,0.4,0.5,0.8,0.6,1c0.2-0.4,0.5-0.7,0.7-1l1.6-2.2h1.9l-3.2,4.3l3.4,4.9h-1.9l-1.9-2.9l-0.5-0.8l-2.4,3.6H1232.7z
+						 M1242.6,375.9v-1.8h1.6v1.8H1242.6z M1242.6,386.8v-9.2h1.6v9.2H1242.6z M1246.6,386.8v-9.2h1.4v1.3c0.3-0.5,0.7-0.8,1.2-1.1
+						c0.5-0.3,1-0.4,1.6-0.4c0.7,0,1.2,0.1,1.7,0.4c0.4,0.3,0.7,0.7,0.9,1.2c0.7-1.1,1.7-1.6,2.8-1.6c0.9,0,1.6,0.3,2.1,0.8
+						c0.5,0.5,0.7,1.3,0.7,2.3v6.3h-1.6V381c0-0.6,0-1.1-0.1-1.3c-0.1-0.3-0.3-0.5-0.5-0.7c-0.3-0.2-0.6-0.3-0.9-0.3
+						c-0.6,0-1.2,0.2-1.6,0.6c-0.4,0.4-0.6,1.1-0.6,2.1v5.3h-1.6v-6c0-0.7-0.1-1.2-0.4-1.6c-0.2-0.3-0.7-0.5-1.2-0.5
+						c-0.5,0-0.9,0.1-1.2,0.3c-0.4,0.2-0.6,0.6-0.8,1c-0.2,0.4-0.3,1.1-0.3,1.9v4.8H1246.6z M1267.3,386.8v-1.4
+						c-0.7,1-1.7,1.6-2.9,1.6c-0.5,0-1-0.1-1.5-0.3c-0.5-0.2-0.8-0.5-1-0.8c-0.2-0.3-0.4-0.7-0.5-1.2c-0.1-0.3-0.1-0.8-0.1-1.5v-5.7
+						h1.6v5.1c0,0.8,0,1.4,0.1,1.6c0.1,0.4,0.3,0.7,0.6,1c0.3,0.2,0.7,0.4,1.2,0.4c0.5,0,0.9-0.1,1.3-0.4c0.4-0.2,0.7-0.6,0.9-1
+						c0.2-0.4,0.3-1,0.3-1.8v-4.9h1.6v9.2H1267.3z M1271.2,386.8v-9.2h1.4v1.3c0.3-0.5,0.7-0.8,1.2-1.1c0.5-0.3,1-0.4,1.6-0.4
+						c0.7,0,1.2,0.1,1.7,0.4c0.4,0.3,0.7,0.7,0.9,1.2c0.7-1.1,1.7-1.6,2.8-1.6c0.9,0,1.6,0.3,2.1,0.8c0.5,0.5,0.7,1.3,0.7,2.3v6.3
+						h-1.6V381c0-0.6,0-1.1-0.1-1.3c-0.1-0.3-0.3-0.5-0.5-0.7c-0.3-0.2-0.6-0.3-0.9-0.3c-0.6,0-1.2,0.2-1.6,0.6
+						c-0.4,0.4-0.6,1.1-0.6,2.1v5.3h-1.6v-6c0-0.7-0.1-1.2-0.4-1.6c-0.2-0.3-0.7-0.5-1.2-0.5c-0.5,0-0.9,0.1-1.2,0.3
+						c-0.4,0.2-0.6,0.6-0.8,1c-0.2,0.4-0.3,1.1-0.3,1.9v4.8H1271.2z" />
+																					<title>Point Maxima</title>
+																					<desc>Point Maxima: Extremum of f</desc>
+																				</g>
+																			</g>
+																		</g>
+																	</g>
+																	<g id="layer1">
+																		<g>
+																			<defs>
+																				<polyline id="SVGID_125_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 				" />
+																			</defs>
+																			<clipPath id="SVGID_126_">
+																				<use xlink:href="#SVGID_125_" style="overflow:visible;" />
+																			</clipPath>
+																			<g class="st41">
+																				<g>
+																					<path class="st42" d="M1761.4,250.7c0,4.1-3.3,7.4-7.4,7.4c-4.1,0-7.4-3.3-7.4-7.4c0-4.1,3.3-7.4,7.4-7.4
+						C1758,243.3,1761.4,246.7,1761.4,250.7z" />
+																					<title>Point Increasing</title>
+																					<desc>Point Increasing: Point on f</desc>
+																				</g>
+																			</g>
+																		</g>
+																		<g>
+																			<defs>
+																				<polyline id="SVGID_127_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 				" />
+																			</defs>
+																			<clipPath id="SVGID_128_">
+																				<use xlink:href="#SVGID_127_" style="overflow:visible;" />
+																			</clipPath>
+																			<g class="st43">
+																				<g>
+																					<path class="st39" d="M1761.4,250.7c0,4.1-3.3,7.4-7.4,7.4c-4.1,0-7.4-3.3-7.4-7.4c0-4.1,3.3-7.4,7.4-7.4
+						C1758,243.3,1761.4,246.7,1761.4,250.7z" />
+																					<title>Point Increasing</title>
+																					<desc>Point Increasing: Point on f</desc>
+																				</g>
+																			</g>
+																		</g>
+																		<g>
+																			<defs>
+																				<polyline id="SVGID_129_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 				" />
+																			</defs>
+																			<clipPath id="SVGID_130_">
+																				<use xlink:href="#SVGID_129_" style="overflow:visible;" />
+																			</clipPath>
+																			<g class="st44">
+																				<g>
+																					<path class="st42" d="M1772.1,255.4v-12.7h1.6v12.7H1772.1z M1776.5,255.4v-9.2h1.5v1.3c0.7-1,1.7-1.5,3-1.5
+						c0.5,0,1,0.1,1.5,0.3c0.5,0.2,0.8,0.5,1,0.8c0.2,0.3,0.3,0.7,0.4,1.1c0.1,0.3,0.1,0.8,0.1,1.5v5.7h-1.6v-5.6
+						c0-0.6,0-1.1-0.1-1.4c-0.1-0.3-0.3-0.6-0.6-0.8c-0.3-0.2-0.7-0.3-1.2-0.3c-0.6,0-1.1,0.2-1.6,0.6c-0.5,0.4-0.7,1.2-0.7,2.4v5
+						H1776.5z M1792.5,252l1.5,0.2c-0.2,1-0.6,1.9-1.3,2.5c-0.7,0.6-1.5,0.9-2.5,0.9c-1.3,0-2.3-0.4-3.1-1.2c-0.7-0.8-1-2-1-3.5
+						c0-1,0.1-1.9,0.4-2.6c0.3-0.7,0.8-1.3,1.5-1.7c0.7-0.4,1.4-0.6,2.2-0.6c1,0,1.8,0.3,2.5,0.8c0.6,0.5,1,1.2,1.2,2.2l-1.5,0.2
+						c-0.2-0.6-0.4-1.1-0.7-1.4c-0.4-0.3-0.8-0.5-1.3-0.5c-0.8,0-1.4,0.3-1.9,0.8c-0.5,0.6-0.7,1.5-0.7,2.7c0,1.2,0.2,2.1,0.6,2.7
+						c0.5,0.6,1.1,0.8,1.9,0.8c0.6,0,1.1-0.2,1.5-0.6C1792,253.4,1792.3,252.8,1792.5,252z M1795.3,255.4v-9.2h1.3v1.4
+						c0.4-0.6,0.7-1.1,1-1.3c0.3-0.2,0.6-0.3,1-0.3c0.5,0,1,0.2,1.6,0.5l-0.6,1.4c-0.4-0.2-0.8-0.3-1.2-0.3c-0.3,0-0.6,0.1-0.9,0.3
+						s-0.5,0.5-0.6,0.9c-0.2,0.6-0.3,1.1-0.3,1.8v4.8H1795.3z M1807.5,252.4l1.5,0.2c-0.2,0.9-0.6,1.7-1.3,2.2
+						c-0.7,0.5-1.6,0.8-2.7,0.8c-1.3,0-2.4-0.4-3.2-1.2c-0.8-0.8-1.2-2-1.2-3.5c0-1.5,0.4-2.7,1.3-3.6c0.8-0.9,1.8-1.3,3-1.3
+						c1.3,0,2.3,0.4,3.1,1.2c0.8,0.8,1.2,2,1.2,3.5c0,0.1,0,0.2,0,0.4h-6.9c0.1,1,0.4,1.8,0.9,2.3c0.5,0.5,1.1,0.8,1.9,0.8
+						c0.6,0,1.1-0.2,1.5-0.5C1806.9,253.5,1807.2,253.1,1807.5,252.4z M1802.4,249.9h5.2c-0.1-0.8-0.3-1.4-0.6-1.8
+						c-0.5-0.6-1.1-0.9-1.9-0.9c-0.8,0-1.4,0.2-1.9,0.7C1802.6,248.4,1802.4,249.1,1802.4,249.9z M1817,254.2
+						c-0.6,0.5-1.1,0.8-1.6,1c-0.5,0.2-1.1,0.3-1.8,0.3c-1,0-1.7-0.2-2.2-0.7c-0.6-0.5-0.9-1.1-0.9-1.9c0-0.4,0.1-0.9,0.3-1.2
+						c0.2-0.4,0.5-0.7,0.9-0.9c0.3-0.2,0.6-0.4,1-0.5c0.3-0.1,0.8-0.2,1.5-0.3c1.2-0.1,2.1-0.3,2.7-0.5c0-0.2,0-0.3,0-0.4
+						c0-0.6-0.1-1.1-0.4-1.4c-0.4-0.3-1-0.5-1.8-0.5c-0.7,0-1.2,0.1-1.6,0.4c-0.3,0.3-0.5,0.7-0.7,1.4l-1.5-0.2
+						c0.1-0.6,0.3-1.2,0.7-1.6c0.3-0.4,0.7-0.7,1.3-0.9c0.6-0.2,1.3-0.3,2.1-0.3c0.8,0,1.4,0.1,1.9,0.3c0.5,0.2,0.8,0.4,1,0.7
+						c0.3,0.3,0.5,0.6,0.6,1.1c0,0.3,0,0.7,0,1.4v2.1c0,1.4,0,2.4,0.1,2.7c0,0.4,0.1,0.8,0.3,1.1h-1.6
+						C1817.2,255,1817.1,254.7,1817,254.2z M1816.8,250.8c-0.5,0.2-1.3,0.4-2.5,0.6c-0.6,0.1-1,0.2-1.3,0.3
+						c-0.3,0.1-0.5,0.3-0.6,0.5c-0.2,0.2-0.3,0.5-0.3,0.7c0,0.4,0.2,0.8,0.6,1c0.3,0.3,0.7,0.4,1.3,0.4s1.1-0.1,1.6-0.4
+						c0.5-0.3,0.8-0.6,1-1.1c0.1-0.4,0.1-0.9,0.1-1.5V250.8z M1820.2,252.6l1.6-0.2c0.1,0.6,0.3,1.1,0.6,1.4c0.4,0.3,1,0.5,1.8,0.5
+						c0.7,0,1.2-0.1,1.6-0.4c0.3-0.3,0.4-0.6,0.4-1c0-0.4-0.1-0.6-0.4-0.8c-0.2-0.1-0.7-0.3-1.6-0.5c-1.1-0.3-1.9-0.5-2.4-0.8
+						c-0.4-0.2-0.7-0.5-1-0.9c-0.2-0.4-0.3-0.8-0.3-1.3c0-0.4,0.1-0.8,0.3-1.1c0.2-0.4,0.4-0.6,0.7-0.9c0.3-0.2,0.6-0.3,1-0.4
+						c0.4-0.1,0.8-0.2,1.3-0.2c0.7,0,1.3,0.1,1.9,0.3c0.5,0.2,0.9,0.5,1.2,0.8c0.3,0.4,0.4,0.8,0.4,1.4l-1.5,0.2
+						c0-0.5-0.2-0.8-0.6-1.1c-0.3-0.3-0.7-0.4-1.3-0.4c-0.8,0-1.3,0.1-1.6,0.4c-0.3,0.2-0.4,0.5-0.4,0.8c0,0.2,0,0.4,0.1,0.5
+						c0.2,0.2,0.4,0.3,0.6,0.4c0.2,0.1,0.7,0.2,1.5,0.4c1.1,0.3,1.8,0.6,2.2,0.7c0.5,0.2,0.8,0.5,1,0.8c0.3,0.3,0.4,0.8,0.4,1.3
+						c0,0.5-0.1,1-0.4,1.5c-0.3,0.5-0.7,0.8-1.3,1.1c-0.6,0.3-1.2,0.4-1.9,0.4c-1.2,0-2.1-0.3-2.8-0.8
+						C1820.8,254.3,1820.4,253.6,1820.2,252.6z M1829.7,244.5v-1.8h1.6v1.8H1829.7z M1829.7,255.4v-9.2h1.6v9.2H1829.7z
+						 M1833.7,255.4v-9.2h1.5v1.3c0.6-1,1.5-1.5,2.8-1.5c0.6,0,1.1,0.1,1.6,0.3c0.5,0.2,0.8,0.5,1,0.8c0.2,0.3,0.3,0.7,0.4,1.1
+						c0.1,0.3,0.1,0.8,0.1,1.5v5.7h-1.6v-5.6c0-0.6,0-1.1-0.1-1.4c-0.1-0.3-0.3-0.6-0.6-0.8c-0.4-0.2-0.8-0.3-1.2-0.3
+						c-0.7,0-1.2,0.2-1.6,0.6c-0.5,0.4-0.7,1.2-0.7,2.4v5H1833.7z M1843.2,256.1l1.5,0.2c0.1,0.5,0.3,0.8,0.6,1
+						c0.4,0.3,0.9,0.4,1.5,0.4c0.8,0,1.4-0.1,1.8-0.4c0.4-0.3,0.6-0.7,0.7-1.2c0.1-0.3,0.1-1,0.1-2c-0.7,0.8-1.5,1.2-2.5,1.2
+						c-1.3,0-2.3-0.5-3-1.4c-0.7-0.9-1-2-1-3.3c0-0.9,0.1-1.7,0.4-2.4c0.3-0.7,0.7-1.3,1.3-1.7c0.6-0.4,1.3-0.6,2.2-0.6
+						c1.1,0,2,0.4,2.7,1.3v-1.1h1.5v7.9c0,1.4-0.1,2.4-0.4,3s-0.8,1.1-1.5,1.4c-0.6,0.3-1.3,0.5-2.2,0.5c-1.2,0-2.1-0.2-2.7-0.7
+						C1843.6,257.9,1843.2,257.1,1843.2,256.1z M1844.6,250.6c0,1.2,0.2,2.1,0.6,2.6c0.5,0.6,1.1,0.8,1.9,0.8c0.7,0,1.3-0.3,1.8-0.8
+						c0.5-0.6,0.7-1.4,0.7-2.6c0-1.1-0.2-2-0.7-2.5c-0.5-0.6-1.1-0.8-1.9-0.8c-0.7,0-1.2,0.3-1.6,0.8
+						C1844.8,248.7,1844.6,249.5,1844.6,250.6z" />
+																					<title>Point Increasing</title>
+																					<desc>Point Increasing: Point on f</desc>
+																				</g>
+																			</g>
+																		</g>
+																		<g>
+																			<defs>
+																				<polyline id="SVGID_131_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 				" />
+																			</defs>
+																			<clipPath id="SVGID_132_">
+																				<use xlink:href="#SVGID_131_" style="overflow:visible;" />
+																			</clipPath>
+																			<g class="st45">
+																				<g>
+																					<path class="st42" d="M959.7,785.5c0,4.1-3.3,7.4-7.4,7.4c-4.1,0-7.4-3.3-7.4-7.4c0-4.1,3.3-7.4,7.4-7.4
+						C956.4,778.1,959.7,781.4,959.7,785.5z" />
+																					<title>Point Decreasing</title>
+																					<desc>Point Decreasing: Point on f</desc>
+																				</g>
+																			</g>
+																		</g>
+																		<g>
+																			<defs>
+																				<polyline id="SVGID_133_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 				" />
+																			</defs>
+																			<clipPath id="SVGID_134_">
+																				<use xlink:href="#SVGID_133_" style="overflow:visible;" />
+																			</clipPath>
+																			<g class="st46">
+																				<g>
+																					<path class="st39" d="M959.7,785.5c0,4.1-3.3,7.4-7.4,7.4c-4.1,0-7.4-3.3-7.4-7.4c0-4.1,3.3-7.4,7.4-7.4
+						C956.4,778.1,959.7,781.4,959.7,785.5z" />
+																					<title>Point Decreasing</title>
+																					<desc>Point Decreasing: Point on f</desc>
+																				</g>
+																			</g>
+																		</g>
+																		<g>
+																			<defs>
+																				<polyline id="SVGID_135_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 				" />
+																			</defs>
+																			<clipPath id="SVGID_136_">
+																				<use xlink:href="#SVGID_135_" style="overflow:visible;" />
+																			</clipPath>
+																			<g class="st47">
+																				<g>
+																					<path class="st42" d="M971.6,789.8v-12.7h4.4c1,0,1.7,0.1,2.3,0.2c0.7,0.2,1.3,0.5,1.8,0.9c0.7,0.6,1.2,1.3,1.5,2.2
+						c0.3,0.9,0.5,1.9,0.5,3c0,1-0.1,1.8-0.3,2.6c-0.2,0.7-0.5,1.4-0.9,1.8c-0.4,0.5-0.7,0.9-1.2,1.2c-0.4,0.3-0.9,0.5-1.5,0.6
+						c-0.6,0.1-1.3,0.2-2,0.2H971.6z M973.3,788.3h2.7c0.8,0,1.5-0.1,2-0.2c0.5-0.2,0.9-0.4,1.1-0.7c0.4-0.4,0.7-0.9,0.9-1.6
+						c0.2-0.7,0.3-1.5,0.3-2.5c0-1.3-0.2-2.3-0.7-3.1c-0.4-0.7-1-1.2-1.6-1.4c-0.5-0.2-1.2-0.3-2.2-0.3h-2.7V788.3z M990.5,786.9
+						l1.6,0.2c-0.2,0.9-0.7,1.7-1.4,2.2c-0.7,0.5-1.6,0.8-2.6,0.8c-1.3,0-2.4-0.4-3.2-1.2c-0.8-0.8-1.2-2-1.2-3.5
+						c0-1.5,0.4-2.7,1.2-3.6c0.8-0.9,1.8-1.3,3.1-1.3c1.2,0,2.2,0.4,3,1.2c0.8,0.8,1.2,2,1.2,3.5c0,0.1,0,0.2,0,0.4h-6.9
+						c0.1,1,0.3,1.8,0.9,2.3c0.5,0.5,1.1,0.8,1.9,0.8c0.6,0,1.1-0.2,1.5-0.5C989.9,788,990.3,787.5,990.5,786.9z M985.4,784.4h5.1
+						c-0.1-0.8-0.3-1.4-0.6-1.8c-0.5-0.6-1.2-0.9-1.9-0.9c-0.7,0-1.3,0.2-1.8,0.7C985.7,782.9,985.4,783.5,985.4,784.4z
+						 M1000.1,786.5l1.5,0.2c-0.2,1-0.6,1.9-1.3,2.5c-0.7,0.6-1.5,0.9-2.5,0.9c-1.3,0-2.3-0.4-3-1.2c-0.8-0.8-1.1-2-1.1-3.5
+						c0-1,0.2-1.9,0.5-2.6c0.3-0.7,0.8-1.3,1.5-1.7c0.7-0.4,1.4-0.6,2.2-0.6c1,0,1.8,0.3,2.4,0.8c0.6,0.5,1.1,1.2,1.2,2.2l-1.5,0.2
+						c-0.1-0.6-0.4-1.1-0.8-1.4c-0.4-0.3-0.8-0.5-1.3-0.5c-0.8,0-1.4,0.3-1.9,0.8c-0.5,0.6-0.7,1.5-0.7,2.7c0,1.2,0.2,2.1,0.7,2.7
+						c0.5,0.6,1.1,0.8,1.8,0.8c0.6,0,1.1-0.2,1.5-0.6C999.7,787.8,999.9,787.2,1000.1,786.5z M1002.9,789.8v-9.2h1.4v1.4
+						c0.4-0.6,0.7-1.1,1-1.3c0.3-0.2,0.6-0.3,1-0.3c0.5,0,1.1,0.2,1.6,0.5l-0.5,1.4c-0.4-0.2-0.8-0.3-1.1-0.3
+						c-0.4,0-0.7,0.1-0.9,0.3c-0.3,0.2-0.5,0.5-0.6,0.9c-0.2,0.6-0.3,1.1-0.3,1.8v4.8H1002.9z M1015.1,786.9l1.6,0.2
+						c-0.2,0.9-0.7,1.7-1.4,2.2c-0.7,0.5-1.6,0.8-2.6,0.8c-1.3,0-2.4-0.4-3.2-1.2c-0.8-0.8-1.2-2-1.2-3.5c0-1.5,0.4-2.7,1.2-3.6
+						c0.8-0.9,1.8-1.3,3.1-1.3c1.2,0,2.2,0.4,3,1.2c0.8,0.8,1.2,2,1.2,3.5c0,0.1,0,0.2,0,0.4h-6.9c0.1,1,0.3,1.8,0.9,2.3
+						c0.5,0.5,1.1,0.8,1.9,0.8c0.6,0,1.1-0.2,1.5-0.5C1014.6,788,1014.9,787.5,1015.1,786.9z M1010,784.4h5.1
+						c-0.1-0.8-0.3-1.4-0.6-1.8c-0.5-0.6-1.2-0.9-1.9-0.9c-0.7,0-1.3,0.2-1.8,0.7C1010.3,782.9,1010.1,783.5,1010,784.4z
+						 M1024.7,788.7c-0.6,0.5-1.1,0.8-1.7,1c-0.5,0.2-1.1,0.3-1.7,0.3c-1,0-1.8-0.2-2.3-0.7c-0.5-0.5-0.8-1.1-0.8-1.9
+						c0-0.4,0.1-0.9,0.3-1.2c0.2-0.4,0.5-0.7,0.8-0.9c0.3-0.2,0.7-0.4,1.1-0.5c0.3-0.1,0.8-0.2,1.4-0.3c1.3-0.1,2.2-0.3,2.8-0.5
+						c0-0.2,0-0.3,0-0.4c0-0.6-0.1-1.1-0.4-1.4c-0.4-0.3-1-0.5-1.8-0.5c-0.7,0-1.3,0.1-1.6,0.4c-0.4,0.3-0.6,0.7-0.8,1.4l-1.5-0.2
+						c0.1-0.6,0.4-1.2,0.7-1.6c0.3-0.4,0.8-0.7,1.4-0.9c0.6-0.2,1.3-0.3,2.1-0.3s1.4,0.1,1.9,0.3c0.5,0.2,0.9,0.4,1.1,0.7
+						c0.2,0.3,0.4,0.6,0.5,1.1c0,0.3,0.1,0.7,0.1,1.4v2.1c0,1.4,0,2.4,0.1,2.7c0.1,0.4,0.2,0.8,0.4,1.1h-1.6
+						C1024.8,789.5,1024.7,789.1,1024.7,788.7z M1024.5,785.2c-0.6,0.2-1.4,0.4-2.5,0.6c-0.6,0.1-1.1,0.2-1.4,0.3
+						c-0.3,0.1-0.5,0.3-0.6,0.5c-0.1,0.2-0.2,0.5-0.2,0.7c0,0.4,0.2,0.8,0.5,1c0.3,0.3,0.8,0.4,1.4,0.4c0.6,0,1.1-0.1,1.6-0.4
+						c0.5-0.3,0.8-0.6,1-1.1c0.2-0.4,0.3-0.9,0.3-1.5V785.2z M1027.9,787.1l1.5-0.2c0.1,0.6,0.3,1.1,0.7,1.4
+						c0.4,0.3,0.9,0.5,1.7,0.5c0.7,0,1.2-0.1,1.6-0.4c0.3-0.3,0.5-0.6,0.5-1c0-0.4-0.2-0.6-0.5-0.8c-0.2-0.1-0.7-0.3-1.6-0.5
+						c-1.1-0.3-1.9-0.5-2.4-0.8c-0.4-0.2-0.8-0.5-1-0.9c-0.2-0.4-0.3-0.8-0.3-1.3c0-0.4,0.1-0.8,0.3-1.1c0.2-0.4,0.4-0.6,0.8-0.9
+						c0.2-0.2,0.6-0.3,1-0.4c0.4-0.1,0.9-0.2,1.4-0.2c0.7,0,1.3,0.1,1.9,0.3c0.6,0.2,1,0.5,1.2,0.8c0.3,0.4,0.4,0.8,0.5,1.4
+						l-1.5,0.2c-0.1-0.5-0.3-0.8-0.6-1.1c-0.3-0.3-0.8-0.4-1.4-0.4c-0.7,0-1.2,0.1-1.5,0.4c-0.3,0.2-0.5,0.5-0.5,0.8
+						c0,0.2,0.1,0.4,0.2,0.5c0.1,0.2,0.3,0.3,0.6,0.4c0.1,0.1,0.6,0.2,1.4,0.4c1.1,0.3,1.9,0.6,2.3,0.7c0.4,0.2,0.8,0.5,1,0.8
+						c0.2,0.3,0.4,0.8,0.4,1.3c0,0.5-0.1,1-0.4,1.5c-0.3,0.5-0.7,0.8-1.3,1.1c-0.6,0.3-1.2,0.4-1.9,0.4c-1.2,0-2.1-0.3-2.7-0.8
+						C1028.5,788.8,1028.1,788,1027.9,787.1z M1037.4,778.9v-1.8h1.6v1.8H1037.4z M1037.4,789.8v-9.2h1.6v9.2H1037.4z M1041.3,789.8
+						v-9.2h1.4v1.3c0.7-1,1.7-1.5,2.9-1.5c0.6,0,1.1,0.1,1.5,0.3c0.5,0.2,0.8,0.5,1,0.8c0.2,0.3,0.4,0.7,0.5,1.1
+						c0,0.3,0.1,0.8,0.1,1.5v5.7h-1.5v-5.6c0-0.6-0.1-1.1-0.2-1.4c-0.1-0.3-0.3-0.6-0.6-0.8c-0.3-0.2-0.7-0.3-1.1-0.3
+						c-0.7,0-1.2,0.2-1.7,0.6c-0.5,0.4-0.7,1.2-0.7,2.4v5H1041.3z M1050.9,790.6l1.5,0.2c0.1,0.5,0.2,0.8,0.5,1
+						c0.4,0.3,0.9,0.4,1.6,0.4c0.7,0,1.3-0.1,1.7-0.4c0.4-0.3,0.7-0.7,0.8-1.2c0.1-0.3,0.1-1,0.1-2c-0.7,0.8-1.5,1.2-2.5,1.2
+						c-1.3,0-2.2-0.5-2.9-1.4c-0.7-0.9-1-2-1-3.3c0-0.9,0.2-1.7,0.5-2.4c0.3-0.7,0.8-1.3,1.4-1.7c0.6-0.4,1.3-0.6,2.1-0.6
+						c1.1,0,2,0.4,2.7,1.3v-1.1h1.4v7.9c0,1.4-0.1,2.4-0.4,3c-0.3,0.6-0.8,1.1-1.4,1.4c-0.6,0.3-1.4,0.5-2.3,0.5
+						c-1.1,0-2-0.2-2.7-0.7C1051.2,792.3,1050.9,791.6,1050.9,790.6z M1052.2,785.1c0,1.2,0.2,2.1,0.7,2.6c0.5,0.6,1.1,0.8,1.8,0.8
+						c0.7,0,1.3-0.3,1.8-0.8c0.5-0.6,0.7-1.4,0.7-2.6c0-1.1-0.2-2-0.7-2.5c-0.5-0.6-1.1-0.8-1.8-0.8c-0.7,0-1.3,0.3-1.8,0.8
+						C1052.4,783.1,1052.2,784,1052.2,785.1z" />
+																					<title>Point Decreasing</title>
+																					<desc>Point Decreasing: Point on f</desc>
+																				</g>
+																			</g>
+																		</g>
+																	</g>
+																	<g id="layer2">
+																	</g>
+																	<g id="layer3">
+																	</g>
+																	<g id="layer4">
+																	</g>
+																	<g id="layer5">
+																	</g>
+																	<g id="layer6">
+																	</g>
+																	<g id="layer7">
+																	</g>
+																	<g id="layer8">
+																	</g>
+																	<g id="layer9">
+																		<g>
+																			<defs>
+																				<polyline id="SVGID_137_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 				" />
+																			</defs>
+																			<clipPath id="SVGID_138_">
+																				<use xlink:href="#SVGID_137_" style="overflow:visible;" />
+																			</clipPath>
+																			<g class="st48">
+																				<g>
+																					<path class="st37" d="M1537,731.1c0,2.4-2,4.4-4.4,4.4c-2.5,0-4.4-2-4.4-4.4c0-2.5,2-4.4,4.4-4.4
+						C1535.1,726.7,1537,728.6,1537,731.1z" />
+																					<title>Point Minima</title>
+																					<desc>Point Minima: Extremum of f</desc>
+																				</g>
+																			</g>
+																		</g>
+																		<g>
+																			<defs>
+																				<polyline id="SVGID_139_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 				" />
+																			</defs>
+																			<clipPath id="SVGID_140_">
+																				<use xlink:href="#SVGID_139_" style="overflow:visible;" />
+																			</clipPath>
+																			<g class="st49">
+																				<g>
+																					<path class="st39" d="M1537,731.1c0,2.4-2,4.4-4.4,4.4c-2.5,0-4.4-2-4.4-4.4c0-2.5,2-4.4,4.4-4.4
+						C1535.1,726.7,1537,728.6,1537,731.1z" />
+																					<title>Point Minima</title>
+																					<desc>Point Minima: Extremum of f</desc>
+																				</g>
+																			</g>
+																		</g>
+																		<g>
+																			<defs>
+																				<polyline id="SVGID_141_" points="2812.8,1209.1 2812.8,-127 297,-127 297,1209.1 				" />
+																			</defs>
+																			<clipPath id="SVGID_142_">
+																				<use xlink:href="#SVGID_141_" style="overflow:visible;" />
+																			</clipPath>
+																			<g class="st50">
+																				<g>
+																					<path class="st37" d="M1542.9,754.4v-12.7h1.7v11.2h6.2v1.5H1542.9z M1552.1,749.8c0-1.7,0.5-3,1.4-3.8c0.8-0.7,1.8-1,2.9-1
+						c1.3,0,2.3,0.4,3.1,1.2c0.8,0.8,1.2,2,1.2,3.4c0,1.2-0.2,2.1-0.5,2.8c-0.4,0.7-0.9,1.2-1.6,1.6c-0.7,0.4-1.4,0.6-2.2,0.6
+						c-1.3,0-2.3-0.4-3.1-1.2C1552.5,752.5,1552.1,751.4,1552.1,749.8z M1553.7,749.8c0,1.2,0.3,2,0.8,2.6c0.5,0.6,1.2,0.9,1.9,0.9
+						c0.8,0,1.4-0.3,1.9-0.9c0.5-0.6,0.8-1.5,0.8-2.7c0-1.1-0.3-2-0.8-2.6c-0.5-0.6-1.2-0.9-1.9-0.9c-0.8,0-1.4,0.3-1.9,0.9
+						C1553.9,747.7,1553.7,748.6,1553.7,749.8z M1568.5,751l1.5,0.2c-0.2,1-0.6,1.9-1.3,2.5c-0.7,0.6-1.5,0.9-2.5,0.9
+						c-1.3,0-2.3-0.4-3-1.2c-0.8-0.8-1.1-2-1.1-3.5c0-1,0.2-1.9,0.5-2.6c0.3-0.7,0.8-1.3,1.5-1.7c0.7-0.4,1.4-0.6,2.2-0.6
+						c1,0,1.8,0.3,2.4,0.8c0.6,0.5,1,1.2,1.2,2.2l-1.5,0.2c-0.1-0.6-0.4-1.1-0.8-1.4c-0.4-0.3-0.8-0.5-1.3-0.5
+						c-0.8,0-1.4,0.3-1.9,0.8c-0.5,0.6-0.7,1.5-0.7,2.7c0,1.2,0.2,2.1,0.7,2.7c0.5,0.6,1.1,0.8,1.8,0.8c0.6,0,1.1-0.2,1.5-0.6
+						C1568.1,752.4,1568.4,751.8,1568.5,751z M1577.4,753.3c-0.6,0.5-1.2,0.8-1.7,1c-0.5,0.2-1.1,0.3-1.7,0.3c-1,0-1.8-0.2-2.3-0.7
+						c-0.5-0.5-0.8-1.1-0.8-1.9c0-0.4,0.1-0.9,0.3-1.2c0.2-0.4,0.5-0.7,0.8-0.9c0.3-0.2,0.7-0.4,1.1-0.5c0.3-0.1,0.8-0.2,1.4-0.3
+						c1.2-0.1,2.2-0.3,2.8-0.5c0-0.2,0-0.3,0-0.4c0-0.6-0.1-1.1-0.4-1.4c-0.4-0.3-1-0.5-1.8-0.5c-0.7,0-1.3,0.1-1.6,0.4
+						c-0.4,0.3-0.6,0.7-0.8,1.4l-1.5-0.2c0.1-0.6,0.4-1.2,0.7-1.6c0.3-0.4,0.8-0.7,1.4-0.9c0.6-0.2,1.3-0.3,2.1-0.3s1.4,0.1,1.9,0.3
+						c0.5,0.2,0.9,0.4,1.1,0.7c0.2,0.3,0.4,0.6,0.5,1.1c0,0.3,0.1,0.7,0.1,1.4v2.1c0,1.4,0,2.4,0.1,2.7c0.1,0.4,0.2,0.8,0.4,1.1
+						h-1.6C1577.5,754.1,1577.4,753.7,1577.4,753.3z M1577.2,749.8c-0.6,0.2-1.4,0.4-2.5,0.6c-0.6,0.1-1.1,0.2-1.4,0.3
+						c-0.3,0.1-0.5,0.3-0.6,0.5c-0.1,0.2-0.2,0.5-0.2,0.7c0,0.4,0.2,0.8,0.5,1c0.3,0.3,0.8,0.4,1.4,0.4s1.1-0.1,1.6-0.4
+						c0.5-0.3,0.8-0.6,1-1.1c0.2-0.4,0.3-0.9,0.3-1.5V749.8z M1581.2,754.4v-12.7h1.6v12.7H1581.2z M1590.2,754.4v-12.7h2.5l3,9
+						c0.3,0.8,0.5,1.5,0.6,1.9c0.1-0.5,0.4-1.1,0.7-2l3-8.8h2.3v12.7h-1.6v-10.6l-3.7,10.6h-1.5l-3.7-10.8v10.8H1590.2z
+						 M1604.8,743.5v-1.8h1.6v1.8H1604.8z M1604.8,754.4v-9.2h1.6v9.2H1604.8z M1608.8,754.4v-9.2h1.4v1.3c0.7-1,1.7-1.5,2.9-1.5
+						c0.6,0,1.1,0.1,1.5,0.3c0.5,0.2,0.8,0.5,1,0.8c0.2,0.3,0.4,0.7,0.5,1.1c0,0.3,0.1,0.8,0.1,1.5v5.7h-1.6v-5.6
+						c0-0.6-0.1-1.1-0.2-1.4c-0.1-0.3-0.3-0.6-0.6-0.8c-0.3-0.2-0.7-0.3-1.1-0.3c-0.7,0-1.2,0.2-1.7,0.6s-0.7,1.2-0.7,2.4v5H1608.8z
+						 M1618.6,743.5v-1.8h1.6v1.8H1618.6z M1618.6,754.4v-9.2h1.6v9.2H1618.6z M1622.6,754.4v-9.2h1.4v1.3c0.3-0.5,0.7-0.8,1.2-1.1
+						c0.5-0.3,1-0.4,1.6-0.4c0.7,0,1.2,0.1,1.7,0.4c0.4,0.3,0.7,0.7,0.9,1.2c0.7-1.1,1.7-1.6,2.8-1.6c0.9,0,1.6,0.3,2.1,0.8
+						c0.5,0.5,0.7,1.3,0.7,2.3v6.3h-1.5v-5.8c0-0.6-0.1-1.1-0.2-1.3c-0.1-0.3-0.3-0.5-0.5-0.7c-0.3-0.2-0.6-0.3-0.9-0.3
+						c-0.6,0-1.2,0.2-1.6,0.6c-0.4,0.4-0.6,1.1-0.6,2.1v5.3h-1.6v-6c0-0.7-0.1-1.2-0.4-1.6c-0.3-0.3-0.7-0.5-1.2-0.5
+						c-0.4,0-0.8,0.1-1.2,0.3c-0.4,0.2-0.6,0.6-0.8,1c-0.2,0.4-0.3,1.1-0.3,1.9v4.8H1622.6z M1643.3,754.4V753
+						c-0.7,1-1.7,1.6-2.9,1.6c-0.5,0-1-0.1-1.5-0.3c-0.5-0.2-0.8-0.5-1-0.8c-0.2-0.3-0.4-0.7-0.5-1.2c-0.1-0.3-0.1-0.8-0.1-1.5v-5.7
+						h1.6v5.1c0,0.8,0,1.4,0.1,1.6c0.1,0.4,0.3,0.7,0.6,1c0.3,0.2,0.7,0.4,1.2,0.4c0.5,0,0.9-0.1,1.3-0.4c0.4-0.2,0.7-0.6,0.9-1
+						s0.3-1,0.3-1.8v-4.9h1.5v9.2H1643.3z M1647.2,754.4v-9.2h1.4v1.3c0.3-0.5,0.7-0.8,1.2-1.1c0.5-0.3,1-0.4,1.6-0.4
+						c0.7,0,1.2,0.1,1.7,0.4c0.4,0.3,0.7,0.7,0.9,1.2c0.7-1.1,1.7-1.6,2.8-1.6c0.9,0,1.6,0.3,2.1,0.8c0.5,0.5,0.7,1.3,0.7,2.3v6.3
+						h-1.5v-5.8c0-0.6-0.1-1.1-0.2-1.3c-0.1-0.3-0.3-0.5-0.5-0.7c-0.3-0.2-0.6-0.3-0.9-0.3c-0.6,0-1.2,0.2-1.6,0.6
+						c-0.4,0.4-0.6,1.1-0.6,2.1v5.3h-1.6v-6c0-0.7-0.1-1.2-0.4-1.6c-0.3-0.3-0.7-0.5-1.2-0.5c-0.4,0-0.8,0.1-1.2,0.3
+						c-0.4,0.2-0.6,0.6-0.8,1c-0.2,0.4-0.3,1.1-0.3,1.9v4.8H1647.2z" />
+																					<title>Point Minima</title>
+																					<desc>Point Minima: Extremum of f</desc>
+																				</g>
+																			</g>
+																		</g>
+																	</g>
+																</g>
+															</svg>
+
+														</div>
+													</div>
+												</div>
+											</div>
+											<br>
+											<br> In order to find the critical points of a function, follow these steps:
+											<ol>
+												<li>
+													1. Find the first derivative of the function.
+												</li>
+												<li>
+													2. Find the points where the function is equal to zero or undefined. These points will tell you the exact relative minimum and maximum points.
+												</li>
+												<li>
+													3. Take those points and plot on a number line.
+												</li>
+												<li>
+													4. With the derivative, find whether the points between the area where the function is equal to zero or undefined have a positive or negative slope by plugging the values into the first derivative; this will help you find the relative minimum and maximum.
+												</li>
+												<li>
+													5. Find the second derivative of the function
+												</li>
+												<li>
+													6. Find the points where the function is equal to zero or undefined. This will tell you the inflection points.
+												</li>
+												<li>
+													7. Take those points and plot on a number line.
+												</li>
+												<li>
+													8. With the derivative, find whether the points between the area where the function is equal to zero or undefined have a positive or negative slope by plugging the values into the second derivative; this will tell you whether that area is a concavity up or down.
+												</li>
+											</ol>
+										</div>
+										<div class="row">
+											<div class="col s12 m6">
+												<div class="card example-hl">
+													<div class="card-content">
+														<span class="headers">APPLY. </span>Find the critical points of the function. $$f(x)=x^2+x-3$$
+														<div class="divider"></div>
+														$$f'(x)=2x+1$$
+														<div class="divider"></div>
+														$$2x+1=0$$ $$2x=-1$$ $$x=-\frac{1}{2}$$
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="category-text">
+											Optimization
+											<span class="category-accent"></span>
+											<br>
+										</div>
+										<div class="category-text-content">
+											Optimization is the process in which you try to make a material, volume, area, etc. as effective as possible. Conceptually, it's the process to find the minimum, maximum, relative minima and maxima, concavities, and inflection points. You can use this process to optimize:
+											<ol>
+												<li>
+													1. Read the problem and understand it. Define what is given to you.
+												</li>
+												<li>
+													2. Sketch the problem. Label <b>everything</b> as humanly possible.
+												</li>
+												<li>
+													3. Write the formula to optimize.
+												</li>
+												<li>
+													4. Use constraints to eliminate one variable (the variable you solve for and plug in).
+												</li>
+												<li>
+													5. Set the physical domain.
+												</li>
+												<li>
+													5. Take the derivative
+												</li>
+												<li>
+													6. Find the critical points of the derivative.
+												</li>
+												<li>
+													7. Test the critical points and the domain endpoints in the original function to find the minimum and maximum.
+												</li>
+												<li>
+													8. Answer the question.
+												</li>
+											</ol>
+											<br> Not every problem is the same. Here are some scenarios for optimization:
+											<ol>
+												<li>
+													1. Velocity
+												</li>
+												<li>
+													2. Boxes
+												</li>
+												<li>
+													3. Triangles
+												</li>
+												<li>
+													4. Cost
+												</li>
+												<li>
+													5. Viewing angle
+												</li>
+												<li>
+													5. Cones
+												</li>
+											</ol>
+										</div>
+										<div class="category-text">
+											Related Rates
+											<span class="category-accent"></span>
+											<br>
+										</div>
+										<div class="category-text-content">
+											With related rates, you can find other related rates.
+											<ol>
+												<li>
+													1. Read the problem and understand it. Define what is given to you.
+												</li>
+												<li>
+													2. Sketch the problem. Label <b>everything</b> as humanly possible.
+												</li>
+												<li>
+													3. Relate rates into one equation based on information given.
+												</li>
+												<li>
+													4. Take the derivative with respect to time of the equation and chain rule non-constant values.
+												</li>
+												<li>
+													5. Substitute the given values and solve for th emissing rate.
+												</li>
+												<li>
+													5. Remember to include units!
+												</li>
+											</ol>
+											<br> Common scenarios:
+											<ol>
+												<li>
+													1. Similar triangles
+												</li>
+												<li>
+													2. Cones
+												</li>
+												<li>
+													3. Volume
+												</li>
+											</ol>
+										</div>
+										<div class="category-text">
+											L'Hospitals Rule
+											<span class="category-accent"></span>
+											<br>
+										</div>
+										<div class="category-text-content">
+											Under L'Hospital's Rule, you can take the limit by simply taking the derivative of the top and bottom (not to be confused with the quotient rule): $$\lim_{x \rightarrow c} \frac{f'(x)}{g'(x)}$$
+
+										</div>
+										<div class="category-text">
+											Position, Velocity, Acceleration
+											<span class="category-accent"></span>
+											<br>
+										</div>
+										<div class="category-text-content">
+											By taking the derivative of position $s$, you get velocity $v$ and when you take the derivative of velocity you get acceleration $a$. To find information about each:
+											<ol>
+												<li>
+													1. Take the first derivative. This will give you the function of velocity.
+												</li>
+												<li>
+													2. Set the derivative equal to zero / undefined and find the points.
+												</li>
+												<li>
+													3. Plot the numbers on a number line and find whether the area in between the points are positive or negative.
+												</li>
+												<li>
+													4. Take the second derivative. This will give you the function of acceleration.
+												</li>
+												<li>
+													5. Set the derivative equal to zero / undefined and find the points.
+												</li>
+												<li>
+													6. Plot the numbers on a number line and find whether the area in between the points are positive or negative.
+												</li>
+											</ol>
+											<br> When analyzing the information, we can deduce the following information if we define the given function: $s(t)=at^2+bt+c$ on interval $[x,y]$:
+											<ol>
+												<li>
+													1. <i>Object is at rest</i>: $t=0$
+												</li>
+												<li>
+													2. <i>Object is moving right</i>: $v&gt;0$
+												</li>
+												<li>
+													3. <i>Object is moving left</i>: $v&lt;0$
+												</li>
+												<li>
+													4. <i>Object changes direction</i>: $v$ changes sign
+												</li>
+												<li>
+													5. <i>Object is speeding up</i>: $v$ and $a$ have the same sign
+												</li>
+												<li>
+													6. <i>Object is slowing down</i>: $v$ and $a$ have a different sign
+												</li>
+												<li>
+													7. <i>Object's total distance</i>: $\mid s(y) - s(x) \mid$
+												</li>
+												<li>
+													8. <i>Object's average velocity</i>: $\frac{s(y)-s(x)}{y-x}$
+												</li>
+											</ol>
+										</div>
+										<div class="category-text">
+											Mean Value Theorem
+											<span class="category-accent"></span>
+											<br>
+										</div>
+										<div class="category-text-content">
+											The mean value theorem finds point at which the secant line and the tangent line are parallel. First, you must establish:
+											<ol>
+												<li>
+													1. $f(x)$ is continuous on interval $[a,b]$
+												</li>
+												<li>
+													2. $f(x)$ is differentiable on interval $[a,b]$
+												</li>
+											</ol>
+											Thus if both rules are true, at least one value $x=c$ where $a&lt;c&lt;b$ such that $f'(c)=\frac{f(b)-f(a)}{b-c}$.
+											<br> To find the of $f(x)$ on interval $[a,b]:
+											<ol>
+												<li>
+													1. Take the derivative.
+												</li>
+												<li>
+													2. Use the formula $\frac{f(b)-f(a)}{b-a}$
+												</li>
+												<li>
+													3. Set the derivative equal to the value found above.
+												</li>
+												<li>
+													3. Make sure the value(s) are in the interval.
+												</li>
+											</ol>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+			</ul>
+		</div>
+	</main>
+	<footer class="page-footer blue-grey darken-1">
+		<div class="footer-copyright blue-grey">
+			<div class="container">
+				Copyright &copy; 2016. Created by <a class="white-text" href="#">SPJY</a>. ty Dr. Ida.
+				<a class="grey-text text-lighten-4 right" href="#!">Privacy Policy</a>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="../../js/style.min.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			$('.collapsible').collapsible({
+				accordion: false
+			});
+		});
+
+		$('.dropdown-button').dropdown({
+			inDuration: 300,
+			outDuration: 225,
+			constrain_width: false,
+			hover: true,
+			gutter: 0,
+			belowOrigin: true,
+			alignment: 'left'
+		});
+	</script>
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+	</script>
+	<script type="text/javascript">
+		window.MathJax = {
+			AuthorInit: function () {
+				MathJax.Hub.Register.StartupHook("Begin", function () {
+					MathJax.Hub.Queue(function () {
+						var elements = document.getElementsByClassName('tex2jax_ignore');
+						for (var i = 0; i < elements.length; i++) {
+							elements[i].classList.remove('tex2jax_ignore');
+						}
+						MathJax.Hub.Config({
+							displayAlign: "left"
+						});
+						MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+					});
+				});
+			}
+		};
+
+		(function (d, script) {
+			script = d.createElement('script');
+			script.type = 'text/javascript';
+			script.src = 'https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full';
+			d.getElementsByTagName('head')[0].appendChild(script);
+		}(document));
+	</script>
+
+	<script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+
+</html>

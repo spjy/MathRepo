@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:300|Comfortaa|Raleway|Open+Sans' rel='stylesheet' type='text/css'>
+      <link type="text/css" rel="stylesheet" href="../../css/style.css"  media="screen,projection"/>
+
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		
+		<style>
+		
+			#call-to-action {
+				
+				font-size:50px;
+				
+			}
+			
+			.headers {
+				
+				font-family:Comfortaa, Roboto, Lucida Sans;
+				
+			}
+			
+			.nav-txt {
+				
+				font-family:Raleway, Roboto, Tahoma;
+				
+			}
+			
+			.js-txt {
+				
+				font-family:Josefin Sans, sans-serif;
+				
+			}
+			
+			.hl-txt {
+				
+				color:#ff9800;
+				
+			}
+
+			.typedtxt {
+			
+			  display:inline;
+
+			}
+			
+			#logobg {
+				
+				background-color:#cc7900;
+				
+			}
+			
+			.logoimg {
+				
+				width:20%
+				
+			}
+			
+			#cat-header {
+				
+				color:#19B5FE;
+				font-size:40px;
+				
+			}
+			
+			.desc-txt {
+				
+				font-size:25px
+				
+			}
+
+			.overlap-header {
+			  padding: 25px 25px 35px;  
+			  /* 100px extra for bottom */
+			}
+
+			.overlap-img {
+			  display: block;
+			  margin: -30px auto 1px;
+			}
+
+			  body {
+				display: flex;
+				min-height: 100vh;
+				flex-direction: column;
+			  }
+
+			  main {
+				flex: 1 0 auto;
+			  }
+			
+			.topic-cards {
+				
+				padding:1.5em;
+				
+			}
+			
+			.category-text {
+				
+				font-size:1.5em;
+				font-family:Open Sans;
+				color:black;
+				padding-top:3%;
+				
+			}
+			
+			.category-text-content {
+				
+				font-size:1em;
+				font-family:Open Sans;
+				color:black;
+				padding-top:1%;
+				padding-bottom:3%;
+				
+			}
+
+			.category-text:after{
+				content:' ';
+				display:block;
+				border:1px solid #ff9800;
+				width:6.5%;
+				
+			}
+			
+			.example-hl {
+				
+				margin-top:3%;
+				border-left:solid 6px #d32f2f;
+				
+			}
+		</style>
+		
+    </head>
+
+    <body class="blue-grey darken-1">
+<header>
+   <nav>
+      <div class="nav-wrapper">
+         <a href="/mathrepo/" class="brand-logo center z-depth-1" id="logobg">&nbsp;<span class="headers">math</span><span class="js-txt hl-txt">calculus</span>&nbsp;</a>
+         <ul id="nav-mobile" class="left hide-on-med-and-down nav-txt">
+      		<li><a class="dropdown-button" href="/mathrepo/calculus/" data-activates="calc">calculus<i class="material-icons right">arrow_drop_down</i></a></li>
+      		<li><a class="dropdown-button" href="/mathrepo/physics/" data-activates="phys">physics<i class="material-icons right">arrow_drop_down</i></a></li>
+         </ul>
+         <ul id="nav-mobile" class="right hide-on-med-and-down nav-txt">
+            <li><a href="#">me</a></li>
+         </ul>
+      </div>
+   </nav>
+	<ul id="calc" class="dropdown-content">
+		<li><a href="/mathrepo/calculus/vectors/">vectors</a></li>
+		<li><a href="/mathrepo/calculus/limits/">limits</a></li>
+		<li><a href="/mathrepo/calculus/derivatives/">derivatives</a></li>
+		<li><a href="/mathrepo/calculus/integrals/">integrals</a></li>
+		<li><a href="/mathrepo/calculus/series/">series</a></li>
+	</ul>
+	<ul id="phys" class="dropdown-content">
+	  <li><a href="#!">intro</a></li>
+	  <li><a href="#!">kintematics</a></li>
+	  <li><a href="#!">newton's laws</a></li>	  
+	</ul>
+</header>
+<main>
+   <div class="container">
+      <div class="center white-text flow-text headers overlap-header" id="call-to-action">
+         <span class="js-txt">topic: <span class="hl-txt">limits</span></span>
+      </div>
+      <div class="divider"></div>
+      <br><br>
+      <a class="btn-floating btn-large waves-effect waves-light orange overlap-img"><i class="material-icons">keyboard_arrow_down</i></a>
+      <div class="row">
+         <div class="col s12 m12">
+            <div class="card overlap-img blue-grey darken-2">
+               <div class="card-content headers center-align">
+                  <br>
+                  <span class="js-txt white-text" id="cat-header">rules | continuity | trig</span>
+               </div>
+            </div>
+         </div>
+      </div>
+      <ul class="collapsible" data-collapsible="accordion">
+         <li>
+            <div class="collapsible-header center topic-cards"><span class="card-title js-txt orange-text" id="cat-header">limits: <span class="js-txt black-text">rules</span></span> 
+            </div>
+            <div class="collapsible-body white">
+               <div class="container left-align">
+                  <div class="category-text">
+                     Limits
+                     <span class="category-accent"></span><br>
+                  </div>
+                  <div class="category-text-content">A limit is the process to find how a function's values become as it approaches a certain value. Here is the notation:<br>
+                     $$\lim_{x \rightarrow a}f(x)$$ <br>
+                     Which is read as "the limit as x approaches a of $f(x)$".
+                  </div>
+                  <div class="category-text">
+                     One sided limits
+                     <span class="category-accent"></span><br>
+                  </div>
+                  <div class="category-text-content">In addition to finding regular limits, you can find a limit of a value when the function approaches it from the right or left.  Finding the limit of a value "from the right" means to find what it is approaching from the $+x$ direction.  To the contrary, finding the limit of a value "from the left" means to find what it is from the $-x$ direction. These differences are denoted by a $^+$ and $^-$ superscript: $$\lim_{x \rightarrow a^+}f(x)$$ $$\lim_{x \rightarrow a^-}f(x)$$ In this case, it is read as "the limit as x approaches a from the right / left of $f(x)$" respectively.</div>
+                  <div class="category-text">
+                     Finding a limit graphically
+                     <span class="category-accent"></span><br>
+                  </div>
+                  <div class="category-text-content">
+                     We know from the previous sections, we have limits, right sided limits, and left sided limits.  To find them graphically, we merely look at what the function approaches.<br>
+                     <div class="card example-hl">
+                        <div class="card-content">
+                           <br>
+<svg 
+     version="1.1"
+     baseProfile="full"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:ev="http://www.w3.org/2001/xml-events"
+     width="18.982854709648016cm"
+     height="9.622069383047199cm"
+     viewBox="0 0 1670 844"
+     >
+<title>
+
+</title>
+<g stroke-linejoin="miter" stroke-dashoffset="0.0000" stroke-dasharray="none" stroke-width="1.0000" stroke-miterlimit="10.000" stroke-linecap="square">
+<clipPath id="clip1">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip1)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 746.15 2.0000 L 746.15 847.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip1 -->
+<clipPath id="clip2">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip2)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 746.15 1.0000 L 741.15 6.0000"/>
+</g> <!-- drawing style -->
+</g> <!-- clip2 -->
+<clipPath id="clip3">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip3)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 746.15 1.0000 L 751.15 6.0000"/>
+</g> <!-- drawing style -->
+</g> <!-- clip3 -->
+<clipPath id="clip4">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip4)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 0.0000 652.85 L 1669.0 652.85"/>
+</g> <!-- drawing style -->
+</g> <!-- clip4 -->
+<clipPath id="clip5">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip5)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 1670.0 652.85 L 1665.0 647.85"/>
+</g> <!-- drawing style -->
+</g> <!-- clip5 -->
+<clipPath id="clip6">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip6)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 1670.0 652.85 L 1665.0 657.85"/>
+</g> <!-- drawing style -->
+</g> <!-- clip6 -->
+<clipPath id="clip7">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip7)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 35.766 667.02 L 35.766 666.03 L 41.734 666.03 L 41.734 667.02 L 35.766 667.02 z M 45.156 665.17 Q 44.328 664.88 43.938 664.32 Q 43.547 663.77 43.547 662.98 Q 43.547 661.81 44.383 661.02 Q 45.219 660.22 46.625 660.22 Q 48.031 660.22 48.891 661.04 Q 49.750 661.86 49.750 663.03 Q 49.750 663.77 49.352 664.32 Q 48.953 664.88 48.156 665.17 Q 49.156 665.50 49.672 666.22 Q 50.188 666.94 50.188 667.94 Q 50.188 669.31 49.211 670.25 Q 48.234 671.19 46.641 671.19 Q 45.062 671.19 44.086 670.24 Q 43.109 669.30 43.109 667.89 Q 43.109 666.84 43.641 666.14 Q 44.172 665.44 45.156 665.17 z M 44.891 662.94 Q 44.891 663.70 45.383 664.19 Q 45.875 664.67 46.656 664.67 Q 47.422 664.67 47.906 664.20 Q 48.391 663.72 48.391 663.02 Q 48.391 662.30 47.891 661.80 Q 47.391 661.30 46.641 661.30 Q 45.891 661.30 45.391 661.78 Q 44.891 662.27 44.891 662.94 z M 44.469 667.91 Q 44.469 668.47 44.734 668.99 Q 45.000 669.52 45.523 669.80 Q 46.047 670.09 46.656 670.09 Q 47.609 670.09 48.219 669.49 Q 48.828 668.89 48.828 667.95 Q 48.828 667.00 48.195 666.38 Q 47.562 665.75 46.609 665.75 Q 45.688 665.75 45.078 666.37 Q 44.469 666.98 44.469 667.91 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip7 -->
+<clipPath id="clip8">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip8)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 41.941 652.85 L 41.941 655.85"/>
+</g> <!-- drawing style -->
+</g> <!-- clip8 -->
+<clipPath id="clip9">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip9)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 123.77 667.02 L 123.77 666.03 L 129.73 666.03 L 129.73 667.02 L 123.77 667.02 z M 131.20 661.67 L 131.20 660.41 L 138.16 660.41 L 138.16 661.42 Q 137.14 662.52 136.13 664.33 Q 135.12 666.14 134.58 668.05 Q 134.17 669.39 134.06 671.00 L 132.72 671.00 Q 132.73 669.73 133.21 667.94 Q 133.69 666.14 134.58 664.48 Q 135.47 662.81 136.47 661.67 L 131.20 661.67 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip9 -->
+<clipPath id="clip10">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip10)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 129.97 652.85 L 129.97 655.85"/>
+</g> <!-- drawing style -->
+</g> <!-- clip10 -->
+<clipPath id="clip11">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip11)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 211.77 667.02 L 211.77 666.03 L 217.73 666.03 L 217.73 667.02 L 211.77 667.02 z M 225.97 662.89 L 224.66 663.00 Q 224.48 662.22 224.16 661.86 Q 223.62 661.30 222.84 661.30 Q 222.20 661.30 221.73 661.66 Q 221.11 662.11 220.75 662.98 Q 220.39 663.84 220.38 665.47 Q 220.84 664.73 221.54 664.38 Q 222.23 664.03 222.98 664.03 Q 224.30 664.03 225.23 665.00 Q 226.16 665.97 226.16 667.52 Q 226.16 668.53 225.72 669.40 Q 225.28 670.27 224.52 670.73 Q 223.77 671.19 222.80 671.19 Q 221.14 671.19 220.10 669.98 Q 219.06 668.77 219.06 665.97 Q 219.06 662.86 220.22 661.45 Q 221.22 660.22 222.92 660.22 Q 224.19 660.22 224.99 660.93 Q 225.80 661.64 225.97 662.89 z M 220.58 667.52 Q 220.58 668.20 220.87 668.83 Q 221.16 669.45 221.68 669.77 Q 222.20 670.09 222.77 670.09 Q 223.61 670.09 224.21 669.42 Q 224.81 668.75 224.81 667.59 Q 224.81 666.48 224.22 665.84 Q 223.62 665.20 222.72 665.20 Q 221.83 665.20 221.20 665.84 Q 220.58 666.48 220.58 667.52 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip11 -->
+<clipPath id="clip12">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip12)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 217.99 652.85 L 217.99 655.85"/>
+</g> <!-- drawing style -->
+</g> <!-- clip12 -->
+<clipPath id="clip13">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip13)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 299.77 667.02 L 299.77 666.03 L 305.73 666.03 L 305.73 667.02 L 299.77 667.02 z M 307.12 668.19 L 308.50 668.06 Q 308.66 669.08 309.22 669.59 Q 309.78 670.09 310.58 670.09 Q 311.53 670.09 312.19 669.38 Q 312.84 668.66 312.84 667.48 Q 312.84 666.34 312.21 665.70 Q 311.58 665.05 310.55 665.05 Q 309.91 665.05 309.40 665.34 Q 308.89 665.62 308.59 666.08 L 307.36 665.92 L 308.39 660.41 L 313.73 660.41 L 313.73 661.67 L 309.45 661.67 L 308.88 664.55 Q 309.84 663.88 310.91 663.88 Q 312.31 663.88 313.27 664.85 Q 314.23 665.83 314.23 667.36 Q 314.23 668.81 313.39 669.88 Q 312.36 671.19 310.58 671.19 Q 309.11 671.19 308.18 670.37 Q 307.25 669.55 307.12 668.19 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip13 -->
+<clipPath id="clip14">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip14)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 306.02 652.85 L 306.02 655.85"/>
+</g> <!-- drawing style -->
+</g> <!-- clip14 -->
+<clipPath id="clip15">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip15)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 387.77 667.02 L 387.77 666.03 L 393.73 666.03 L 393.73 667.02 L 387.77 667.02 z M 399.34 671.00 L 399.34 668.42 L 394.69 668.42 L 394.69 667.22 L 399.59 660.27 L 400.67 660.27 L 400.67 667.22 L 402.12 667.22 L 402.12 668.42 L 400.67 668.42 L 400.67 671.00 L 399.34 671.00 z M 399.34 667.22 L 399.34 662.38 L 395.98 667.22 L 399.34 667.22 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip15 -->
+<clipPath id="clip16">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip16)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 394.05 652.85 L 394.05 655.85"/>
+</g> <!-- drawing style -->
+</g> <!-- clip16 -->
+<clipPath id="clip17">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip17)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 475.77 667.02 L 475.77 666.03 L 481.73 666.03 L 481.73 667.02 L 475.77 667.02 z M 483.12 668.17 L 484.45 667.98 Q 484.67 669.11 485.22 669.60 Q 485.77 670.09 486.55 670.09 Q 487.48 670.09 488.12 669.45 Q 488.77 668.81 488.77 667.86 Q 488.77 666.95 488.17 666.36 Q 487.58 665.77 486.66 665.77 Q 486.28 665.77 485.73 665.92 L 485.88 664.77 Q 486.02 664.78 486.09 664.78 Q 486.94 664.78 487.61 664.34 Q 488.28 663.89 488.28 662.98 Q 488.28 662.25 487.79 661.77 Q 487.30 661.30 486.52 661.30 Q 485.75 661.30 485.24 661.78 Q 484.73 662.27 484.58 663.23 L 483.27 663.00 Q 483.50 661.67 484.36 660.95 Q 485.22 660.22 486.48 660.22 Q 487.38 660.22 488.11 660.59 Q 488.84 660.97 489.24 661.62 Q 489.64 662.28 489.64 663.02 Q 489.64 663.70 489.27 664.27 Q 488.89 664.84 488.16 665.19 Q 489.11 665.41 489.63 666.09 Q 490.16 666.78 490.16 667.83 Q 490.16 669.23 489.13 670.21 Q 488.11 671.19 486.55 671.19 Q 485.12 671.19 484.20 670.34 Q 483.27 669.50 483.12 668.17 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip17 -->
+<clipPath id="clip18">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip18)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 482.07 652.85 L 482.07 655.85"/>
+</g> <!-- drawing style -->
+</g> <!-- clip18 -->
+<clipPath id="clip19">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip19)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 563.77 667.02 L 563.77 666.03 L 569.73 666.03 L 569.73 667.02 L 563.77 667.02 z M 578.05 669.73 L 578.05 671.00 L 570.95 671.00 Q 570.94 670.53 571.11 670.08 Q 571.38 669.36 571.98 668.66 Q 572.58 667.95 573.70 667.03 Q 575.45 665.59 576.07 664.76 Q 576.69 663.92 576.69 663.17 Q 576.69 662.39 576.12 661.85 Q 575.56 661.31 574.66 661.31 Q 573.70 661.31 573.13 661.88 Q 572.56 662.45 572.56 663.47 L 571.20 663.33 Q 571.34 661.81 572.25 661.02 Q 573.16 660.22 574.69 660.22 Q 576.23 660.22 577.13 661.08 Q 578.03 661.94 578.03 663.20 Q 578.03 663.84 577.77 664.47 Q 577.52 665.09 576.90 665.78 Q 576.28 666.47 574.86 667.67 Q 573.67 668.66 573.34 669.02 Q 573.00 669.38 572.78 669.73 L 578.05 669.73 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip19 -->
+<clipPath id="clip20">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip20)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 570.10 652.85 L 570.10 655.85"/>
+</g> <!-- drawing style -->
+</g> <!-- clip20 -->
+<clipPath id="clip21">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip21)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 651.77 667.02 L 651.77 666.03 L 657.73 666.03 L 657.73 667.02 L 651.77 667.02 z M 664.09 671.00 L 662.77 671.00 L 662.77 662.59 Q 662.30 663.05 661.52 663.51 Q 660.75 663.97 660.14 664.19 L 660.14 662.91 Q 661.23 662.39 662.06 661.66 Q 662.89 660.92 663.23 660.22 L 664.09 660.22 L 664.09 671.00 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip21 -->
+<clipPath id="clip22">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip22)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 658.13 652.85 L 658.13 655.85"/>
+</g> <!-- drawing style -->
+</g> <!-- clip22 -->
+<clipPath id="clip23">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip23)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 752.62 665.70 Q 752.62 663.80 753.02 662.64 Q 753.41 661.48 754.18 660.85 Q 754.95 660.22 756.12 660.22 Q 756.98 660.22 757.64 660.57 Q 758.30 660.92 758.72 661.57 Q 759.14 662.22 759.38 663.16 Q 759.62 664.11 759.62 665.70 Q 759.62 667.59 759.23 668.76 Q 758.84 669.92 758.07 670.55 Q 757.30 671.19 756.12 671.19 Q 754.58 671.19 753.69 670.06 Q 752.62 668.73 752.62 665.70 z M 753.98 665.70 Q 753.98 668.34 754.60 669.22 Q 755.22 670.09 756.12 670.09 Q 757.03 670.09 757.65 669.22 Q 758.27 668.34 758.27 665.70 Q 758.27 663.05 757.65 662.18 Q 757.03 661.31 756.11 661.31 Q 755.20 661.31 754.66 662.08 Q 753.98 663.06 753.98 665.70 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip23 -->
+<clipPath id="clip24">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip24)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 746.15 652.85 L 746.15 655.85"/>
+</g> <!-- drawing style -->
+</g> <!-- clip24 -->
+<clipPath id="clip25">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip25)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 836.59 671.00 L 835.27 671.00 L 835.27 662.59 Q 834.80 663.05 834.02 663.51 Q 833.25 663.97 832.64 664.19 L 832.64 662.91 Q 833.73 662.39 834.56 661.66 Q 835.39 660.92 835.73 660.22 L 836.59 660.22 L 836.59 671.00 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip25 -->
+<clipPath id="clip26">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip26)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 834.18 652.85 L 834.18 655.85"/>
+</g> <!-- drawing style -->
+</g> <!-- clip26 -->
+<clipPath id="clip27">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip27)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 926.55 669.73 L 926.55 671.00 L 919.45 671.00 Q 919.44 670.53 919.61 670.08 Q 919.88 669.36 920.48 668.66 Q 921.08 667.95 922.20 667.03 Q 923.95 665.59 924.57 664.76 Q 925.19 663.92 925.19 663.17 Q 925.19 662.39 924.62 661.85 Q 924.06 661.31 923.16 661.31 Q 922.20 661.31 921.63 661.88 Q 921.06 662.45 921.06 663.47 L 919.70 663.33 Q 919.84 661.81 920.75 661.02 Q 921.66 660.22 923.19 660.22 Q 924.73 660.22 925.63 661.08 Q 926.53 661.94 926.53 663.20 Q 926.53 663.84 926.27 664.47 Q 926.02 665.09 925.40 665.78 Q 924.78 666.47 923.36 667.67 Q 922.17 668.66 921.84 669.02 Q 921.50 669.38 921.28 669.73 L 926.55 669.73 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip27 -->
+<clipPath id="clip28">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip28)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 922.21 652.85 L 922.21 655.85"/>
+</g> <!-- drawing style -->
+</g> <!-- clip28 -->
+<clipPath id="clip29">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip29)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 1007.6 668.17 L 1009.0 667.98 Q 1009.2 669.11 1009.7 669.60 Q 1010.3 670.09 1011.0 670.09 Q 1012.0 670.09 1012.6 669.45 Q 1013.3 668.81 1013.3 667.86 Q 1013.3 666.95 1012.7 666.36 Q 1012.1 665.77 1011.2 665.77 Q 1010.8 665.77 1010.2 665.92 L 1010.4 664.77 Q 1010.5 664.78 1010.6 664.78 Q 1011.4 664.78 1012.1 664.34 Q 1012.8 663.89 1012.8 662.98 Q 1012.8 662.25 1012.3 661.77 Q 1011.8 661.30 1011.0 661.30 Q 1010.2 661.30 1009.7 661.78 Q 1009.2 662.27 1009.1 663.23 L 1007.8 663.00 Q 1008.0 661.67 1008.9 660.95 Q 1009.7 660.22 1011.0 660.22 Q 1011.9 660.22 1012.6 660.59 Q 1013.3 660.97 1013.7 661.62 Q 1014.1 662.28 1014.1 663.02 Q 1014.1 663.70 1013.8 664.27 Q 1013.4 664.84 1012.7 665.19 Q 1013.6 665.41 1014.1 666.09 Q 1014.7 666.78 1014.7 667.83 Q 1014.7 669.23 1013.6 670.21 Q 1012.6 671.19 1011.0 671.19 Q 1009.6 671.19 1008.7 670.34 Q 1007.8 669.50 1007.6 668.17 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip29 -->
+<clipPath id="clip30">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip30)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 1010.2 652.85 L 1010.2 655.85"/>
+</g> <!-- drawing style -->
+</g> <!-- clip30 -->
+<clipPath id="clip31">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip31)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 1099.8 671.00 L 1099.8 668.42 L 1095.2 668.42 L 1095.2 667.22 L 1100.1 660.27 L 1101.2 660.27 L 1101.2 667.22 L 1102.6 667.22 L 1102.6 668.42 L 1101.2 668.42 L 1101.2 671.00 L 1099.8 671.00 z M 1099.8 667.22 L 1099.8 662.38 L 1096.5 667.22 L 1099.8 667.22 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip31 -->
+<clipPath id="clip32">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip32)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 1098.3 652.85 L 1098.3 655.85"/>
+</g> <!-- drawing style -->
+</g> <!-- clip32 -->
+<clipPath id="clip33">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip33)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 1183.6 668.19 L 1185.0 668.06 Q 1185.2 669.08 1185.7 669.59 Q 1186.3 670.09 1187.1 670.09 Q 1188.0 670.09 1188.7 669.38 Q 1189.3 668.66 1189.3 667.48 Q 1189.3 666.34 1188.7 665.70 Q 1188.1 665.05 1187.0 665.05 Q 1186.4 665.05 1185.9 665.34 Q 1185.4 665.62 1185.1 666.08 L 1183.9 665.92 L 1184.9 660.41 L 1190.2 660.41 L 1190.2 661.67 L 1186.0 661.67 L 1185.4 664.55 Q 1186.3 663.88 1187.4 663.88 Q 1188.8 663.88 1189.8 664.85 Q 1190.7 665.83 1190.7 667.36 Q 1190.7 668.81 1189.9 669.88 Q 1188.9 671.19 1187.1 671.19 Q 1185.6 671.19 1184.7 670.37 Q 1183.8 669.55 1183.6 668.19 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip33 -->
+<clipPath id="clip34">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip34)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 1186.3 652.85 L 1186.3 655.85"/>
+</g> <!-- drawing style -->
+</g> <!-- clip34 -->
+<clipPath id="clip35">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip35)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 1278.5 662.89 L 1277.2 663.00 Q 1277.0 662.22 1276.7 661.86 Q 1276.1 661.30 1275.3 661.30 Q 1274.7 661.30 1274.2 661.66 Q 1273.6 662.11 1273.2 662.98 Q 1272.9 663.84 1272.9 665.47 Q 1273.3 664.73 1274.0 664.38 Q 1274.7 664.03 1275.5 664.03 Q 1276.8 664.03 1277.7 665.00 Q 1278.7 665.97 1278.7 667.52 Q 1278.7 668.53 1278.2 669.40 Q 1277.8 670.27 1277.0 670.73 Q 1276.3 671.19 1275.3 671.19 Q 1273.6 671.19 1272.6 669.98 Q 1271.6 668.77 1271.6 665.97 Q 1271.6 662.86 1272.7 661.45 Q 1273.7 660.22 1275.4 660.22 Q 1276.7 660.22 1277.5 660.93 Q 1278.3 661.64 1278.5 662.89 z M 1273.1 667.52 Q 1273.1 668.20 1273.4 668.83 Q 1273.7 669.45 1274.2 669.77 Q 1274.7 670.09 1275.3 670.09 Q 1276.1 670.09 1276.7 669.42 Q 1277.3 668.75 1277.3 667.59 Q 1277.3 666.48 1276.7 665.84 Q 1276.1 665.20 1275.2 665.20 Q 1274.3 665.20 1273.7 665.84 Q 1273.1 666.48 1273.1 667.52 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip35 -->
+<clipPath id="clip36">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip36)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 1274.3 652.85 L 1274.3 655.85"/>
+</g> <!-- drawing style -->
+</g> <!-- clip36 -->
+<clipPath id="clip37">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip37)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 1359.7 661.67 L 1359.7 660.41 L 1366.7 660.41 L 1366.7 661.42 Q 1365.6 662.52 1364.6 664.33 Q 1363.6 666.14 1363.1 668.05 Q 1362.7 669.39 1362.6 671.00 L 1361.2 671.00 Q 1361.2 669.73 1361.7 667.94 Q 1362.2 666.14 1363.1 664.48 Q 1364.0 662.81 1365.0 661.67 L 1359.7 661.67 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip37 -->
+<clipPath id="clip38">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip38)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 1362.3 652.85 L 1362.3 655.85"/>
+</g> <!-- drawing style -->
+</g> <!-- clip38 -->
+<clipPath id="clip39">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip39)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 1449.7 665.17 Q 1448.8 664.88 1448.4 664.32 Q 1448.0 663.77 1448.0 662.98 Q 1448.0 661.81 1448.9 661.02 Q 1449.7 660.22 1451.1 660.22 Q 1452.5 660.22 1453.4 661.04 Q 1454.2 661.86 1454.2 663.03 Q 1454.2 663.77 1453.9 664.32 Q 1453.5 664.88 1452.7 665.17 Q 1453.7 665.50 1454.2 666.22 Q 1454.7 666.94 1454.7 667.94 Q 1454.7 669.31 1453.7 670.25 Q 1452.7 671.19 1451.1 671.19 Q 1449.6 671.19 1448.6 670.24 Q 1447.6 669.30 1447.6 667.89 Q 1447.6 666.84 1448.1 666.14 Q 1448.7 665.44 1449.7 665.17 z M 1449.4 662.94 Q 1449.4 663.70 1449.9 664.19 Q 1450.4 664.67 1451.2 664.67 Q 1451.9 664.67 1452.4 664.20 Q 1452.9 663.72 1452.9 663.02 Q 1452.9 662.30 1452.4 661.80 Q 1451.9 661.30 1451.1 661.30 Q 1450.4 661.30 1449.9 661.78 Q 1449.4 662.27 1449.4 662.94 z M 1449.0 667.91 Q 1449.0 668.47 1449.2 668.99 Q 1449.5 669.52 1450.0 669.80 Q 1450.5 670.09 1451.2 670.09 Q 1452.1 670.09 1452.7 669.49 Q 1453.3 668.89 1453.3 667.95 Q 1453.3 667.00 1452.7 666.38 Q 1452.1 665.75 1451.1 665.75 Q 1450.2 665.75 1449.6 666.37 Q 1449.0 666.98 1449.0 667.91 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip39 -->
+<clipPath id="clip40">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip40)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 1450.4 652.85 L 1450.4 655.85"/>
+</g> <!-- drawing style -->
+</g> <!-- clip40 -->
+<clipPath id="clip41">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip41)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 1535.8 668.52 L 1537.1 668.41 Q 1537.2 669.30 1537.7 669.70 Q 1538.2 670.09 1538.9 670.09 Q 1539.5 670.09 1539.9 669.82 Q 1540.4 669.55 1540.7 669.08 Q 1541.0 668.61 1541.2 667.82 Q 1541.4 667.03 1541.4 666.20 Q 1541.4 666.12 1541.4 665.95 Q 1541.0 666.58 1540.3 666.97 Q 1539.6 667.36 1538.8 667.36 Q 1537.5 667.36 1536.5 666.39 Q 1535.6 665.42 1535.6 663.84 Q 1535.6 662.20 1536.6 661.21 Q 1537.5 660.22 1539.0 660.22 Q 1540.0 660.22 1540.9 660.78 Q 1541.8 661.34 1542.2 662.39 Q 1542.7 663.44 1542.7 665.41 Q 1542.7 667.47 1542.2 668.69 Q 1541.8 669.91 1540.9 670.55 Q 1540.0 671.19 1538.8 671.19 Q 1537.6 671.19 1536.8 670.48 Q 1536.0 669.78 1535.8 668.52 z M 1541.2 663.78 Q 1541.2 662.64 1540.6 661.98 Q 1540.0 661.31 1539.2 661.31 Q 1538.3 661.31 1537.6 662.03 Q 1537.0 662.75 1537.0 663.89 Q 1537.0 664.91 1537.6 665.55 Q 1538.2 666.19 1539.1 666.19 Q 1540.0 666.19 1540.6 665.55 Q 1541.2 664.91 1541.2 663.78 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip41 -->
+<clipPath id="clip42">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip42)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 1538.4 652.85 L 1538.4 655.85"/>
+</g> <!-- drawing style -->
+</g> <!-- clip42 -->
+<clipPath id="clip43">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip43)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 1624.6 671.00 L 1623.3 671.00 L 1623.3 662.59 Q 1622.8 663.05 1622.0 663.51 Q 1621.2 663.97 1620.6 664.19 L 1620.6 662.91 Q 1621.7 662.39 1622.6 661.66 Q 1623.4 660.92 1623.7 660.22 L 1624.6 660.22 L 1624.6 671.00 z M 1628.0 665.70 Q 1628.0 663.80 1628.4 662.64 Q 1628.7 661.48 1629.5 660.85 Q 1630.3 660.22 1631.5 660.22 Q 1632.3 660.22 1633.0 660.57 Q 1633.6 660.92 1634.1 661.57 Q 1634.5 662.22 1634.7 663.16 Q 1635.0 664.11 1635.0 665.70 Q 1635.0 667.59 1634.6 668.76 Q 1634.2 669.92 1633.4 670.55 Q 1632.6 671.19 1631.5 671.19 Q 1629.9 671.19 1629.0 670.06 Q 1628.0 668.73 1628.0 665.70 z M 1629.3 665.70 Q 1629.3 668.34 1629.9 669.22 Q 1630.6 670.09 1631.5 670.09 Q 1632.4 670.09 1633.0 669.22 Q 1633.6 668.34 1633.6 665.70 Q 1633.6 663.05 1633.0 662.18 Q 1632.4 661.31 1631.5 661.31 Q 1630.5 661.31 1630.0 662.08 Q 1629.3 663.06 1629.3 665.70 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip43 -->
+<clipPath id="clip44">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip44)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 1626.4 652.85 L 1626.4 655.85"/>
+</g> <!-- drawing style -->
+</g> <!-- clip44 -->
+<clipPath id="clip45">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip45)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 723.77 830.02 L 723.77 829.03 L 729.73 829.03 L 729.73 830.02 L 723.77 830.02 z M 738.05 832.73 L 738.05 834.00 L 730.95 834.00 Q 730.94 833.53 731.11 833.08 Q 731.38 832.36 731.98 831.66 Q 732.58 830.95 733.70 830.03 Q 735.45 828.59 736.07 827.76 Q 736.69 826.92 736.69 826.17 Q 736.69 825.39 736.12 824.85 Q 735.56 824.31 734.66 824.31 Q 733.70 824.31 733.13 824.88 Q 732.56 825.45 732.56 826.47 L 731.20 826.33 Q 731.34 824.81 732.25 824.02 Q 733.16 823.22 734.69 823.22 Q 736.23 823.22 737.13 824.08 Q 738.03 824.94 738.03 826.20 Q 738.03 826.84 737.77 827.47 Q 737.52 828.09 736.90 828.78 Q 736.28 829.47 734.86 830.67 Q 733.67 831.66 733.34 832.02 Q 733.00 832.38 732.78 832.73 L 738.05 832.73 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip45 -->
+<clipPath id="clip46">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip46)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 743.15 828.91 L 746.15 828.91"/>
+</g> <!-- drawing style -->
+</g> <!-- clip46 -->
+<clipPath id="clip47">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip47)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 723.77 742.02 L 723.77 741.03 L 729.73 741.03 L 729.73 742.02 L 723.77 742.02 z M 736.09 746.00 L 734.77 746.00 L 734.77 737.59 Q 734.30 738.05 733.52 738.51 Q 732.75 738.97 732.14 739.19 L 732.14 737.91 Q 733.23 737.39 734.06 736.66 Q 734.89 735.92 735.23 735.22 L 736.09 735.22 L 736.09 746.00 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip47 -->
+<clipPath id="clip48">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip48)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 743.15 740.88 L 746.15 740.88"/>
+</g> <!-- drawing style -->
+</g> <!-- clip48 -->
+<clipPath id="clip49">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip49)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 730.62 644.70 Q 730.62 642.80 731.02 641.64 Q 731.41 640.48 732.18 639.85 Q 732.95 639.22 734.12 639.22 Q 734.98 639.22 735.64 639.57 Q 736.30 639.92 736.72 640.57 Q 737.14 641.22 737.38 642.16 Q 737.62 643.11 737.62 644.70 Q 737.62 646.59 737.23 647.76 Q 736.84 648.92 736.07 649.55 Q 735.30 650.19 734.12 650.19 Q 732.58 650.19 731.69 649.06 Q 730.62 647.73 730.62 644.70 z M 731.98 644.70 Q 731.98 647.34 732.60 648.22 Q 733.22 649.09 734.12 649.09 Q 735.03 649.09 735.65 648.22 Q 736.27 647.34 736.27 644.70 Q 736.27 642.05 735.65 641.18 Q 735.03 640.31 734.11 640.31 Q 733.20 640.31 732.66 641.08 Q 731.98 642.06 731.98 644.70 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip49 -->
+<clipPath id="clip50">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip50)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 735.59 570.00 L 734.27 570.00 L 734.27 561.59 Q 733.80 562.05 733.02 562.51 Q 732.25 562.97 731.64 563.19 L 731.64 561.91 Q 732.73 561.39 733.56 560.66 Q 734.39 559.92 734.73 559.22 L 735.59 559.22 L 735.59 570.00 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip50 -->
+<clipPath id="clip51">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip51)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 743.15 564.82 L 746.15 564.82"/>
+</g> <!-- drawing style -->
+</g> <!-- clip51 -->
+<clipPath id="clip52">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip52)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 737.55 480.73 L 737.55 482.00 L 730.45 482.00 Q 730.44 481.53 730.61 481.08 Q 730.88 480.36 731.48 479.66 Q 732.08 478.95 733.20 478.03 Q 734.95 476.59 735.57 475.76 Q 736.19 474.92 736.19 474.17 Q 736.19 473.39 735.62 472.85 Q 735.06 472.31 734.16 472.31 Q 733.20 472.31 732.63 472.88 Q 732.06 473.45 732.06 474.47 L 730.70 474.33 Q 730.84 472.81 731.75 472.02 Q 732.66 471.22 734.19 471.22 Q 735.73 471.22 736.63 472.08 Q 737.53 472.94 737.53 474.20 Q 737.53 474.84 737.27 475.47 Q 737.02 476.09 736.40 476.78 Q 735.78 477.47 734.36 478.67 Q 733.17 479.66 732.84 480.02 Q 732.50 480.38 732.28 480.73 L 737.55 480.73 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip52 -->
+<clipPath id="clip53">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip53)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 743.15 476.80 L 746.15 476.80"/>
+</g> <!-- drawing style -->
+</g> <!-- clip53 -->
+<clipPath id="clip54">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip54)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 730.62 391.17 L 731.95 390.98 Q 732.17 392.11 732.72 392.60 Q 733.27 393.09 734.05 393.09 Q 734.98 393.09 735.62 392.45 Q 736.27 391.81 736.27 390.86 Q 736.27 389.95 735.67 389.36 Q 735.08 388.77 734.16 388.77 Q 733.78 388.77 733.23 388.92 L 733.38 387.77 Q 733.52 387.78 733.59 387.78 Q 734.44 387.78 735.11 387.34 Q 735.78 386.89 735.78 385.98 Q 735.78 385.25 735.29 384.77 Q 734.80 384.30 734.02 384.30 Q 733.25 384.30 732.74 384.78 Q 732.23 385.27 732.08 386.23 L 730.77 386.00 Q 731.00 384.67 731.86 383.95 Q 732.72 383.22 733.98 383.22 Q 734.88 383.22 735.61 383.59 Q 736.34 383.97 736.74 384.62 Q 737.14 385.28 737.14 386.02 Q 737.14 386.70 736.77 387.27 Q 736.39 387.84 735.66 388.19 Q 736.61 388.41 737.13 389.09 Q 737.66 389.78 737.66 390.83 Q 737.66 392.23 736.63 393.21 Q 735.61 394.19 734.05 394.19 Q 732.62 394.19 731.70 393.34 Q 730.77 392.50 730.62 391.17 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip54 -->
+<clipPath id="clip55">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip55)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 743.15 388.77 L 746.15 388.77"/>
+</g> <!-- drawing style -->
+</g> <!-- clip55 -->
+<clipPath id="clip56">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip56)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 734.84 306.00 L 734.84 303.42 L 730.19 303.42 L 730.19 302.22 L 735.09 295.27 L 736.17 295.27 L 736.17 302.22 L 737.62 302.22 L 737.62 303.42 L 736.17 303.42 L 736.17 306.00 L 734.84 306.00 z M 734.84 302.22 L 734.84 297.38 L 731.48 302.22 L 734.84 302.22 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip56 -->
+<clipPath id="clip57">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip57)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 743.15 300.74 L 746.15 300.74"/>
+</g> <!-- drawing style -->
+</g> <!-- clip57 -->
+<clipPath id="clip58">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip58)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 730.62 215.19 L 732.00 215.06 Q 732.16 216.08 732.72 216.59 Q 733.28 217.09 734.08 217.09 Q 735.03 217.09 735.69 216.38 Q 736.34 215.66 736.34 214.48 Q 736.34 213.34 735.71 212.70 Q 735.08 212.05 734.05 212.05 Q 733.41 212.05 732.90 212.34 Q 732.39 212.62 732.09 213.08 L 730.86 212.92 L 731.89 207.41 L 737.23 207.41 L 737.23 208.67 L 732.95 208.67 L 732.38 211.55 Q 733.34 210.88 734.41 210.88 Q 735.81 210.88 736.77 211.85 Q 737.73 212.83 737.73 214.36 Q 737.73 215.81 736.89 216.88 Q 735.86 218.19 734.08 218.19 Q 732.61 218.19 731.68 217.37 Q 730.75 216.55 730.62 215.19 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip58 -->
+<clipPath id="clip59">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip59)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 743.15 212.72 L 746.15 212.72"/>
+</g> <!-- drawing style -->
+</g> <!-- clip59 -->
+<clipPath id="clip60">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip60)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 737.47 121.89 L 736.16 122.00 Q 735.98 121.22 735.66 120.86 Q 735.12 120.30 734.34 120.30 Q 733.70 120.30 733.23 120.66 Q 732.61 121.11 732.25 121.98 Q 731.89 122.84 731.88 124.47 Q 732.34 123.73 733.04 123.38 Q 733.73 123.03 734.48 123.03 Q 735.80 123.03 736.73 124.00 Q 737.66 124.97 737.66 126.52 Q 737.66 127.53 737.22 128.40 Q 736.78 129.27 736.02 129.73 Q 735.27 130.19 734.30 130.19 Q 732.64 130.19 731.60 128.98 Q 730.56 127.77 730.56 124.97 Q 730.56 121.86 731.72 120.45 Q 732.72 119.22 734.42 119.22 Q 735.69 119.22 736.49 119.93 Q 737.30 120.64 737.47 121.89 z M 732.08 126.52 Q 732.08 127.20 732.37 127.83 Q 732.66 128.45 733.18 128.77 Q 733.70 129.09 734.27 129.09 Q 735.11 129.09 735.71 128.42 Q 736.31 127.75 736.31 126.59 Q 736.31 125.48 735.72 124.84 Q 735.12 124.20 734.22 124.20 Q 733.33 124.20 732.70 124.84 Q 732.08 125.48 732.08 126.52 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip60 -->
+<clipPath id="clip61">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip61)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 743.15 124.69 L 746.15 124.69"/>
+</g> <!-- drawing style -->
+</g> <!-- clip61 -->
+<clipPath id="clip62">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip62)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 730.70 32.672 L 730.70 31.406 L 737.66 31.406 L 737.66 32.422 Q 736.64 33.516 735.63 35.328 Q 734.62 37.141 734.08 39.047 Q 733.67 40.391 733.56 42.000 L 732.22 42.000 Q 732.23 40.734 732.71 38.938 Q 733.19 37.141 734.08 35.477 Q 734.97 33.812 735.97 32.672 L 730.70 32.672 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip62 -->
+<clipPath id="clip63">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip63)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 743.15 36.664 L 746.15 36.664"/>
+</g> <!-- drawing style -->
+</g> <!-- clip63 -->
+<g id="misc">
+</g><!-- misc -->
+<g id="layer0">
+<clipPath id="clip64">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip64)">
+<g stroke-linejoin="round" stroke-width="1.5000" stroke-linecap="round" fill="none" stroke-opacity="1.0000" stroke="#ff5500">
+  <path d="M 522.19 -5.0178 L 523.82 3.2557 L 525.45 11.469 L 527.08 19.621 L 528.71 27.713 L 530.35 35.745 L 531.98 43.716 L 533.61 51.626 L 535.24 59.476 L 536.87 67.266 L 538.51 74.995 L 540.14 82.664 L 541.77 90.272 L 543.40 97.819 L 545.03 105.31 L 546.67 112.73 L 548.30 120.10 L 549.93 127.40 L 551.56 134.65 L 553.19 141.83 L 554.82 148.96 L 556.46 156.02 L 558.09 163.02 L 559.72 169.97 L 561.35 176.85 L 562.98 183.67 L 564.62 190.43 L 566.25 197.13 L 567.88 203.77 L 569.51 210.35 L 571.14 216.87 L 572.77 223.33 L 574.41 229.73 L 576.04 236.06 L 577.67 242.34 L 579.30 248.56 L 580.93 254.71 L 582.57 260.81 L 584.20 266.84 L 585.83 272.82 L 587.46 278.73 L 589.09 284.59 L 590.72 290.38 L 592.36 296.11 L 593.99 301.78 L 595.62 307.39 L 597.25 312.95 L 598.88 318.44 L 600.52 323.87 L 602.15 329.24 L 603.78 334.54 L 605.41 339.79 L 607.04 344.98 L 608.67 350.11 L 610.31 355.18 L 613.57 365.13 L 616.83 374.84 L 620.10 384.31 L 623.36 393.53 L 626.62 402.52 L 629.89 411.26 L 633.15 419.76 L 636.42 428.02 L 639.68 436.03 L 642.94 443.81 L 646.21 451.34 L 649.47 458.63 L 652.73 465.68 L 655.43 471.32 L 658.13 476.80"/>
+<title>Function f</title>
+<desc>f(x) = If[x  &lt;  -1, x² + 1]</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip64 -->
+<clipPath id="clip65">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip65)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#ff5500">
+  <path d="M 518.73 93.000 L 518.73 84.000 L 517.19 84.000 L 517.19 82.625 L 518.73 82.625 L 518.73 81.531 Q 518.73 80.484 518.92 79.969 Q 519.17 79.281 519.81 78.859 Q 520.45 78.438 521.61 78.438 Q 522.36 78.438 523.25 78.609 L 522.98 80.141 Q 522.44 80.047 521.95 80.047 Q 521.16 80.047 520.82 80.391 Q 520.48 80.734 520.48 81.672 L 520.48 82.625 L 522.52 82.625 L 522.52 84.000 L 520.48 84.000 L 520.48 93.000 L 518.73 93.000 z"/>
+<title>Function f</title>
+<desc>f(x) = If[x  &lt;  -1, x² + 1]</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip65 -->
+<clipPath id="clip66">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip66)">
+<g stroke-linejoin="round" stroke-width="1.5000" stroke-linecap="round" fill="none" stroke-opacity="1.0000" stroke="#9933ff">
+  <path d="M 658.13 388.77 L 665.79 388.77 L 672.32 388.77 L 678.84 388.77 L 685.37 388.77 L 691.90 388.77 L 698.43 388.77 L 704.95 388.77 L 711.48 388.77 L 718.01 388.77 L 724.54 388.77 L 731.06 388.77 L 737.59 388.77 L 744.12 388.77 L 750.64 388.77 L 757.17 388.77 L 763.70 388.77 L 770.23 388.77 L 776.75 388.77 L 783.28 388.77 L 789.81 388.77 L 796.34 388.77 L 802.86 388.77 L 809.39 388.77 L 815.92 388.77 L 822.45 388.77 L 828.31 388.77 L 834.18 388.77"/>
+<title>Function g</title>
+<desc>g(x) = If[-1  &lt;  x  &lt;  1, 3]</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip66 -->
+<clipPath id="clip67">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip67)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#9933ff">
+  <path d="M 675.00 405.86 L 676.70 406.11 Q 676.81 406.91 677.30 407.27 Q 677.95 407.75 679.09 407.75 Q 680.31 407.75 680.98 407.27 Q 681.64 406.78 681.88 405.91 Q 682.02 405.36 682.00 403.64 Q 680.84 405.00 679.12 405.00 Q 676.98 405.00 675.81 403.45 Q 674.64 401.91 674.64 399.75 Q 674.64 398.27 675.18 397.02 Q 675.72 395.77 676.74 395.08 Q 677.77 394.39 679.14 394.39 Q 680.97 394.39 682.17 395.88 L 682.17 394.62 L 683.78 394.62 L 683.78 403.59 Q 683.78 406.02 683.29 407.02 Q 682.80 408.03 681.73 408.62 Q 680.66 409.20 679.09 409.20 Q 677.25 409.20 676.10 408.38 Q 674.95 407.55 675.00 405.86 z M 676.45 399.62 Q 676.45 401.67 677.27 402.61 Q 678.08 403.55 679.30 403.55 Q 680.50 403.55 681.32 402.61 Q 682.14 401.67 682.14 399.69 Q 682.14 397.78 681.30 396.81 Q 680.45 395.84 679.27 395.84 Q 678.09 395.84 677.27 396.80 Q 676.45 397.75 676.45 399.62 z"/>
+<title>Function g</title>
+<desc>g(x) = If[-1  &lt;  x  &lt;  1, 3]</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip67 -->
+<clipPath id="clip68">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip68)">
+<g stroke-linejoin="round" stroke-width="1.5000" stroke-linecap="round" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 834.18 388.77 L 835.50 387.45 L 842.03 380.93 L 848.55 374.40 L 855.08 367.87 L 861.61 361.34 L 868.14 354.82 L 874.66 348.29 L 881.19 341.76 L 887.72 335.23 L 894.25 328.71 L 900.77 322.18 L 907.30 315.65 L 913.83 309.12 L 920.36 302.60 L 926.88 296.07 L 933.41 289.54 L 939.94 283.02 L 946.46 276.49 L 952.99 269.96 L 959.52 263.43 L 966.05 256.91 L 972.57 250.38 L 979.10 243.85 L 985.63 237.32 L 992.16 230.80 L 998.68 224.27 L 1005.2 217.74 L 1011.7 211.21 L 1018.3 204.69 L 1024.8 198.16 L 1031.3 191.63 L 1037.8 185.11 L 1044.4 178.58 L 1050.9 172.05 L 1057.4 165.52 L 1064.0 159.00 L 1070.5 152.47 L 1077.0 145.94 L 1083.5 139.41 L 1090.1 132.89 L 1096.6 126.36 L 1103.1 119.83 L 1109.6 113.30 L 1116.2 106.78 L 1122.7 100.25 L 1129.2 93.722 L 1135.8 87.195 L 1142.3 80.668 L 1148.8 74.140 L 1155.3 67.613 L 1161.9 61.086 L 1168.4 54.558 L 1174.9 48.031 L 1181.4 41.504 L 1188.0 34.976 L 1194.5 28.449 L 1201.0 21.922 L 1207.6 15.394 L 1214.1 8.8668 L 1220.6 2.3395 L 1227.1 -4.1878 L 1233.7 -10.715"/>
+<title>Function h</title>
+<desc>h(x) = If[x &gt; 1, x + 2]</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip68 -->
+<clipPath id="clip69">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip69)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 846.31 402.00 L 846.31 387.69 L 848.08 387.69 L 848.08 392.81 Q 849.31 391.39 851.19 391.39 Q 852.33 391.39 853.18 391.84 Q 854.03 392.30 854.40 393.10 Q 854.77 393.91 854.77 395.42 L 854.77 402.00 L 853.02 402.00 L 853.02 395.42 Q 853.02 394.11 852.44 393.51 Q 851.86 392.91 850.83 392.91 Q 850.05 392.91 849.35 393.31 Q 848.66 393.72 848.37 394.41 Q 848.08 395.11 848.08 396.33 L 848.08 402.00 L 846.31 402.00 z"/>
+<title>Function h</title>
+<desc>h(x) = If[x &gt; 1, x + 2]</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip69 -->
+<clipPath id="clip70">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip70)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#0000ff">
+  <path d="M 663.13 388.77 C 663.13 391.53 660.89 393.77 658.13 393.77 C 655.37 393.77 653.13 391.53 653.13 388.77 C 653.13 386.01 655.37 383.77 658.13 383.77 C 660.89 383.77 663.13 386.01 663.13 388.77 z"/>
+<title>Point B</title>
+<desc>B = (-1, 3)</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip70 -->
+<clipPath id="clip71">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip71)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 663.13 388.77 C 663.13 391.53 660.89 393.77 658.13 393.77 C 655.37 393.77 653.13 391.53 653.13 388.77 C 653.13 386.01 655.37 383.77 658.13 383.77 C 660.89 383.77 663.13 386.01 663.13 388.77 z"/>
+<title>Point B</title>
+<desc>B = (-1, 3)</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip71 -->
+<clipPath id="clip72">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip72)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#0000ff">
+  <path d="M 663.47 379.00 L 663.47 364.69 L 668.84 364.69 Q 670.48 364.69 671.47 365.12 Q 672.45 365.55 673.02 366.45 Q 673.58 367.36 673.58 368.34 Q 673.58 369.27 673.09 370.08 Q 672.59 370.89 671.58 371.38 Q 672.88 371.77 673.58 372.68 Q 674.28 373.59 674.28 374.84 Q 674.28 375.86 673.85 376.72 Q 673.42 377.58 672.80 378.05 Q 672.17 378.52 671.23 378.76 Q 670.30 379.00 668.92 379.00 L 663.47 379.00 z M 665.36 370.70 L 668.45 370.70 Q 669.72 370.70 670.27 370.53 Q 670.98 370.31 671.35 369.82 Q 671.72 369.33 671.72 368.56 Q 671.72 367.86 671.38 367.31 Q 671.03 366.77 670.40 366.57 Q 669.77 366.38 668.22 366.38 L 665.36 366.38 L 665.36 370.70 z M 665.36 377.31 L 668.92 377.31 Q 669.84 377.31 670.22 377.23 Q 670.88 377.12 671.31 376.85 Q 671.75 376.58 672.03 376.05 Q 672.31 375.53 672.31 374.84 Q 672.31 374.05 671.91 373.45 Q 671.50 372.86 670.77 372.62 Q 670.03 372.39 668.67 372.39 L 665.36 372.39 L 665.36 377.31 z"/>
+<title>Point B</title>
+<desc>B = (-1, 3)</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip72 -->
+<clipPath id="clip73">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip73)">
+<g stroke-width="2.5000" fill="none" stroke-opacity="1.0000" stroke="#7d7dff">
+  <path d="M 663.13 476.80 C 663.13 479.56 660.89 481.80 658.13 481.80 C 655.37 481.80 653.13 479.56 653.13 476.80 C 653.13 474.03 655.37 471.80 658.13 471.80 C 660.89 471.80 663.13 474.03 663.13 476.80 z"/>
+<title>Point A</title>
+<desc>Point A: Point on f</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip73 -->
+<clipPath id="clip74">
+  <path d="M 0.0000 0.0000 L 0.0000 847.00 L 1671.0 847.00 L 1671.0 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip74)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#7d7dff">
+  <path d="M 661.97 467.00 L 667.47 452.69 L 669.52 452.69 L 675.38 467.00 L 673.22 467.00 L 671.55 462.66 L 665.56 462.66 L 663.98 467.00 L 661.97 467.00 z M 666.11 461.12 L 670.95 461.12 L 669.47 457.16 Q 668.78 455.34 668.45 454.19 Q 668.17 455.56 667.67 456.92 L 666.11 461.12 z"/>
+<title>Point A</title>
+<desc>Point A: Point on f</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip74 -->
+</g><!-- layer0 -->
+</g> <!-- default stroke -->
+</svg> <!-- bounding box -->
+
+                        </div>
+                     </div>
+                  </div>
+                  <div class="category-text">
+                     Finding a limit algebraically
+                     <span class="category-accent"></span><br>
+                  </div>
+                  <div class="category-text-content">
+                     We know from the previous sections, we have limits, right sided limits, and left sided limits which are denoted by $\lim_{x \rightarrow a}f(x)$, $\lim_{x \rightarrow a^+}f(x)$, and $\lim_{x \rightarrow a^-}f(x)$ respectively.  In order to find the limit algebraically, we merely plug in the value.<br><br>
+                     <ul>
+                        <li>If the limit is well defined (no undefined $\frac{1}{0}$ or indeterminate $\frac{0}{0}$ values) then the limit exists. If the limit gives an undefined value, then the limit does not exist (DNE). Whereas, if the limit gives an indeterminate value, you must further simplify the value (factoring, cancelling, etc.).</li>
+                     </ul>
+                     <div class="row">
+                        <div class="col s12 m6">
+                           <div class="card example-hl">
+                              <div class="card-content">
+                                 <span class="headers">APPLY. </span>Evaluate:
+                                 <br>$$\lim_{x \rightarrow 2} \frac{x^2+9}{5x-9}\ \text{Start with equation.}\\[5px]$$ $$=\lim_{x \rightarrow 2} \frac{(2)^2+9}{5(2)-9}$$ $$=\lim_{x \rightarrow 2} \frac{4+9}{10-9}$$ $$=\lim_{x \rightarrow 2} 13$$
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col s12 m6">
+                           <div class="card example-hl">
+                              <div class="card-content">
+                                 <span class="headers">APPLY. </span>Evalutate:
+                                 <br>$$\lim_{x \rightarrow 0} \frac{x^2+x}{3x}$$ $$=\lim_{x \rightarrow 0} \frac{x(x+1)}{3x}$$ $$=\lim_{x \rightarrow 0} \frac{x+1}{3}$$ $$=\lim_{x \rightarrow 0} \frac{1}{3}$$
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </li>
+      </ul>
+      <ul class="collapsible" data-collapsible="expandable">
+         <li>
+            <div class="collapsible-header center topic-cards"><span class="card-title js-txt orange-text" id="cat-header">limits: <span class="js-txt black-text">continuity</span></span> 
+            </div>
+            <div class="collapsible-body white">
+               <div class="container left-align">
+                  <div class="category-text">
+                     Determining continuity
+                     <span class="category-accent"></span><br>
+                  </div>
+                  <div class="category-text-content">
+                     If a function is continuous, then it has no asymptotes (essential discontinuity), jumps, or removable discontinuities. The basic rule of thumb to follow is that if the graph can be made without lifting your pencil, then it is continuous.  If not, it is said to be discontinuous.  To determine whether, for example, $f(x)$ is continuous at $x=a$, you must test the existence of:
+                     <ul>
+                        <li>$$f(a)$$</li>
+                        <li>$$\lim_{x \rightarrow a} f(x)$$</li>
+                        <li>$$f(a)=\lim_{x \rightarrow a} f(x)$$</li>
+                     </ul>
+                     In other words, you must test to see if the function exists at $a$, if the limit exists as $x$ approaches $a$ and if the function at $a$ is equal to the limit as $x$ approaches $a$.
+                  </div>
+                  <div class="row">
+                     <div class="col s12 m6">
+                        <div class="card example-hl">
+                           <div class="card-content">
+                              <span class="headers">APPLY. </span>Determine if the function is continuous at x=2:
+                              $$f(x)=\frac{x^2-1}{x-2}$$
+                              $$f(x)=\frac{(x+2)(x-2)}{x-2}$$
+                              $$f(x)=x+2$$
+                              <div class="divider"></div>
+                              $$f(x)=x+2$$
+                              $$f(2)=(2)+2$$
+                              $$f(2)=4$$
+                              <div class="divider"></div>
+                              $$\lim_{x \rightarrow 2} x+2$$
+                              $$\lim_{x \rightarrow 2} (2)+2=4$$
+                              <div class="divider"></div>
+                              $$\lim_{x \rightarrow 2} = f(2) = 4$$
+                              <div class="divider"></div>
+                              Since the function meets all the requirements at x=2, the function is continuous.
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col s12 m6">
+                        <div class="card example-hl">
+                           <div class="card-content">
+                              Determine if the function is continuous:
+                              <br>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="category-text">
+                     Continuity involving piecewise functions
+                     <span class="category-accent"></span><br>
+                  </div>
+                  <div class="category-text-content">In order to determine continuity of a piecewise function, you must evaluate its left and right side limits and whether it exists at the point.  If $\lim_{x \rightarrow a^-}f(x) = \lim_{x \rightarrow a^+}f(x)$ and the point exists then the piecewise function is continuous.
+                  </div>
+                  <div class="row">
+                     <div class="col s12 m6">
+                        <div class="card example-hl">
+                           <div class="card-content">
+                              <span class="headers">APPLY. </span>Determine if the piecewise function is continuous:
+                              $$f(x)=\begin{cases}x^2 & x \leq 0\\x+2 & x > 0\end{cases}$$
+                              <div class="divider"></div>
+                              $$f(x)=x^2$$
+                              $$f(0)=(0)^2$$
+                              $$f(0)=0$$
+                              <div class="divider"></div>
+                              $$\lim_{x \rightarrow 0^+} x+2$$
+                              $$\lim_{x \rightarrow 0^+} (0)+2=2$$
+                              $$\lim_{x \rightarrow 0^+} 2$$
+                              <div class="divider"></div>
+                              $$\lim_{x \rightarrow 0^-} x^2$$
+                              $$\lim_{x \rightarrow 0^-} (0)^2$$
+                              $$\lim_{x \rightarrow 0^-} 0$$
+                              <div class="divider"></div>
+                              $$\lim_{x \rightarrow 0^+} \ne \lim_{x \rightarrow 0^-}$$
+                              <div class="divider"></div>
+                              Since the limit as $x$ approaches $0$ from the right does not equal the limit as $x$ approaches $0$ from the left, then this piecewise function is not continuous at the point $x=0$.
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </li>
+      </ul>
+      <ul class="collapsible" data-collapsible="expandable">
+         <li>
+            <div class="collapsible-header center topic-cards"><span class="card-title js-txt orange-text" id="cat-header">limits: <span class="js-txt black-text">trig</span></span> 
+            </div>
+            <div class="collapsible-body white">
+               <div class="container left-align">
+                  <div class="category-text">
+                     Trigonometric limits
+                     <span class="category-accent"></span><br>
+                  </div>
+                  <div class="category-text-content">
+                     In addition to taking the limits of polynomials, piecewises, rationals, etc. we can take the limit of trigonometric functions.  Here are some important identities, part of the $Sandwich \ Theorem$ (or the Squeeze Theorem):
+                     <ul>
+                        <li>$$\lim_{x \rightarrow 0} \frac{sinx}{x}=1$$</li>
+                        <li>$$\lim_{x \rightarrow 0} \frac{x}{sinx}=1$$</li>
+                     </ul>
+                     Since the value is negligable as we approach zero, the sandwich theorem is an identity we can use.
+                  </div>
+                  <div class="row">
+                     <div class="col s12 m6">
+                        <div class="card example-hl">
+                           <div class="card-content">
+                              <span class="headers">APPLY. </span>Evaluate: $$\lim_{x \rightarrow 0} \frac{sin^2x}{x}$$ $$\lim_{x \rightarrow 0} \frac{sinx}{x} \times sinx$$ $$\lim_{x \rightarrow 0} 1 \times sinx$$ $$\lim_{x \rightarrow 0} sin(0)$$ $$\lim_{x \rightarrow 0} 0$$
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="category-text">
+                     Trigonometric limits using 1
+                     <span class="category-accent"></span><br>
+                  </div>
+                  <div class="category-text-content">Sometimes we need to manipulate the trig function in order to solve the limit. One method is to multiply the function by a value equal to 1.
+                  </div>
+                  <div class="row">
+                     <div class="col s12 m6">
+                        <div class="card example-hl">
+                           <div class="card-content">
+                              <span class="headers">APPLY. </span>Evaluate: $$\lim_{x \rightarrow 0} \frac{sin2x}{sin3x}$$ $$\lim_{x \rightarrow 0} \frac{sin2x}{sin3x} \times \frac{2x}{2x} \times \frac{3x}{3x}$$ $$\lim_{x \rightarrow 0} \frac{sin2x}{2x} \times \frac{3x}{sin3x} \times \frac{2x}{3x}$$ $$\lim_{x \rightarrow 0} 1 \times 1 \times \frac{2}{3}$$ $$\lim_{x \rightarrow 0} \frac{2}{3}$$
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="category-text">
+                     Trigonometric limits using conjugates
+                     <span class="category-accent"></span><br>
+                  </div>
+                  <div class="category-text-content">As stated before, we must use other methods in order to solve for the limit; another way is to use the conjugate.
+                  </div>
+                  <div class="row">
+                     <div class="col s12 m6">
+                        <div class="card example-hl">
+                           <div class="card-content">
+                              <span class="headers">APPLY. </span>Evaluate: $$\lim_{x \rightarrow \theta} \frac{\theta^2}{1-cos\theta}$$ $$\lim_{x \rightarrow \theta} \frac{\theta^2}{1-cos\theta} \times \frac{1+cos\theta}{1+cos\theta}$$ $$\lim_{x \rightarrow \theta} \frac{\theta^2 (1+cos\theta)}{(1-cos^2\theta)}$$ $$\lim_{x \rightarrow \theta} \frac{\theta^2}{sin^2\theta} \times 1+cos\theta$$ $$\lim_{x \rightarrow \theta} 1 \times 1+cos(0)$$ $$\lim_{x \rightarrow \theta} 1 + 1$$ $$\lim_{x \rightarrow \theta} 2$$ 
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </li>
+      </ul>
+      <ul class="collapsible" data-collapsible="expandable">
+         <li>
+            <div class="collapsible-header center topic-cards"><span class="card-title js-txt orange-text" id="cat-header">limits: <span class="js-txt black-text">infinity</span></span> 
+            </div>
+            <div class="collapsible-body white">
+               <div class="container left-align">
+                  <div class="category-text">
+                     Limits involving infinity
+                     <span class="category-accent"></span><br>
+                  </div>
+                  <div class="category-text-content">
+                     If we take the limit of a function and the denominator is zero, we can define:
+                     <ul>
+                        <li>$$\lim_{x \rightarrow \infty} \frac{-1}{0}=-\infty$$</li>
+                        <li>$$\lim_{x \rightarrow \infty} \frac{1}{0}=\infty$$</li>
+                     </ul>
+                     Since the value as we divide one by a very big number is very small, we can define the limit in this way.
+                     <br><br>
+                     If we want to find the limit as $x$ approaches $\infty$ of a polynomial, we take the order of magnitude.
+                     $$\lim_{x \rightarrow \infty} \frac{ax^n-bx}{ux^n-c}=\frac{a}{u}$$
+                     We can focus on the largest term since the other values are negligable.  Thus, we can divide the largest term of the numerator by the largest term of the denominator.
+                  </div>
+               </div>
+            </div>
+         </li>
+      </ul>
+   </div>
+</main>
+<footer class="page-footer blue-grey darken-1">
+   <div class="footer-copyright blue-grey">
+      <div class="container">
+         Copyright &copy; 2016.  Created by <a class="white-text" href="#">SPJY</a>. ty Dr. Ida. 
+         <a class="grey-text text-lighten-4 right" href="#!">Privacy Policy</a>
+      </div>
+   </div>
+</footer>		
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="../../js/style.min.js"></script>
+	  <script>
+		 $(document).ready(function(){
+			$('.collapsible').collapsible({
+			  accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+			});
+		  });	
+		  $('.dropdown-button').dropdown({
+			  inDuration: 300,
+			  outDuration: 225,
+			  constrain_width: false,
+			  hover: true,
+			  gutter: 0,
+			  belowOrigin: true,
+			  alignment: 'left'
+			}
+		  );
+	  </script>
+	  <script type="text/x-mathjax-config">
+  		MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+	  </script>
+	  <script type="text/javascript">
+		  window.MathJax = {
+			AuthorInit: function() {
+			  MathJax.Hub.Register.StartupHook("Begin", function() {
+				MathJax.Hub.Queue(function() {
+				  var elements = document.getElementsByClassName('tex2jax_ignore');
+				  for (var i = 0; i < elements.length; i++) {
+					elements[i].classList.remove('tex2jax_ignore');
+				  }
+				  MathJax.Hub.Config({
+					displayAlign: "left"
+				  });
+				  MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+				});
+			  });
+			}
+		  };
+
+		  (function(d, script) {
+			script = d.createElement('script');
+			script.type = 'text/javascript';
+			script.src = 'https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full';
+			d.getElementsByTagName('head')[0].appendChild(script);
+		  }(document));
+	  </script>
+
+	  <script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>  
+
+
+
+
+    </body>
+</html>

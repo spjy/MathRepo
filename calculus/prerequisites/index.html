@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:300|Comfortaa|Raleway|Open+Sans' rel='stylesheet' type='text/css'>
+	<link type="text/css" rel="stylesheet" href="../../css/style.css" media="screen,projection" />
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<style>
+		#call-to-action {
+			font-size: 50px;
+		}
+		
+		.headers {
+			font-family: Comfortaa, Roboto, Lucida Sans;
+		}
+		
+		.nav-txt {
+			font-family: Raleway, Roboto, Tahoma;
+		}
+		
+		.js-txt {
+			font-family: Josefin Sans, sans-serif;
+		}
+		
+		.os-txt {
+			font-family: Open Sans;
+		}
+		
+		.hl-txt {
+			color: #ff9800;
+		}
+		
+		.typedtxt {
+			display: inline;
+		}
+		
+		#logobg {
+			background-color: #cc7900;
+		}
+		
+		.logoimg {
+			width: 20%
+		}
+		
+		#cat-header {
+			color: #19B5FE;
+			font-size: 40px;
+		}
+		
+		.desc-txt {
+			font-size: 0.3em;
+		}
+		
+		.overlap-header {
+			padding: 25px 25px 35px;
+			/* 100px extra for bottom */
+		}
+		
+		.overlap-img {
+			display: block;
+			margin: -30px auto 1px;
+		}
+		
+		body {
+			display: flex;
+			min-height: 100vh;
+			flex-direction: column;
+		}
+		
+		main {
+			flex: 1 0 auto;
+		}
+		
+		.topic-cards {
+			padding: 1.5em;
+		}
+		
+		.category-text {
+			font-size: 1.5em;
+			font-family: Open Sans;
+			color: black;
+			padding-top: 3%;
+		}
+		
+		.category-text-content {
+			font-size: 1em;
+			font-family: Open Sans;
+			color: black;
+			padding-top: 1%;
+			padding-bottom: 3%;
+		}
+		
+		.category-text:after {
+			content: ' ';
+			display: block;
+			border: 1px solid #ff9800;
+			width: 6.5%;
+		}
+		
+		.example-hl {
+			margin-top: 3%;
+			border-left: solid 6px #d32f2f;
+		}
+		
+		.f-hl {
+			margin-top: 3%;
+			border-left: solid 6px #d32f2f;
+		}
+	</style>
+
+</head>
+
+<body class="blue-grey darken-1">
+	<header>
+		<nav>
+			<div class="nav-wrapper">
+				<a href="/mathrepo/" class="brand-logo center z-depth-1" id="logobg">&nbsp;<span class="headers">math</span><span class="js-txt hl-txt">calculus</span>&nbsp;</a>
+				<ul id="nav-mobile" class="left hide-on-med-and-down nav-txt">
+					<li><a class="dropdown-button" href="/mathrepo/calculus/" data-activates="calc">calculus<i class="material-icons right">arrow_drop_down</i></a></li>
+					<li><a class="dropdown-button" href="/mathrepo/physics/" data-activates="phys">physics<i class="material-icons right">arrow_drop_down</i></a></li>
+				</ul>
+				<ul id="nav-mobile" class="right hide-on-med-and-down nav-txt">
+					<li><a href="#">me</a></li>
+				</ul>
+			</div>
+		</nav>
+		<ul id="calc" class="dropdown-content">
+			<li><a href="/mathrepo/calculus/vectors/">vectors</a></li>
+			<li><a href="/mathrepo/calculus/limits/">limits</a></li>
+			<li><a href="/mathrepo/calculus/derivatives/">derivatives</a></li>
+			<li><a href="/mathrepo/calculus/integrals/">integrals</a></li>
+			<li><a href="/mathrepo/calculus/series/">series</a></li>
+		</ul>
+		<ul id="phys" class="dropdown-content">
+			<li><a href="#!">intro</a></li>
+			<li><a href="#!">kintematics</a></li>
+			<li><a href="#!">newton's laws</a></li>
+		</ul>
+	</header>
+	<main>
+		<div class="container">
+			<div class="center white-text flow-text headers overlap-header" id="call-to-action">
+				<span class="js-txt">topic: <span class="hl-txt">prerequisites</span></span>
+				<br>
+			</div>
+			<div class="divider"></div>
+			<br>
+			<br>
+			<a class="btn-floating btn-large waves-effect waves-light orange overlap-img"><i class="material-icons">keyboard_arrow_down</i></a>
+			<div class="row">
+				<div class="col s12 m12">
+					<div class="card overlap-img blue-grey darken-2">
+						<div class="card-content headers center-align">
+							<br>
+							<span class="js-txt white-text" id="cat-header">functions | asymptotes | trig</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<ul class="card-animation">
+				<li>
+					<ul class="collapsible" data-collapsible="expandable">
+						<li>
+							<div class="collapsible-header center topic-cards"><span class="card-title js-txt orange-text" id="cat-header">prerequisites: <span class="js-txt black-text">functions</span></span>
+							</div>
+							<div class="collapsible-body white">
+								<div class="container left-align">
+									<div class="category-text">
+										Finding the domain
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">
+										The domain of the function tells you where the function for values of $x$ are defined. It can be expressed in either interval notation or as an inequality.
+										<br>
+										<br> In general:
+										<ol>
+											<li>1. If the function is a linear, polynomial, or exponential, then all $x$ values exist.</li>
+											<li>2. If the function is a rational, then set the denominator equal to zero. The value given means that $x$ values exist everywhere except at the point(s).</li>
+											<li>3. If the function is a square root, then ony $x$ greater than or equal to zero exist.</li>
+											<li>4. If the function is a logarithm, then only postive $x$ values exist.</li>
+										</ol>
+									</div>
+									<div class="category-text">
+										Finding the range
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">
+										The range of the function tells you where the function for values of $y$ are defined. Simiar to the domain, it can be expressed in either interval notation or as an inequality. Usually, graphing the function is the best way to find the domain.
+										<br>
+										<br>Algebraically, you can find the domain of the inverse of the function; that is the function's range.
+									</div>
+									<div class="category-text">
+										Finding x-intercepts (zeroes)
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">
+										The x-intercepts tell you when a function intersects the $x$-axis. You solve $x$-intercepts by making $f(x)=0$.
+										<br>
+										<br>
+										<ol>
+											<li>1. If it is rational, you make the numerator of $f(x)=0$</li>
+											<li>2. If it is unfactorable, use the quadratic formula: $\frac{-b\pm\sqrt{b^2-4ac}}{2a}$</li>
+											<li>3. If it is greater than a quadratic (ex. cubic) and unfactorable, use synthetic division.</li>
+										</ol>
+									</div>
+									<div class="category-text">
+										Finding y-intercepts
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">
+										The y-intercepts tell you when a function intersects the y-axis. You solve y-intercepts by making $f(x)=0$.
+									</div>
+									<div class="category-text">
+										Finding even-odd symmetry
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">
+										To find whether the function is even or odd, plug in $-x$ for $x$. If the signs given are:
+										<br>
+										<br>
+										<ol>
+											<li>1. The same as the original function, then the function's symmetry is even.</li>
+											<li>2. Opposite from the original function (plus signs become negative and vice versa), then it is odd.</li>
+											<li>3. Something different, then it is neither even or odd.</li>
+										</ol>
+										<br> If the function's symmetry is said to be even, then that means the function is symmetrical when reflected over the y-axis. Contrarily, if the functiion is said to be odd, then the function is the same as rotates over the y-axis 180 degrees.
+									</div>
+									<div class="category-text">
+										Finding inverse functions
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">
+										To find the function's inverse, replace all $y$ with $x$ and $x$ with $y$, then solve for $y$. A function's inverse is denoted by a superscript -1: $f^{-1}(x)$.
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<ul class="collapsible" data-collapsible="expandable">
+						<li>
+							<div class="collapsible-header center topic-cards"><span class="card-title js-txt orange-text" id="cat-header">prerequisites: <span class="js-txt black-text">asymptotes</span></span>
+							</div>
+							<div class="collapsible-body white">
+								<div class="container left-align">
+									<div class="category-text">
+										Asymptotes
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">
+										An asymptote is an imaginary line in which the function approaches at a certain point but never touches it. There are three types, vertical, horizontal, and oblique asymptotes.
+									</div>
+									<div class="category-text">
+										Finding vertical asymptotes
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">
+										To find a vertical asymptote, merely set the denominator of the function equal to zero.
+									</div>
+									<div class="category-text">
+										Finding horizontal &amp; oblique asymptotes
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">
+										To find horizontal asymptotes, look at the function's powers.
+										<br>Let's say we have the function $\large \frac{ax^y}{bx^z}$.
+										<br>
+										<ol>
+											<li>1. If $y &lt; z$ then the horizontal asymptote exists at $y=0$.</li>
+											<li>2. If $y = z$ then the horizontal asymptote exists at $\large y=\frac{a}{b}$ where $a$ and $b$ are the coefficients of the numerator and denominator.</li>
+											<li>3. If $y &gt; z$ then there are no horizontal asymptotes; however, there an oblique asymptote exists. You find it by using long division.</li>
+										</ol>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<ul class="collapsible" data-collapsible="expandable">
+						<li>
+							<div class="collapsible-header center topic-cards"><span class="card-title js-txt orange-text" id="cat-header">prerequisites: <span class="js-txt black-text">trig</span></span>
+							</div>
+							<div class="collapsible-body white">
+								<div class="container left-align">
+									<div class="category-text">
+										Trigonometry
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">
+										$Math + Triangles = Trigonometry$
+									</div>
+									<div class="category-text">
+										The unit circle
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">
+										you know em
+									</div>
+									<div class="category-text">
+										Trigonometric Identities
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">
+										Triangle Identities:
+										<ol>
+											<li>$sin^2\theta+cos^2\theta=1$</li>
+											<li>$1+tan^2\theta=sec^2\theta$</li>
+											<li>$1+cot^2\theta=csc^2\theta$</li>
+										</ol>
+										<br> Sum and Difference Identities:
+										<ol>
+											<li>$sin(a\pm b)=2sin\theta cos\theta$</li>
+											<li>$cos(a\pm b)=cos^2\theta-sin^2\theta$</li>
+											<li>$tan(a\pm b)=cos^2\theta-1$</li>
+										</ol>
+										<br> Double Angle Identities:
+										<ol>
+											<li>$sin(2\theta)=2sin\theta cos\theta$</li>
+											<li>$cos(2\theta)=cos^2\theta-sin^2\theta=cos^2\theta-1=1-sin^2\theta$</li>
+											<li>$tan(2\theta)=\frac{2tan\theta}{1-tan^2\theta}$</li>
+
+										</ol>
+										<br> Half Angle Identities:
+										<ol>
+											<li>$sin(\frac{\theta}{2}~)=\large \sqrt{\frac{1-cos\theta}{2}}$</li>
+											<li>$cos(\frac{\theta}{2}~)=\large \sqrt{\frac{1+cos\theta}{2}}$</li>
+											<li>$tan(\frac{\theta}{2}~)=\large \frac{1-cos\theta}{sin\theta}=\frac{sin\theta}{1+cos\theta}$</li>
+										</ol>
+										<br>
+									</div>
+									<div class="category-text">
+										Hyperbolic Trigonometric Identities
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">
+										Hyperbolic Trig Identities:
+										<ol>
+											<li>$sinhx=\large \frac{e^x-e^{-x}}{2}$</li>
+											<li>$coshx=\large \frac{e^x-e^{-x}}{2}$</li>
+										</ol>
+										<br> Triangle Identities:
+										<ol>
+											<li>$cosh^2\theta-sinh^2\theta=1$</li>
+											<li>$tanh^2\theta+sech^2\theta=1$</li>
+											<li>$coth^2\theta+csch^2\theta=1$</li>
+										</ol>
+										<br>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="collapsible" data-collapsible="expandable">
+						<li>
+							<div class="collapsible-header center topic-cards"><span class="card-title js-txt orange-text" id="cat-header">prerequisites: <span class="js-txt black-text">derivative &amp; integral formulas</span></span>
+							</div>
+							<div class="collapsible-body white">
+               <div class="container left-align">
+                  <div class="category-text">
+                     Derivatives involving trigonometry
+                     <span class="category-accent"></span><br>
+                  </div>
+                  <div class="category-text-content">We can find the derivative of trigonometric functions which can be found through the limit definition of a derivative.  Here they are:
+					  <div class="row">
+						  <div class="col s12 m4">
+					  		$$y=sinx \\ y'=cosx$$
+						  </div>
+						  <div class="col s12 m4">
+					  		$$y=cosx \\ y'=-sinx$$
+						  </div>
+						  <div class="col s12 m4">
+					  		$$y=tanx \\ y'=sec^2x$$
+						  </div>						  
+					  </div>
+					  <div class="row">
+						  <div class="col s12 m4">
+					  		$$y=cscx \\ y'=-cscxcotx$$
+						  </div>
+						  <div class="col s12 m4">
+					  		$$y=secx \\ y'=secxtanx$$
+						  </div>
+						  <div class="col s12 m4">
+					  		$$y=cotx \\ y'=-csc^2x$$
+						  </div>						  
+					  </div>
+                  </div>
+                  <div class="category-text">
+                     Derivatives involving inverse trigonometry
+                     <span class="category-accent"></span><br>
+                  </div>
+                  <div class="category-text-content">We can also find the derivative of the inverse trigonometric functions through the same methods as the regular trig.  Here is a compilation:
+					  <div class="row">
+						  <div class="col s12 m4">
+					  		$$y=sin^{-1}x \\ y'=\frac{1}{\sqrt{1-x^2}}$$
+						  </div>
+						  <div class="col s12 m4">
+					  		$$y=cos^{-1}x \\ y'=-\frac{1}{\sqrt{1-x^2}}$$
+						  </div>
+						  <div class="col s12 m4">
+					  		$$y=tan^{-1}x \\ y'=\frac{1}{1+x^2}$$
+						  </div>						  
+					  </div>
+					  <div class="row">
+						  <div class="col s12 m4">
+					  		$$y=csc^{-1}x \\ y'=-\frac{1}{|x|\sqrt{x^2-1}}$$
+						  </div>
+						  <div class="col s12 m4">
+					  		$$y=sec^{-1}x \\ y'=\frac{1}{|x|\sqrt{x^2-1}}$$
+						  </div>
+						  <div class="col s12 m4">
+					  		$$y=cot^{-1}x \\ y'=-\frac{1}{1+x^2}$$
+						  </div>						  
+					  </div>
+                  </div>         
+                  <div class="category-text">
+                     Derivatives involving hyperbolic trigonometry
+                     <span class="category-accent"></span><br>
+                  </div>
+                  <div class="category-text-content">Finally, here is a list of the derivatives involving hyperbolic trigonometry.
+					  <div class="row">
+						  <div class="col s12 m4">
+					  		$$y=sinhx \\ y'=coshx$$
+						  </div>
+						  <div class="col s12 m4">
+					  		$$y=coshx \\ y'=sinhx$$
+						  </div>
+						  <div class="col s12 m4">
+					  		$$y=tanhx \\ y'=sech^2x$$
+						  </div>						  
+					  </div>
+					  <div class="row">
+						  <div class="col s12 m4">
+					  		$$y=cschx \\ y'=-cschxcothx$$
+						  </div>
+						  <div class="col s12 m4">
+					  		$$y=sechx \\ y'=-sechxtanhx$$
+						  </div>
+						  <div class="col s12 m4">
+					  		$$y=cothx \\ y'=-csc^2x$$
+						  </div>						  
+					  </div>
+                  </div>  
+                 
+               </div>
+								<div class="container left-align">
+									<div class="category-text">
+										Integrals involving trigonometry
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">
+									  <div class="row">
+										  <div class="col s12 m4">
+											$$\int sinx \ dx \\ =-cosx+c$$
+										  </div>
+										  <div class="col s12 m4">
+											$$\int cosx \ dx \\ =sinx+c$$
+										  </div>
+										  <div class="col s12 m4">
+											$$\int tanx \ dx \\ =-ln|cosx|+c$$
+										  </div>						  
+									  </div>
+									  <div class="row">
+										  <div class="col s12 m4">
+											$$\int cscx \ dx \\ =ln|cscx-cotx|+c$$
+										  </div>
+										  <div class="col s12 m4">
+											$$\int secx \ dx \\ =-ln|secx-tanx|+c$$
+										  </div>
+										  <div class="col s12 m4">
+											$$\int cotx \ dx \\ =ln|sinx|+c$$
+										  </div>						  
+									  </div>
+									</div>
+								</div>
+								<div class="container left-align">
+									<div class="category-text">
+										Integrals involving inverse trigonometry
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">
+									  <div class="row">
+										  <div class="col s12 m4">
+											$$\int \frac{1}{\sqrt{1-x^2}} \ dx \\ =sin^{-1}x+c$$
+										  </div>
+										  <div class="col s12 m4">
+											$$\int \frac{1}{1+x^2} \ dx \\ =tan^{-1}x+c$$
+										  </div>
+										  <div class="col s12 m4">
+											$$\int \frac{1}{x\sqrt{x^2-1}} \ dx \\ =sec^{-1}|x|+c$$
+										  </div>						  
+									  </div>
+									</div>
+								</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</main>
+	<footer class="page-footer blue-grey darken-1">
+		<div class="footer-copyright blue-grey">
+			<div class="container">
+				Copyright &copy; 2016. Created by <a class="white-text" href="#">SPJY</a>. ty Dr. Ida.
+				<a class="grey-text text-lighten-4 right" href="#!">Privacy Policy</a>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="../../js/style.min.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			$('.collapsible').collapsible({
+				accordion: false
+			});
+		});
+
+		$('.dropdown-button').dropdown({
+			inDuration: 300,
+			outDuration: 225,
+			constrain_width: false,
+			hover: true,
+			gutter: 0,
+			belowOrigin: true,
+			alignment: 'left'
+		});
+	</script>
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+	</script>
+	<script type="text/javascript">
+		window.MathJax = {
+			AuthorInit: function () {
+				MathJax.Hub.Register.StartupHook("Begin", function () {
+					MathJax.Hub.Queue(function () {
+						var elements = document.getElementsByClassName('tex2jax_ignore');
+						for (var i = 0; i < elements.length; i++) {
+							elements[i].classList.remove('tex2jax_ignore');
+						}
+						MathJax.Hub.Config({
+							displayAlign: "left"
+						});
+						MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+					});
+				});
+			}
+		};
+
+		(function (d, script) {
+			script = d.createElement('script');
+			script.type = 'text/javascript';
+			script.src = 'https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full';
+			d.getElementsByTagName('head')[0].appendChild(script);
+		}(document));
+	</script>
+
+	<script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+
+</html>

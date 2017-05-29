@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:300|Comfortaa|Raleway|Open+Sans' rel='stylesheet' type='text/css'>
+	<link type="text/css" rel="stylesheet" href="../../css/style.css" media="screen,projection" />
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<style>
+		#call-to-action {
+			font-size: 50px;
+		}
+		
+		.headers {
+			font-family: Comfortaa, Roboto, Lucida Sans;
+		}
+		
+		.nav-txt {
+			font-family: Raleway, Roboto, Tahoma;
+		}
+		
+		.js-txt {
+			font-family: Josefin Sans, sans-serif;
+		}
+		
+		.os-txt {
+			font-family: Open Sans;
+		}
+		
+		.hl-txt {
+			color: #ff9800;
+		}
+		
+		.typedtxt {
+			display: inline;
+		}
+		
+		#logobg {
+			background-color: #cc7900;
+		}
+		
+		.logoimg {
+			width: 20%
+		}
+		
+		#cat-header {
+			color: #19B5FE;
+			font-size: 40px;
+		}
+		
+		.desc-txt {
+			font-size: 0.3em;
+		}
+		
+		.overlap-header {
+			padding: 25px 25px 35px;
+			/* 100px extra for bottom */
+		}
+		
+		.overlap-img {
+			display: block;
+			margin: -30px auto 1px;
+		}
+		
+		body {
+			display: flex;
+			min-height: 100vh;
+			flex-direction: column;
+		}
+		
+		main {
+			flex: 1 0 auto;
+		}
+		
+		.topic-cards {
+			padding: 1.5em;
+		}
+		
+		.category-text {
+			font-size: 1.5em;
+			font-family: Open Sans;
+			color: black;
+			padding-top: 3%;
+		}
+		
+		.category-text-content {
+			font-size: 1em;
+			font-family: Open Sans;
+			color: black;
+			padding-top: 1%;
+			padding-bottom: 3%;
+		}
+		
+		.category-text:after {
+			content: ' ';
+			display: block;
+			border: 1px solid #ff9800;
+			width: 6.5%;
+		}
+		
+		.example-hl {
+			margin-top: 3%;
+			border-left: solid 6px #d32f2f;
+		}
+		
+		.f-hl {
+			margin-top: 3%;
+			border-left: solid 6px #d32f2f;
+		}
+		
+		ol li .step::first-letter {
+			font-weight: bolder;
+		}
+	</style>
+
+</head>
+
+<body class="blue-grey darken-1">
+	<header>
+		<nav>
+			<div class="nav-wrapper">
+				<a href="/mathrepo/" class="brand-logo center z-depth-1" id="logobg">&nbsp;<span class="headers">math</span><span class="js-txt hl-txt">calculus</span>&nbsp;</a>
+				<ul id="nav-mobile" class="left hide-on-med-and-down nav-txt">
+					<li><a class="dropdown-button" href="/mathrepo/calculus/" data-activates="calc">calculus<i class="material-icons right">arrow_drop_down</i></a></li>
+					<li><a class="dropdown-button" href="/mathrepo/physics/" data-activates="phys">physics<i class="material-icons right">arrow_drop_down</i></a></li>
+				</ul>
+				<ul id="nav-mobile" class="right hide-on-med-and-down nav-txt">
+					<li><a href="#">me</a></li>
+				</ul>
+			</div>
+		</nav>
+		<ul id="calc" class="dropdown-content">
+			<li><a href="/mathrepo/calculus/vectors/">vectors</a></li>
+			<li><a href="/mathrepo/calculus/limits/">limits</a></li>
+			<li><a href="/mathrepo/calculus/derivatives/">derivatives</a></li>
+			<li><a href="/mathrepo/calculus/integrals/">integrals</a></li>
+			<li><a href="/mathrepo/calculus/series/">series</a></li>
+		</ul>
+		<ul id="phys" class="dropdown-content">
+			<li><a href="#!">intro</a></li>
+			<li><a href="#!">kintematics</a></li>
+			<li><a href="#!">newton's laws</a></li>
+		</ul>
+	</header>
+	<main>
+		<div class="container">
+			<div class="center white-text flow-text headers overlap-header" id="call-to-action">
+				<span class="js-txt">topic: <span class="hl-txt">integrals</span></span>
+				<br>
+			</div>
+			<div class="divider"></div>
+			<br>
+			<br>
+			<a class="btn-floating btn-large waves-effect waves-light orange overlap-img"><i class="material-icons">keyboard_arrow_down</i></a>
+			<div class="row">
+				<div class="col s12 m12">
+					<div class="card overlap-img blue-grey darken-2">
+						<div class="card-content headers center-align">
+							<br>
+							<span class="js-txt white-text" id="cat-header">rules | trig | application</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<ul class="card-animation">
+				<li>
+					<ul class="collapsible" data-collapsible="expandable">
+						<li>
+							<div class="collapsible-header center topic-cards"><span class="card-title js-txt orange-text" id="cat-header">integrals: <span class="js-txt black-text">rules</span></span>
+							</div>
+							<div class="collapsible-body white">
+								<div class="container left-align">
+									<div class="category-text">
+										Integrals
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">
+										An integral finds the area under a curve. The notation of an integral is as follows: $$\int_{a}^{b} f(x)dx$$ where $b$ is the upper limit, $a$ is the lower limit, $f(x)$ is the function, and $dx$ (or $\triangle x$) is displacement of each rectangle.
+									</div>
+								</div>
+								<div class="container left-align">
+									<div class="category-text">
+										Approximation methods
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">
+										To approximate the area under the curve, we can use rectangles and take their area. These methods are called left, right, or middle rectangle approximation methods, also known as LRAM, RRAM, and MRAM respectively.
+										<br>
+										<br> Let's say we wanted to find the area of the function $x$ with the domain of $[a,b]$ with $n$ rectangles. We simply would employ these steps:
+										<ol>
+											<li>
+												1. Choose the domain of where you want to approximate the area and how many rectangles you want to use. The more rectangles means that your answer is more accurate.
+											</li>
+											<li>
+												2. Find the width of each rectangle of the function by using the equation $w=\frac{b-a}{n}$.
+											</li>
+											<li>
+												3. Create a table of values and increase each value by your width while staying within the domain.
+											</li>
+											<li>
+												4. For LRAM approximation, multiply each $y$ value by the width of each rectangle except for the last. For RRAM approximation, multiply each $y$ value by the width of each rectangle except for the first. Finally, for MRAM approximation, take the average of each $x$ value, make a table of values based on your original function and multiply each $y$ value by the height.
+											</li>
+										</ol>
+									</div>
+								</div>
+								<div class="container left-align">
+									<div class="category-text">
+										Numerical Methods (Trapezoidal Approximation)
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">
+										If an integral is impossible to compute, we can use numerical methods.
+										<ol>
+											<li>
+												$$A=(\frac{y_2+y_1}{2}) \triangle x$$
+											</li>
+										</ol>
+									</div>
+								</div>
+								<div class="container left-align">
+									<div class="category-text">
+										Limit definition
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">
+										To find the integral of $\int_{a}^{b} f(x)dx$ with the limit definition of an integral, use the steps:
+										<ol>
+											<li>
+												1. Find $\triangle x$ and $x$: $$\triangle x=\frac{b-a}{n}$$ $$x=a+(k)(\triangle x)$$
+											</li>
+											<li>
+												2. Plug in $x$ for each $x$ of the function and plug in $\triangle x$ for $dx$.
+											</li>
+											<li>
+												3. Take the limit as $n \rightarrow \infty$ and sum each k.
+											</li>
+										</ol>
+									</div>
+								</div>
+								<div class="container left-align">
+									<div class="category-text">
+										The Fundamental Theorem of Calculus (FTC)
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">
+										The holy grail of calculus! You now have the key to all power! Here is the key: $$\int_{a}^{b} f'(x)dx=f(b)-f(a)$$ on the interval $[a,b]$. This rule basically states that the integral is the antiderivative.
+										<br>
+										<br>
+										<b>Note</b>: $f(b)-f(a)$ is written as $f(x) |^b_a$.
+									</div>
+								</div>								
+								<div class="container left-align">
+									<div class="category-text">
+										Indefinite Integral
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">
+										An indefinite integral is a general equation that has no limits.  To denote this difference, we must add a $+c$ after integrating.
+									  </div>
+									</div>
+								<div class="container left-align">
+									<div class="category-text">
+										Definite Integral
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">
+										A definite integral is one that has limits and is solvable.
+									  </div>
+									</div>
+								<div class="container left-align">
+									<div class="category-text">
+										Power Rule
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">
+										$$\int x^n=\frac{x^{n+1}}{n+1}+c$$
+									  </div>
+									</div>
+								<div class="container left-align">
+									<div class="category-text">
+										Substitution (Reverse Chain Rule)
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">
+										We can find the integral using substitution, or the reverse chain rule.  If we define the substitution variable as u, follow these steps:
+										<ol>
+											<li>
+												1. Strategically choose the term in the function you want to substitute.
+											</li>
+											<li>
+												2. Define it as $u$.
+											</li>
+											<li>
+												3. Take the derivative of the term, solve for $dx$ in terms of $u$.
+											</li>
+											<li>
+												4. Change the limits in terms of $u$.  Plug in the current limits in the substitution equation for $x$.
+											</li>
+											<li>
+												5. Integrate the function in terms of $u$.
+											</li>
+										</ol>
+									</div>
+								</div>
+								<div class="container left-align">
+									<div class="category-text">
+										Parts (Reverse Product Rule)
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">
+										We can find the integral using parts, or the reverse product rule. This method basically "transforms" the current integral into another form so we can take the integral easily.  A good candidate for this method is if you need to integrate the product of two dissimilar functions, for instance, $\displaystyle \int (polynomial)(exponential) dx$.
+										<ol class="step">
+											<li>
+												1. Separate the two dissimilar functions into parts, one equal to $u$ and the other function and everything else equal to $dv$.
+											</li>
+											<li>
+												2. The general rule of thumb for what to define $u$ is LIPET; however, be aware that this does not always work.
+												<ol>
+													<li>
+														a. Logarithms
+													</li>
+													<li>
+														b. Inverse Trigonometry
+													</li>
+													<li>
+														c. Polynomials
+													</li>
+													<li>
+														d. Exponentials
+													</li>
+													<li>
+														e. Trigonometry
+													</li>
+												</ol>
+											</li>
+											<li>
+												3. For the function defined by $u$, take the derivative of $u$ in terms of the function variable and solve for $du$.
+											</li>
+											<li>
+												4. For the function defined by $v$, integrate it.
+											</li>
+											<li>
+												5. After deriving $u$ and integrating $v$, plug in to this equation: $$uv-\int vdu$$
+											</li>
+										</ol>
+									</div>
+								</div>
+								<div class="container left-align">
+									<div class="category-text">
+										Partial Fraction Decomposition
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">
+										If a function is too difficult to be integrated, we can simplify it through partial fraction decomposition.  If we have the integral in the form $\displaystyle \frac{N(x)}{D(x)}$:
+										<ol>
+											<li>
+												1. If $N(x)$ is larger than $D(x)$, long divide it.
+											</li>
+											<li>
+												2. Factor $D(x)$
+											</li>
+											<li>
+												3. Consider these cases:
+											</li>
+											<li>
+												a. $\displaystyle (ax+b) => \frac{A}{ax+b}$
+											</li>
+											<li>
+												b. $\displaystyle (ax+b)^n => \frac{A}{ax+b} + \frac{B}{(ax+b)^2} + \frac{C}{(ax+b)^3} + \frac{N}{(ax+b)^n}$
+											</li>											
+											<li>
+												c. $\displaystyle (ax+b)^n => \frac{Ax+B}{ax^2+bx+c}$
+											</li>										
+											<li>
+												d. $\displaystyle (ax^2+bx+c)^n => \frac{Ax+B}{ax^2+bx+c} + \frac{Cx+D}{(ax^2+bx+c)^2} + \frac{Ex+F}{(ax^2+bx+c)^3} + \frac{Nx+(N+1)}{(ax^2+bx+c)^n}$
+											</li>
+											<li>
+												4. Clear fractions by multiplying $D(x)$.
+											</li>
+											<li>
+												5. Solve the values as a system of equations.
+											</li>
+										</ol>
+									</div>
+								</div>
+								<div class="container left-align">
+									<div class="category-text">
+										Trigonometric Substitution
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">
+										For integrals that look similar to the inverse trigonometric integrals, we can use trig subtitution:
+										<ol>
+											<li>
+												1. Identify the type of substitution to make:
+											</li>
+											<li>
+												a. $const+x^2=tan^2(\theta)$
+											</li>
+											<li>
+												b. $const-x^2=sin^2(\theta)$
+											</li>
+											<li>
+												c. $x^2-const=sec^2(\theta)$
+											</li>
+											<li>
+												2. Rearrange the $x^2$ and $const$ terms with trigonometric identities.
+											</li>											
+											<li>
+												3. Substitute the $x^2$ term with the the respective type, as shown above.
+											</li>										
+											<li>
+												4. Differentiate the substitution and solve for $dx$.
+											</li>
+											<li>
+												5. Plug in each term you solve for.
+											</li>
+											<li>
+												6. Integrate normally.
+											</li>
+											<li>
+												7. Solve for $\theta$ and create a right triangle.
+											</li>
+											<li>
+												8. Using the triangle, convert the integral back om terms of $x$.
+											</li>
+										</ol>
+									</div>
+								</div>
+								<div class="container left-align">
+									<div class="category-text">
+										Weierstrass Substitution ($\displaystyle tan(\frac{x}{2})$ substitution)
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">
+										If we encounter an integral that is not able to be integrated with the previous methods, we can use Weierstrass substitution.
+										<ol>
+											<li>
+												1. Substitute $\displaystyle u=\frac{x}{2})$
+											</li>
+											<li>
+												a. $\displaystyle sinx=\frac{2u}{1+u^2}$
+											</li>
+											<li>
+												b. $\displaystyle cosx=\frac{1-u^2}{1+u^2}$
+											</li>
+											<li>
+												c. $\displaystyle dx=\frac{2du}{1+u^2}$
+											</li>
+											<li>
+												2. Substitute each term and integrate. 
+											</li>				
+											<li>
+												3. Substitute back in for $u$.
+											</li>								
+										</ol>
+									</div>
+								</div>
+								<div class="container left-align">
+									<div class="category-text">
+										Improper Integrals
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">
+										If an integral contains an infinity or an asymptote, try these methods:
+										<ol>
+											<li>
+												1. Integrals involving infinity: $\displaystyle \int_{0}^{\infty} ax^2 dx => \lim_{b \rightarrow \infty} \int_{0}^{b} ax^2 dx$
+											</li>
+											<li>
+												a. Integrals involving vertical asyptotes: $\displaystyle \int_{-1}^{1} \frac{1}{x} dx => \lim_{b \rightarrow 0} \int_{-1}^{0} \frac{1}{x} dx + \int_{0}^{1} \frac{1}{x} dx$
+											</li>								
+										</ol>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="card-animation">
+				<li>
+					<ul class="collapsible" data-collapsible="expandable">
+						<li>
+							<div class="collapsible-header center topic-cards"><span class="card-title js-txt orange-text" id="cat-header">integrals: <span class="js-txt black-text">trig</span></span>
+							</div>
+							<div class="collapsible-body white">
+								<div class="container left-align">
+									<div class="category-text">
+										Integrals involving trigonometry
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">
+									  <div class="row">
+										  <div class="col s12 m4">
+											$$\int sinx \ dx \\ =-cosx+c$$
+										  </div>
+										  <div class="col s12 m4">
+											$$\int cosx \ dx \\ =sinx+c$$
+										  </div>
+										  <div class="col s12 m4">
+											$$\int tanx \ dx \\ =-ln|cosx|+c$$
+										  </div>						  
+									  </div>
+									  <div class="row">
+										  <div class="col s12 m4">
+											$$\int cscx \ dx \\ =ln|cscx-cotx|+c$$
+										  </div>
+										  <div class="col s12 m4">
+											$$\int secx \ dx \\ =-ln|secx-tanx|+c$$
+										  </div>
+										  <div class="col s12 m4">
+											$$\int cotx \ dx \\ =ln|sinx|+c$$
+										  </div>						  
+									  </div>
+									</div>
+								</div>
+								<div class="container left-align">
+									<div class="category-text">
+										Integrals involving inverse trigonometry
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">
+									  <div class="row">
+										  <div class="col s12 m4">
+											$$\int \frac{1}{\sqrt{1-x^2}} \ dx \\ =sin^{-1}x+c$$
+										  </div>
+										  <div class="col s12 m4">
+											$$\int \frac{1}{1+x^2} \ dx \\ =tan^{-1}x+c$$
+										  </div>
+										  <div class="col s12 m4">
+											$$\int \frac{1}{x\sqrt{x^2-1}} \ dx \\ =sec^{-1}|x|+c$$
+										  </div>						  
+									  </div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="card-animation">
+				<li>
+					<ul class="collapsible" data-collapsible="expandable">
+						<li>
+							<div class="collapsible-header center topic-cards"><span class="card-title js-txt orange-text" id="cat-header">integrals: <span class="js-txt black-text">application</span></span>
+							</div>
+							<div class="collapsible-body white">
+								<div class="container left-align">
+									<div class="category-text">
+										Planar areas
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">
+										We can find the area between two functions by integration. <br><br>
+										If we are integrating the functions in terms of $x$, $y_2$ and $y_1$, where they intersect at points $b$ and $a$, follow these steps:
+										<ol>
+											<li>
+												1. Find when each function intersects each other by making them equal to each other.  These values are in terms of the $x$ axis and are the upper and lower bounds.
+											</li>
+											<li>
+												2. Graph the function to see which function is on top or bottom.
+											</li>
+											<li>
+												3. We subtract the functions, $top_{function}-bottom_{function}$.
+											</li>
+											<li>
+												4. Set up the integral: $\int_{a}^{b} top_{function}-bottom_{function} \ dx$
+											</li>
+											<li>
+												5. Solve.
+											</li>
+										</ol><br>
+										We can also find the planar area of a function in terms of $y$.
+										<ol>
+											<li>
+												1. Find when each function intersects each other by making them equal to each other.  These values are in terms of the $y$ axis and are the upper and lower bounds.
+											</li>
+											<li>
+												2. Graph the function to see which function is on right or left.
+											</li>
+											<li>
+												3. We subtract the functions, $right_{function}-left_{function}$.
+											</li>
+											<li>
+												4. Set up the integral: $\displaystyle \int_{a}^{b} right_{function}-left_{function} \ dx$
+											</li>
+											<li>
+												5. Solve.
+											</li>
+										</ol>
+									</div>
+								</div>
+								<div class="container left-align">
+									<div class="category-text">
+										Volume of solids of revolution using washers
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">
+										If we rotate a function around an axis, a three dimensional shape can be created.  We must first consider the bounds, the function, and the axis of rotation.  The equation for the volume of washer is $$V= \pi r^2 \ \triangle x$$
+										<ol>
+											<li>
+												1. To find the bounds of the shape, simply find the intersection points of the functions. The limits will be in terms of the axis of rotation.
+											</li>
+											<li>
+												2. The general equations are: $$top^2-bottom^2$$ $$(axis-outer \ radius)^2-(axis-inner \ radius)^2$$ 
+											</li>
+											<li>
+												3. We must find the infinite sum of the shape to find the the full volume.  We take the limit as $x$ approaches infinity, then set up the integral as $a$ approaches $b$: $$V= \pi \lim_{x \rightarrow \infty} \sum (axis-outer \ radius)^2-(axis-inner \ radius)^2 \triangle x$$ $$V= \pi \int_{a}^{b} (axis-outer \ radius)^2-(axis-inner \ radius)^2 \ dx$$
+											</li>
+											<li>
+												4. Solve.
+											</li>
+											<li>
+												Note: If the axis is above/right, subtract $axis-function$ but if it's below/left, add $axis+function$.
+											</li>
+										</ol>										
+									</div>
+								</div>
+								<div class="container left-align">
+									<div class="category-text">
+										Volume of solids of revolution using shells
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">
+										Another method to find the volume of a shape rotated around an axis is the shell method.  Like the washer method, we must consider the bounds, the function, and the axis rotation.  The equation for the volume of a shell is: $$V=2 \pi rh \triangle x$$
+										<ol class="steps">
+											<li>
+												1. To find the bounds of the shape, simply find the intersection points of the functions. The limits will be in terms of the axis perpendicular to the one of rotation.
+											</li>
+											<li>
+												2. The general equation is: $$(x-axis)-(top_{function}-bottom_{function})$$
+											</li>
+											<li>
+												3. We must find the infinite sum of the shape to find the the full volume.  We take the limit as $x$ approaches infinity, then set up the integral as $a$ approaches $b$: $$V= 2 \pi \lim_{x \rightarrow \infty} \sum (x-axis)-(top_{function}-bottom_{function}) \triangle x$$ $$V= 2 \pi \int_{a}^{b} (x-axis)-(top_{function}-bottom_{function}) \ dx$$
+											</li>
+											<li>
+												4. Solve.
+											</li>
+											<li>
+												Note: If the axis is above/right, use $x-axis$ but if it's below/left, use $x+axis$.
+											</li>
+										</ol>										
+									</div>
+								</div>
+								<div class="container left-align">
+									<div class="category-text">
+										Volume of solids of with known cross-sections
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">
+										If we are given what type of shape the solid is, then we can find the volume. The general equation is: $$V=area \times thickness$$
+										<ol class="steps">
+											<li>
+												1. The base of the cross section is $top-bottom$ and the area is in terms of the $x$ axis.
+											</li>
+											<li>
+												2. The geometry depends on the shape of the cross sections.
+											</li>
+											<li>
+												3. The integral depends on the geometry of the base and cross section.
+											</li>
+											<li>
+												4. Solve.
+											</li>
+										</ol>
+										<br><br>
+										Common Shapes:
+										<ol class="steps">
+											<li>
+												1. Semicircle: $\frac{1}{2}r^2$
+											</li>
+											<li>
+												2. Isosceles Triangle: Base is $x \sqrt{2}$, sides are $x$.
+											</li>
+											<li>
+												3. 30-60-90 Triangle: Base is $x$,
+											</li>
+											<li>
+												4. Solve.
+											</li>
+										</ol>										
+									</div>
+								</div>
+								<div class="container left-align">
+									<div class="category-text">
+										Arc length
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">
+										We can find the arc length by using: $$ dL= \sqrt{1+(\frac{dy}{dx})^2} dx$$
+										If it is in terms of y, use $$ \displaystyle dL= \sqrt{1+(\frac{dy}{dx})^2}dy$$
+									</div>
+								</div>
+								<div class="container left-align">
+									<div class="category-text">
+										Surface Area
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">
+										We can find the surface area by using: $$SA=2 \pi r dL$$ where dL is the arc length.
+									</div>
+								</div>
+								<div class="container left-align">
+									<div class="category-text">
+										Position, Velocity, Acceleration
+										<span class="category-accent"></span>
+										<br>
+									</div>
+									<div class="category-text-content">
+										We can find find the position, velocity, and acceleration of a function by integrating.
+										<ol class="steps">
+											<li>
+												1. The integral of acceleration is velocity.
+											</li>
+											<li>
+												2. The integral of velocity is displacement.
+											</li>
+										</ol>
+										In order to find the general equation form of an indefinite function, you must be given a defined point and solve for the constant ($+c$).
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</main>
+	<footer class="page-footer blue-grey darken-1">
+		<div class="footer-copyright blue-grey">
+			<div class="container">
+				Copyright &copy; 2016. Created by <a class="white-text" href="#">SPJY</a>. ty Dr. Ida.
+				<a class="grey-text text-lighten-4 right" href="#!">Privacy Policy</a>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="../../js/style.min.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			$('.collapsible').collapsible({
+				accordion: false
+			});
+		});
+
+		$('.dropdown-button').dropdown({
+			inDuration: 300,
+			outDuration: 225,
+			constrain_width: false,
+			hover: true,
+			gutter: 0,
+			belowOrigin: true,
+			alignment: 'left'
+		});
+	</script>
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+	</script>
+	<script type="text/javascript">
+		window.MathJax = {
+			AuthorInit: function () {
+				MathJax.Hub.Register.StartupHook("Begin", function () {
+					MathJax.Hub.Queue(function () {
+						var elements = document.getElementsByClassName('tex2jax_ignore');
+						for (var i = 0; i < elements.length; i++) {
+							elements[i].classList.remove('tex2jax_ignore');
+						}
+						MathJax.Hub.Config({
+							displayAlign: "left"
+						});
+						MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+					});
+				});
+			}
+		};
+
+		(function (d, script) {
+			script = d.createElement('script');
+			script.type = 'text/javascript';
+			script.src = 'https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full';
+			d.getElementsByTagName('head')[0].appendChild(script);
+		}(document));
+	</script>
+
+	<script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+
+</html>
